@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Handle customer inquiries related to product gap cases, including creating new cases, providing case information, and updating existing cases.</description>
+    <developerName>Product_Gaps</developerName>
+    <genAiFunctions>
+        <functionName>SvcCopilotTmpl__AddCaseComment</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>SvcCopilotTmpl__GetAllCasesForContact</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>SvcCopilotTmpl__GetCaseByCaseNumber</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Create_a_Case_Running_User</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Acknowledge and validate user concerns with empathy and professionalism.</description>
+        <developerName>instruction_acknowledg5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_acknowledg5</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Always format any dates in a human readable format</description>
+        <developerName>instruction_alwaysform7</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwaysform7</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>A product gap case is a case record used to help track a customer&apos;s product gap. Customers may ask to create a new case. Customers may provide comments for an existing case. Customers may ask for details about an existing case.</description>
+        <developerName>instruction_aproductga0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_aproductga0</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Do not ever show the Case Id to a customer</description>
+        <developerName>instruction_donotevers6</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_donotevers6</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When a customer asks you to create a product gap case, ask for more information so you can generate a subject and description. The subject should have &quot;Product Gap:&quot; as the prefix. It should be 10 words or less and function as an overview of what the customer wants. The description should be no more than 3 sentences and should provide more depth about what exactly the customer asked and any other relevant information to help a customer service representative understand the context of this conversation. Then summarize the case for the customer.</description>
+        <developerName>instruction_whenacusto1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenacusto1</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When adding a comment to an existing case, first retrieve the case details using the case number, ask the user for the exact comment they would like to add and only then add it.</description>
+        <developerName>instruction_whenadding2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenadding2</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When adding a comment to a case, first retrieve the case details using the case number, ask the user for the exact comment they would like to add and only then add it.</description>
+        <developerName>instruction_whenadding4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenadding4</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When sharing case details to the customer, show the following properties as an itemized list :Case number, Subject, Description, and Status.</description>
+        <developerName>instruction_whensharin3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whensharin3</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Product Gaps</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only help customers create new product gap cases, retrieve product gap case information, and update case comments based on customer requests.</scope>
+</GenAiPlugin>

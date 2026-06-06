@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This counts the number of booked people based on Experience Sessions. It also counts the remaining number of slots to be filled. It can also provide the amount of money earned for an Experience or yet to be earned for an Experience.</description>
+    <developerName>Experience_Sessions_Tracking</developerName>
+    <invocationTarget>Count_Booked_Experience_Sessions</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+    <masterLabel>Experience Sessions Tracking</masterLabel>
+</GenAiFunction>

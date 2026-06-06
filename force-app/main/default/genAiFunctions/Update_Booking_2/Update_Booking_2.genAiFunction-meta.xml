@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This updates the booking record of an experience session for a contact.</description>
+    <developerName>Update_Booking_2</developerName>
+    <invocationTarget>Update_Booking</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+    <masterLabel>Update Booking</masterLabel>
+</GenAiFunction>

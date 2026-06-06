@@ -1,0 +1,45 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Output_Message" : {
+      "title" : "Output_Message",
+      "description" : "The output message for canceling the booking.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "Output_Message_Date" : {
+      "title" : "Output_Message_Date",
+      "description" : "The output message to be used if the date is updated.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "Output_Message_Time" : {
+      "title" : "Output_Message_Time",
+      "description" : "The output message to be used if the time of the session is updated.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "Updated_Session_Record" : {
+      "title" : "Updated_Session_Record",
+      "description" : "Shows the updated experience session record.",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Session__c"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

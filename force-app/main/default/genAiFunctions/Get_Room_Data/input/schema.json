@@ -1,0 +1,14 @@
+{
+  "required" : [ "Room_Number" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Room_Number" : {
+      "title" : "Room_Number",
+      "description" : "This is the room number that is being asked about.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

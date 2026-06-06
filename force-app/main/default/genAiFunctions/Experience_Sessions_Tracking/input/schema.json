@@ -1,0 +1,14 @@
+{
+  "required" : [ "ExperienceName" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "ExperienceName" : {
+      "title" : "ExperienceName",
+      "description" : "This will be the experience name that is used to determine which experience is being targeted. If the experience isn't provided, use the Name field from Experience__c to provide a list of options.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

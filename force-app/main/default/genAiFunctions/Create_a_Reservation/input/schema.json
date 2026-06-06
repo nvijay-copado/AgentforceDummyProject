@@ -1,0 +1,56 @@
+{
+  "required" : [ "Check_In_Date", "Check_Out_Date", "Contact_Id", "Num_of_Guests", "Room_Name", "Room_Type" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Check_In_Date" : {
+      "title" : "Check_In_Date",
+      "description" : "This is the check-in date for the reservation. If a relative date is provided, calculate it and use that. If one isn't provided ask for it.",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "Check_Out_Date" : {
+      "title" : "Check_Out_Date",
+      "description" : "This is the check-out date for the reservation.  If a relative date is provided, calculate it and use that. If one isn't provided ask for it.",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "Contact_Id" : {
+      "title" : "Contact_Id",
+      "description" : "This is the contact id of the person making the reservation. If a contact isn't specified ask for a contact.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Num_of_Guests" : {
+      "title" : "Num_of_Guests",
+      "description" : "The number of people staying for this reservation. If this isn't ask for it.",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "Room_Name" : {
+      "title" : "Room_Name",
+      "description" : "This is the name of the room including the number that is available. Provide a list of available rooms based on the type of room.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "Room_Type" : {
+      "title" : "Room_Type",
+      "description" : "The type of room the person making the reservation would like. If a type isn't provided, use the type associated to the room number they are trying to book, or provide a list of available types and ask them to choose one.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "Status" : {
+      "title" : "Status",
+      "description" : "This is the status of the reservation. Set this to Confirmed unless another status is selected.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

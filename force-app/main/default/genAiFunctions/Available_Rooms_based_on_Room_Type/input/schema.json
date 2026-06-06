@@ -1,0 +1,34 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Check_in_Date" : {
+      "title" : "Check_in_Date",
+      "description" : "This is to check based on a check in date.",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Check_out_date" : {
+      "title" : "Check_out_date",
+      "description" : "This is to check based on a check out date.",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Reservation_Record_Id" : {
+      "title" : "Reservation_Record_Id",
+      "description" : "This is the reservation where we want to inquire about different rooms.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Room_Type" : {
+      "title" : "Room_Type",
+      "description" : "This is the room type being inquired about.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

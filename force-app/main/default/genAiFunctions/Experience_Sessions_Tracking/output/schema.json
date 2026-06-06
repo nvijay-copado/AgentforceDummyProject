@@ -1,0 +1,42 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "AmtMoneyMade" : {
+      "title" : "AmtMoneyMade",
+      "description" : "This is the total amount of money booked for an experience based on the number of slots booked for experience sessions.",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "AmtMoneytoMake" : {
+      "title" : "AmtMoneytoMake",
+      "description" : "This is the total amount of money available to earn for an experience based on remaining experience session slots.",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "NumSlotsRemaining" : {
+      "title" : "NumSlotsRemaining",
+      "description" : "This is the number of remaining slots.",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "NumSlotsTaken" : {
+      "title" : "NumSlotsTaken",
+      "description" : "The number of booked slots.",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

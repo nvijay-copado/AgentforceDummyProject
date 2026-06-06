@@ -1,0 +1,28 @@
+{
+  "required" : [ "Booking_Id" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Booking_Id" : {
+      "title" : "Booking_Id",
+      "description" : "This is the booking id that needs to be modified.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Is_Cancelled" : {
+      "title" : "Is_Cancelled",
+      "description" : "Tracks if the booking needs to be cancelled.",
+      "lightning:type" : "lightning__booleanType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Num_of_Guests" : {
+      "title" : "Num_of_Guests",
+      "description" : "This tracks the number of guests that need to be updated.",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

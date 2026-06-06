@@ -1,0 +1,41 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Booking_ID" : {
+      "title" : "Booking_ID",
+      "description" : "This grabs the booking id should you be looking at a booking vs the session.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Is_Cancelled" : {
+      "title" : "Is_Cancelled",
+      "description" : "Tracks if the experience session needs to be cancelled.",
+      "lightning:type" : "lightning__booleanType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "New_Date" : {
+      "title" : "New_Date",
+      "description" : "The new date of the experience session.",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Session_Id" : {
+      "title" : "Session_Id",
+      "description" : "Record ID of the experience session to be modified.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Update_Time" : {
+      "title" : "Update_Time",
+      "description" : "Updates the time of the experience session.",
+      "lightning:type" : "lightning__timeType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

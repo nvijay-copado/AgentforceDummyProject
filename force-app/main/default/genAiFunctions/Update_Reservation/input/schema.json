@@ -1,0 +1,70 @@
+{
+  "required" : [ "Reservation_Id" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Check_in_Date" : {
+      "title" : "Check_in_Date",
+      "description" : "This is to update the Check_in_Date.",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Check_out_Date" : {
+      "title" : "Check_out_Date",
+      "description" : "This is to update the Check_out_Date.",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "NightlyRate" : {
+      "title" : "NightlyRate",
+      "description" : "This is to update the nightly rate.",
+      "lightning:type" : "lightning__currencyType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Notes" : {
+      "title" : "Notes",
+      "description" : "This is to add notes to the updated reservation.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Number_of_Guests" : {
+      "title" : "Number_of_Guests",
+      "description" : "This is to update the Number of Guests.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Reservation_Id" : {
+      "title" : "Reservation_Id",
+      "description" : "This is the reservation id that is going to be updated.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Room_Record_Id" : {
+      "title" : "Room_Record_Id",
+      "description" : "This is to update the room that is selected.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Room_Type" : {
+      "title" : "Room_Type",
+      "description" : "This is to update the the Room Type.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Status" : {
+      "title" : "Status",
+      "description" : "This is to update the Status of the Room.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

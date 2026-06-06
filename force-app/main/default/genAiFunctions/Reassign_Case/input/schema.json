@@ -1,0 +1,21 @@
+{
+  "required" : [ "CaseID", "NewOwnerName" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "CaseID" : {
+      "title" : "CaseID",
+      "description" : "This is the ID for the Case that will be updated.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "NewOwnerName" : {
+      "title" : "NewOwnerName",
+      "description" : "This is the name of the new owner. If the name of a user isn't provided, ask for the name.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,21 @@
+{
+  "required" : [ "caseId", "caseStatus" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "caseId" : {
+      "title" : "caseId",
+      "description" : "The case id to be used to update the status.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "caseStatus" : {
+      "title" : "caseStatus",
+      "description" : "Used to capture the new status for the case. If a status isn't provided prompt the user to type one in. Do not just pick one.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

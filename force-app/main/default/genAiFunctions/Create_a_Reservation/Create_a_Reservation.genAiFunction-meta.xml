@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Use this action if the user is trying to book a new reservation or book a room. This creates a new reservation. Gather the contact, check-in date, check-out date, and number of guests staying first. Provide a list of room types in a list to choose from based on the number of guests selected. Provide a list of available rooms to choose from and have them select one. Default the reservation status to Confirmed unless specifically told otherwise.</description>
+    <developerName>Create_a_Reservation</developerName>
+    <invocationTarget>Create_a_Reservation</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+    <masterLabel>Create a Reservation</masterLabel>
+</GenAiFunction>

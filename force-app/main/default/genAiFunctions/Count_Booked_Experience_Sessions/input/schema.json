@@ -1,0 +1,28 @@
+{
+  "required" : [ "ExperienceName", "Range_Begin_Date", "Range_End_Date" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "ExperienceName" : {
+      "title" : "ExperienceName",
+      "description" : "This will be the experience name that is used to determine which experience is being targeted.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Range_Begin_Date" : {
+      "title" : "Range_Begin_Date",
+      "description" : "The start of the date range used to determine which sessions to check. It is ok if the date range is a single day.",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Range_End_Date" : {
+      "title" : "Range_End_Date",
+      "description" : "The end of the date range used to determine which sessions to check. It is ok if the date range is a single day.",
+      "lightning:type" : "lightning__dateType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

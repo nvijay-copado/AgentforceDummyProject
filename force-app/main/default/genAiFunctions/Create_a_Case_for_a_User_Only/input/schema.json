@@ -1,0 +1,35 @@
+{
+  "required" : [ "CaseOrigin" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "CaseOrigin" : {
+      "title" : "CaseOrigin",
+      "description" : "If the case origin hasn't been provided, then provide a list from which a case origin can be selected.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Description" : {
+      "title" : "Description",
+      "description" : "This is to provide the full request not just a summary.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "OwnerID" : {
+      "title" : "OwnerID",
+      "description" : "This reflects who should own this case.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "SubjectLine" : {
+      "title" : "SubjectLine",
+      "description" : "This provides a single line summary of what is being requested.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}
