@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recommendation__c</fullName>
+    <description>AI recommended next best action for the lead.</description>
+    <externalId>false</externalId>
+    <label>Recommendation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Schedule Demo Immediately</fullName>
+                <default>false</default>
+                <label>Schedule Demo Immediately</label>
+            </value>
+            <value>
+                <fullName>Nurture with Product Content</fullName>
+                <default>false</default>
+                <label>Nurture with Product Content</label>
+            </value>
+            <value>
+                <fullName>Add to Marketing Campaign</fullName>
+                <default>false</default>
+                <label>Add to Marketing Campaign</label>
+            </value>
+            <value>
+                <fullName>Escalate to Sales Rep</fullName>
+                <default>false</default>
+                <label>Escalate to Sales Rep</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
