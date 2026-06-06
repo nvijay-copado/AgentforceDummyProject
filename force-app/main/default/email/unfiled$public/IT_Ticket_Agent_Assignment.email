@@ -1,0 +1,18 @@
+<messaging:emailTemplate subject="New IT Ticket Assigned: {!relatedTo.Name}" recipientType="User" relatedToType="IT_Ticket__c">
+<messaging:htmlEmailBody >
+<html>
+<body>
+<p>Hello,</p>
+<p>A new IT ticket has been assigned to your queue.</p>
+<p><strong>Ticket:</strong> {!relatedTo.Name}<br/>
+<strong>Subject:</strong> {!relatedTo.Subject__c}<br/>
+<strong>Category:</strong> {!relatedTo.Category__c}<br/>
+<strong>Priority:</strong> {!relatedTo.Priority__c}<br/>
+<strong>SLA Due Date:</strong> {!relatedTo.SLA_Due_Date__c}</p>
+<p><strong>Description:</strong><br/>{!relatedTo.Description__c}</p>
+<p>Please review and action this ticket in Salesforce.</p>
+<p>Thank you,<br/>IT Help Desk</p>
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

@@ -1,0 +1,56 @@
+<template>
+    <lightning-card title="IT Category Routing" icon-name="standard:queue">
+        <div slot="actions">
+            <lightning-button
+                label="Manage in Setup"
+                onclick={handleManageInSetup}
+            ></lightning-button>
+        </div>
+
+        <div class="slds-p-around_medium">
+            <p class="slds-text-body_regular slds-m-bottom_small">
+                Tickets are auto-assigned to queues based on category. Unmatched
+                categories route to the <strong>{defaultQueueName}</strong> queue.
+            </p>
+
+            <template lwc:if={isLoading}>
+                <lightning-spinner alternative-text="Loading routing rules"></lightning-spinner>
+            </template>
+
+            <template lwc:elseif={hasRules}>
+                <lightning-datatable
+                    key-field="category"
+                    data={routingRules}
+                    columns={columns}
+                    hide-checkbox-column
+                ></lightning-datatable>
+            </template>
+
+            <template lwc:else>
+                <div class="slds-text-color_weak">
+                    No routing rules are configured yet.
+                </div>
+            </template>
+
+            <div class="slds-m-top_medium">
+                <h3 class="slds-text-heading_small slds-m-bottom_x-small">
+                    Available IT Queues
+                </h3>
+                <template lwc:if={hasQueues}>
+                    <ul class="slds-list_dotted">
+                        <template for:each={queueOptions} for:item="queue">
+                            <li key={queue.developerName}>
+                                {queue.name} ({queue.developerName})
+                            </li>
+                        </template>
+                    </ul>
+                </template>
+            </div>
+
+            <p class="slds-text-body_small slds-m-top_medium slds-text-color_weak">
+                IT Managers can update routing rules in Setup without a code
+                deployment by editing IT Category Routing custom metadata records.
+            </p>
+        </div>
+    </lightning-card>
+</template>
