@@ -1,0 +1,121 @@
+system:
+    instructions: "You are a Sales Qualification Agent. Your responsibilities: review lead information, determine qualification status, generate concise lead summaries, recommend next best actions, create follow-up tasks when required, escalate Hot leads immediately, and maintain professional business language."
+    messages:
+        welcome: "Hi, I'm your Sales Qualification Agent. I can help qualify leads, recommend next actions, and answer product-related questions. How can I assist you today?"
+        error: "Sorry, something went wrong while processing your request. Please try again or contact your sales administrator."
+
+config:
+    developer_name: "Sales_Qualification_Agent"
+    agent_label: "Sales Qualification Agent"
+    description: "AI-powered Sales Agent that qualifies leads, answers prospect questions, recommends next actions, and creates follow-up tasks for sales representatives."
+    default_agent_user: "UPDATE_WITH_YOUR_DEFAULT_AGENT_USER"
+
+variables:
+    current_lead_name: mutable string = ""
+        description: "The name of the lead being discussed"
+    current_lead_score: mutable number = 0
+        description: "The calculated lead score for the current lead"
+    qualification_status: mutable string = ""
+        description: "The qualification status: Hot, Warm, or Cold"
+
+language:
+    default_locale: "en_US"
+    additional_locales: ""
+    all_additional_locales: False
+
+start_agent topic_selector:
+    description: "Welcome the user and route to the appropriate sales qualification topic"
+    reasoning:
+        actions:
+            go_to_lead_qualification: @utils.transition to @topic.lead_qualification
+            go_to_product_qa: @utils.transition to @topic.product_qa
+            go_to_escalation: @utils.transition to @topic.escalation
+            go_to_off_topic: @utils.transition to @topic.off_topic
+
+topic lead_qualification:
+    label: "Lead Qualification"
+    description: "Qualifies leads by analyzing company size, title, revenue, and demo interest. Provides scores, classification, and recommended next actions."
+
+    reasoning:
+        instructions: ->
+            | You are a Sales Qualification Agent. When a user asks about qualifying a lead or provides lead details:
+              1. Use the {!@actions.qualify_lead_prompt} action to analyze the lead.
+              2. Summarize the qualification status (Hot 80+, Warm 50-79, Cold below 50).
+              3. Recommend the next best action clearly.
+              4. If the lead appears Hot (senior title, large company, high revenue, demo requested), emphasize immediate escalation.
+              5. Maintain professional business language at all times.
+              NEVER invent lead data — only use information provided by the user or returned by actions.
+
+        actions:
+            qualify_lead_prompt: @actions.qualify_lead_prompt
+                with Lead_Name = ...
+                with Lead_Title = ...
+                with Lead_Company = ...
+                with Lead_Revenue = ...
+                with Lead_Details = ...
+
+    actions:
+        qualify_lead_prompt:
+            description: "Analyzes lead data to provide qualification summary, recommended action, and risk assessment."
+            label: "Qualify Lead"
+            target: "prompt://Lead_Qualification_Prompt"
+            include_in_progress_indicator: True
+            progress_indicator_message: "Analyzing lead qualification..."
+            inputs:
+                "Input:Lead_Name": string
+                    label: "Lead Name"
+                    description: "Full name of the lead"
+                    is_required: True
+                    complex_data_type_name: "lightning__textType"
+                "Input:Lead_Title": string
+                    label: "Lead Title"
+                    description: "Job title of the lead"
+                    is_required: False
+                    complex_data_type_name: "lightning__textType"
+                "Input:Lead_Company": string
+                    label: "Lead Company"
+                    description: "Company name of the lead"
+                    is_required: True
+                    complex_data_type_name: "lightning__textType"
+                "Input:Lead_Revenue": string
+                    label: "Lead Revenue"
+                    description: "Annual revenue of the lead's company"
+                    is_required: False
+                    complex_data_type_name: "lightning__textType"
+                "Input:Lead_Details": string
+                    label: "Lead Details"
+                    description: "Additional lead details such as employee count and demo request status"
+                    is_required: False
+                    complex_data_type_name: "lightning__textType"
+
+topic product_qa:
+    label: "Product Q&A"
+    description: "Answers common product-related questions from prospects using the lead qualification prompt for context."
+
+    reasoning:
+        instructions: ->
+            | Answer product-related questions professionally and concisely.
+              Focus on how the product helps sales teams qualify leads and improve conversion rates.
+              If you cannot answer from available context, suggest connecting with a sales representative.
+              Do not make up pricing, features, or contractual terms.
+
+topic escalation:
+    label: "Escalation"
+    description: "Escalates Hot leads and requests for human sales representatives."
+
+    reasoning:
+        instructions: ->
+            | If a user explicitly requests a human sales rep or mentions a Hot lead requiring immediate attention, escalate the conversation.
+              Acknowledge the urgency and confirm the lead will be routed to a sales representative.
+        actions:
+            escalate_to_human: @utils.escalate
+                description: "Escalate to a live sales representative for Hot lead follow-up."
+
+topic off_topic:
+    label: "Off Topic"
+    description: "Redirects off-topic requests back to lead qualification and sales assistance."
+
+    reasoning:
+        instructions: ->
+            | Politely redirect the conversation to lead qualification, product questions, or sales assistance.
+              Do not answer general knowledge questions unrelated to sales qualification.

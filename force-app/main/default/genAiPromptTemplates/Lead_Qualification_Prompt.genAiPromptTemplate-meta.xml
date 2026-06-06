@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Analyzes lead data to provide qualification summary, recommended action, and risk assessment.</description>
+    <developerName>Lead_Qualification_Prompt</developerName>
+    <masterLabel>Lead Qualification Prompt</masterLabel>
+    <templateVersions>
+        <content>You are a Sales Qualification Agent analyzing incoming leads.
+
+Analyze the following lead:
+
+Name: {!$Input:Lead_Name}
+Title: {!$Input:Lead_Title}
+Company: {!$Input:Lead_Company}
+Revenue: {!$Input:Lead_Revenue}
+Additional Details: {!$Input:Lead_Details}
+
+Provide a professional business response with exactly these sections:
+
+1. Qualification Summary — Brief assessment of lead fit based on company size, title seniority, revenue, and demo interest.
+2. Recommended Action — One clear next best action (schedule demo, nurture, or marketing campaign).
+3. Risk Assessment — Note any gaps in data or concerns that could affect conversion.
+
+Maintain professional business language. Be concise and actionable.
+</content>
+        <inputs>
+            <apiName>Lead_Name</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Lead Name</masterLabel>
+            <referenceName>Input:Lead_Name</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Lead_Title</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Lead Title</masterLabel>
+            <referenceName>Input:Lead_Title</referenceName>
+            <required>false</required>
+        </inputs>
+        <inputs>
+            <apiName>Lead_Company</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Lead Company</masterLabel>
+            <referenceName>Input:Lead_Company</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Lead_Revenue</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Lead Revenue</masterLabel>
+            <referenceName>Input:Lead_Revenue</referenceName>
+            <required>false</required>
+        </inputs>
+        <inputs>
+            <apiName>Lead_Details</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Lead Details</masterLabel>
+            <referenceName>Input:Lead_Details</referenceName>
+            <required>false</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>
