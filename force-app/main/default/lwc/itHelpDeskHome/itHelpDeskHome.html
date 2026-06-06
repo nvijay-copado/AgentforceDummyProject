@@ -1,0 +1,60 @@
+<template>
+    <div class="slds-p-around_large">
+        <template if:true={showHome}>
+            <lightning-card title="IT Help Desk Portal" icon-name="standard:portal">
+                <div class="slds-p-around_large slds-text-align_center">
+                    <p class="slds-text-heading_medium slds-m-bottom_medium">
+                        Welcome to the IT Help Desk
+                    </p>
+                    <p class="slds-text-body_regular slds-m-bottom_large">
+                        Submit hardware, software, network, and access requests for support.
+                    </p>
+                    <lightning-button
+                        variant="brand"
+                        label="Submit IT Request"
+                        onclick={handleOpenForm}
+                    ></lightning-button>
+                </div>
+            </lightning-card>
+        </template>
+
+        <template if:true={showForm}>
+            <c-it-ticket-submission-form
+                onticketsubmitted={handleTicketSubmitted}
+            ></c-it-ticket-submission-form>
+        </template>
+
+        <template if:true={showConfirmation}>
+            <lightning-card title="Request Submitted" icon-name="utility:success">
+                <div class="slds-p-around_large">
+                    <p class="slds-text-heading_small slds-m-bottom_small">
+                        Your IT request has been submitted successfully.
+                    </p>
+                    <p class="slds-m-bottom_x-small">
+                        <strong>Ticket ID:</strong> {confirmationDetails.ticketName}
+                    </p>
+                    <p class="slds-m-bottom_x-small">
+                        <strong>Expected SLA:</strong> {confirmationDetails.slaHours} hours
+                    </p>
+                    <p class="slds-m-bottom_medium">
+                        <strong>SLA Due Date:</strong> {formattedSlaDueDate}
+                    </p>
+                    <p class="slds-text-body_small slds-m-bottom_large">
+                        A confirmation email has been sent to your contact address.
+                    </p>
+                    <lightning-button
+                        variant="brand"
+                        label="Submit Another Request"
+                        onclick={handleSubmitAnother}
+                        class="slds-m-right_small"
+                    ></lightning-button>
+                    <lightning-button
+                        variant="neutral"
+                        label="Back to Home"
+                        onclick={handleBackToHome}
+                    ></lightning-button>
+                </div>
+            </lightning-card>
+        </template>
+    </div>
+</template>

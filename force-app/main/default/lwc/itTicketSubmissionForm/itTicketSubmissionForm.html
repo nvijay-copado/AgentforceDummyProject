@@ -1,0 +1,145 @@
+<template>
+    <lightning-card title="Submit IT Request" icon-name="standard:case">
+        <div class="slds-p-around_medium">
+            <template if:true={formError}>
+                <div class="slds-text-color_error slds-m-bottom_small">{formError}</div>
+            </template>
+
+            <div class="slds-grid slds-wrap slds-gutters">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-p-bottom_small">
+                    <lightning-input
+                        label="Employee Name"
+                        value={employeeName}
+                        readonly
+                    ></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-p-bottom_small">
+                    <lightning-input
+                        label="Department"
+                        value={department}
+                        readonly
+                    ></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-p-bottom_small">
+                    <lightning-input
+                        type="email"
+                        label="Contact Email"
+                        value={contactEmail}
+                        readonly
+                    ></lightning-input>
+                    <template if:true={contactEmailError}>
+                        <div class="slds-text-color_error slds-text-body_small">{contactEmailError}</div>
+                    </template>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-p-bottom_small">
+                    <lightning-combobox
+                        name="category"
+                        label="Issue Category"
+                        value={category}
+                        placeholder="Select a category"
+                        options={categoryOptions}
+                        onchange={handleCategoryChange}
+                        required
+                    ></lightning-combobox>
+                    <template if:true={categoryError}>
+                        <div class="slds-text-color_error slds-text-body_small">{categoryError}</div>
+                    </template>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-p-bottom_small">
+                    <lightning-combobox
+                        name="subCategory"
+                        label="Sub-category"
+                        value={subCategory}
+                        placeholder="Select a sub-category"
+                        options={subCategoryOptions}
+                        onchange={handleSubCategoryChange}
+                        disabled={isSubCategoryDisabled}
+                        required
+                    ></lightning-combobox>
+                    <template if:true={subCategoryError}>
+                        <div class="slds-text-color_error slds-text-body_small">{subCategoryError}</div>
+                    </template>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-p-bottom_small">
+                    <lightning-input
+                        label="Subject"
+                        value={subject}
+                        onchange={handleSubjectChange}
+                        required
+                    ></lightning-input>
+                    <template if:true={subjectError}>
+                        <div class="slds-text-color_error slds-text-body_small">{subjectError}</div>
+                    </template>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-p-bottom_small">
+                    <lightning-input-rich-text
+                        label="Description"
+                        value={description}
+                        onchange={handleDescriptionChange}
+                    ></lightning-input-rich-text>
+                    <template if:true={descriptionError}>
+                        <div class="slds-text-color_error slds-text-body_small">{descriptionError}</div>
+                    </template>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-p-bottom_small">
+                    <lightning-combobox
+                        name="priority"
+                        label="Priority"
+                        value={priority}
+                        options={priorityOptions}
+                        onchange={handlePriorityChange}
+                        required
+                    ></lightning-combobox>
+                    <template if:true={priorityError}>
+                        <div class="slds-text-color_error slds-text-body_small">{priorityError}</div>
+                    </template>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-p-bottom_small">
+                    <lightning-combobox
+                        name="urgency"
+                        label="Urgency"
+                        value={urgency}
+                        options={urgencyOptions}
+                        onchange={handleUrgencyChange}
+                        required
+                    ></lightning-combobox>
+                    <template if:true={urgencyError}>
+                        <div class="slds-text-color_error slds-text-body_small">{urgencyError}</div>
+                    </template>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-p-bottom_small">
+                    <lightning-input
+                        label="Affected System"
+                        value={affectedSystem}
+                        onchange={handleAffectedSystemChange}
+                    ></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-p-bottom_small">
+                    <lightning-file-upload
+                        label="Attachment"
+                        name="attachmentUpload"
+                        accept={acceptedFormats}
+                        record-id={userId}
+                        onuploadfinished={handleUploadFinished}
+                        multiple
+                    ></lightning-file-upload>
+                    <p class="slds-text-body_small slds-m-top_x-small">
+                        Attachments up to 10MB are supported per file.
+                    </p>
+                    <template if:true={attachmentError}>
+                        <div class="slds-text-color_error slds-text-body_small">{attachmentError}</div>
+                    </template>
+                </div>
+            </div>
+
+            <div class="slds-m-top_medium">
+                <lightning-button
+                    variant="brand"
+                    label="Submit Ticket"
+                    onclick={handleSubmit}
+                    disabled={isSubmitting}
+                ></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>
