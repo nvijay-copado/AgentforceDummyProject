@@ -1,0 +1,16 @@
+- There's a Copado CLI available that grants capabilities for Salesforce ALM and DevOps this are the available capabilities for you to use
+  - `sf copado story display` will show the header of the currently set user story
+  - `sf copado story push` will sync local commits with Copado
+  - `sf copado story open` can open the contextual user story in Copado
+  - `sf copado job list --story <user story id>` can list the job executions for a user story, such as commits, quality gates and so on
+  - `sf copado job open -i <job id>` can open a job execution in Copado to inspect the detail of the failure
+  - `sf copado story submit` can submit a user story that is ready to be promoted
+  - `sf copado dependency get --from-changes` can detect missing dependencies in the target environment
+- When you're doing some changes in the implementation you should be runnin the following to push the changes to the developer org: `sf project deploy start --metadata=<value>` Metadata component names to deploy. Wildcards (`*`) supported as long as you use quotes, such as `ApexClass:MyClass*`.
+- You should be pulling the user story as mentioned above to check for the details and check the `copado__Functional_Specifications__c` and `copado__Technical_Specifications__c` to determine what to change
+- If you're asked to commit some changes you should:
+  - Commit to local Git
+  - Trigger missing dependency checking using `sf copado dependency get`
+  - Sync local commits with Copado
+- In case there are missing dependencies detected and that are not being committed, notify it as a missing dependency on destination and offer to retrieve them and commit them as well
+- All `sf` commands work with the `--json` flag so the output is JSON formatted and easier to process
