@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Assigns a Strategic Deal Owner and sends a notification task when an Opportunity is flagged as a Strategic Deal.</description>
+    <interviewLabel>Strategic Deal Notification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Strategic Deal Notification Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <decisions>
+        <name>Has_Opportunity_Owner</name>
+        <label>Has Opportunity Owner</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <defaultConnector>
+            <targetReference>Create_Strategic_Deal_Task</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Owner - Skip Assignment</defaultConnectorLabel>
+        <rules>
+            <name>Owner_Present</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Strategic_Deal_Owner</targetReference>
+            </connector>
+            <label>Owner Present</label>
+        </rules>
+    </decisions>
+    <recordCreates>
+        <name>Create_Strategic_Deal_Task</name>
+        <label>Create Strategic Deal Task</label>
+        <locationX>176</locationX>
+        <locationY>398</locationY>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <stringValue>Opportunity {!$Record.Name} has been flagged as a Strategic Deal.</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>High</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Strategic Deal Flagged</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <name>Assign_Strategic_Deal_Owner</name>
+        <label>Assign Strategic Deal Owner</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <connector>
+            <targetReference>Create_Strategic_Deal_Task</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Strategic_Deal_Owner__c</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Has_Opportunity_Owner</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Strategic_Deal__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Strategic_Deal__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
