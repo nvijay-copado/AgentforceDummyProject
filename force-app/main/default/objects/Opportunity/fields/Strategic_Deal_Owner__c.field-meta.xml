@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Strategic_Deal_Owner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Individual responsible for follow-up on this Strategic Deal.</description>
+    <label>Strategic Deal Owner</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Strategic_Deal_Owned_Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -10,6 +10,11 @@
         <field>Opportunity.Strategic_Deal__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Strategic_Deal_Owner__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Strategic Deal Access</label>
 </PermissionSet>

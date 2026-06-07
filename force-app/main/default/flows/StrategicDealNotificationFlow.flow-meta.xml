@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>66.0</apiVersion>
-    <description>Sends a notification task when an Opportunity is flagged as a Strategic Deal.</description>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Assigns a Strategic Deal Owner and sends a notification task when an Opportunity is flagged as a Strategic Deal.</description>
     <interviewLabel>Strategic Deal Notification {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Strategic Deal Notification Flow</label>
     <processMetadataValues>
@@ -11,11 +12,36 @@
         </value>
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
+    <decisions>
+        <name>Has_Opportunity_Owner</name>
+        <label>Has Opportunity Owner</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <defaultConnector>
+            <targetReference>Create_Strategic_Deal_Task</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Owner - Skip Assignment</defaultConnectorLabel>
+        <rules>
+            <name>Owner_Present</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Strategic_Deal_Owner</targetReference>
+            </connector>
+            <label>Owner Present</label>
+        </rules>
+    </decisions>
     <recordCreates>
         <name>Create_Strategic_Deal_Task</name>
         <label>Create Strategic Deal Task</label>
         <locationX>176</locationX>
-        <locationY>278</locationY>
+        <locationY>398</locationY>
         <inputAssignments>
             <field>Description</field>
             <value>
@@ -55,11 +81,27 @@
         <object>Task</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
+    <recordUpdates>
+        <name>Assign_Strategic_Deal_Owner</name>
+        <label>Assign Strategic Deal Owner</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <connector>
+            <targetReference>Create_Strategic_Deal_Task</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Strategic_Deal_Owner__c</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
     <start>
         <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Create_Strategic_Deal_Task</targetReference>
+            <targetReference>Has_Opportunity_Owner</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
