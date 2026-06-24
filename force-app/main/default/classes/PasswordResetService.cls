@@ -1,6 +1,6 @@
 public with sharing class PasswordResetService {
 
-    // INPUT WRAPPER
+    // INPUT WRAPPER 2
     public class ResetRequest {
 
         @InvocableVariable(required=true)
