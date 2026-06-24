@@ -3,7 +3,7 @@ public with sharing class ITTicketController {
     private static final Integer MAX_ATTACHMENT_BYTES = 10485760;
     private static final String EMAIL_TEMPLATE_DEVELOPER_NAME = 'IT_Ticket_Confirmation';
 
-    public class TicketRequest {
+    public class TicketRequest { // Naman Test
         @AuraEnabled
         public String category { get; set; }
         @AuraEnabled
