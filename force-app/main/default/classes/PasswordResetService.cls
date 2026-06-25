@@ -40,7 +40,7 @@ public with sharing class PasswordResetService {
                     WHERE Username = :request.username
                     LIMIT 1
                 ];
-                // Directly changed in uat
+
                 System.resetPassword(usr.Id, true);
 
                 response.success = true;
