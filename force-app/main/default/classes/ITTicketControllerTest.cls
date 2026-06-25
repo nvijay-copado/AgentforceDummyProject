@@ -1,6 +1,6 @@
 @isTest
 private class ITTicketControllerTest {
-    @isTest // Naman Test
+    @isTest
     static void createTicket_createsRecordAndReturnsTicketId() {
         ITTicketController.TicketRequest request = buildValidRequest();
 
