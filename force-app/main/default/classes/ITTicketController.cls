@@ -1,5 +1,5 @@
 public with sharing class ITTicketController {
-    private static final Integer DEFAULT_SLA_HOURS = 24; //hello
+    private static final Integer DEFAULT_SLA_HOURS = 24;
     private static final Integer MAX_ATTACHMENT_BYTES = 10485760;
     private static final String EMAIL_TEMPLATE_DEVELOPER_NAME = 'IT_Ticket_Confirmation';
 
