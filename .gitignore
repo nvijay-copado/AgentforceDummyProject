@@ -47,3 +47,7 @@ $RECYCLE.BIN/
 **/__pycache__/
 **/.venv/
 **/venv/
+
+
+**/abw_cms__*.*
+!**/objects/abw_cms__*/**

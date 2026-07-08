@@ -6,7 +6,7 @@ public with sharing class CheckWeather {
     public static List<WeatherResponse> getWeather(
         List<WeatherRequest> requests
     ) {
-        // Retrieve the date for which we want to check the weather
+        // Retrieve the date for which we want to check the weather 1234
         Datetime dateToCheck = (Datetime) requests[0].dateToCheck;
 
         WeatherService.Weather weather = WeatherService.getResortWeather(
