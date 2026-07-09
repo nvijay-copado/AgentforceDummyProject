@@ -8,7 +8,7 @@ public with sharing class DummyApexClass {
 
     // Constructor
     public DummyApexClass() {
-        this.message = 'Hello from DummyApexClass 4!';
+        this.message = 'Hello from DummyApexClass latest 2 and 4!';
     }
 
     // Sample method
