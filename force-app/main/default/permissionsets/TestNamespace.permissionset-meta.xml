@@ -4,6 +4,10 @@
         <apexClass>DummyApexClass</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>DummyApexClassTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <fieldPermissions>
         <editable>true</editable>
         <field>abw_cms__Default_Campaign_Member_Status_Set__c.abw_cms__Active__c</field>
