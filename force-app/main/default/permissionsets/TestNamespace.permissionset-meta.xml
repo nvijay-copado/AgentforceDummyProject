@@ -4,6 +4,10 @@
         <apexClass>DummyApexClass</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>DummyApexClassTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <hasActivationRequired>false</hasActivationRequired>
     <label>TestNamespace</label>
 </PermissionSet>
