@@ -10,9 +10,9 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>PicklistValue1</fullName>
+                <fullName>PicklistValue2</fullName>
                 <default>false</default>
-                <label>PicklistValue1</label>
+                <label>PicklistValue2</label>
             </value>
         </valueSetDefinition>
     </valueSet>
