@@ -1,14 +1,14 @@
 public with sharing class DummyApexClass {
 
     // Static variable
-    public static final String APP_NAME = 'Dummy Application third try';
+    public static final String APP_NAME = 'Dummy Application second try';
 
     // Instance variable
     public String message;
 
     // Constructor
     public DummyApexClass() {
-        this.message = 'Hello from DummyApexClass new third try!';
+        this.message = 'Hello from DummyApexClass new second try!';
     }
 
     // Sample method
