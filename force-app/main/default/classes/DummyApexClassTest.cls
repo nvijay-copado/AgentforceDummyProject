@@ -7,7 +7,7 @@ private class DummyApexClassTest {
         DummyApexClass dummy = new DummyApexClass();
 
         System.assertEquals(
-            'Hello from DummyApexClass first try!',
+            'Hello from DummyApexClass second try!',
             dummy.message
         );
 
