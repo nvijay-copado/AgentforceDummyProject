@@ -8,7 +8,7 @@ public with sharing class CurrentDate {
         // Get current time in GMT
         DateTime nowGmt = System.now();
         // Get the desired time zone (e.g., 'America/New_York')
-        TimeZone tz = TimeZone.getTimeZone('America/New_York');
+        TimeZone tz = TimeZone.getTimeZone('America/New_York'); // naman comment
         // Convert to the desired time zone
         DateTime nowInTz = nowGmt.addSeconds(tz.getOffset(nowGmt) / 1000);
         // Get the date part in that time zone
