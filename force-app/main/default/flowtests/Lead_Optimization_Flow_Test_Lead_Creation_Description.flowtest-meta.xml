@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowTest xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flowApiName>Lead_Optimization_Flow</flowApiName>
+    <flowTestFlowVersions>
+        <flowVersionNumber>1</flowVersionNumber>
+    </flowTestFlowVersions>
+    <label>Test Lead Creation Description</label>
+    <testPoints>
+        <elementApiName>Start</elementApiName>
+        <isUseMockOutput>false</isUseMockOutput>
+        <parameters>
+            <leftValueReference>$Record</leftValueReference>
+            <type>InputTriggeringRecordInitial</type>
+            <value>
+                <sobjectValue>{&quot;Company&quot;:&quot;Test&quot;,&quot;IsUnreadByOwner&quot;:true,&quot;LastName&quot;:&quot;Test&quot;,&quot;OwnerId&quot;:&quot;005g5000007HcXtAAK&quot;,&quot;Status&quot;:&quot;Open - Not Contacted&quot;}</sobjectValue>
+            </value>
+        </parameters>
+    </testPoints>
+    <testPoints>
+        <assertions>
+            <conditions>
+                <leftValueReference>$Record.Description</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>This is an automated test Lead.</stringValue>
+                </rightValue>
+            </conditions>
+        </assertions>
+        <elementApiName>Finish</elementApiName>
+        <isUseMockOutput>false</isUseMockOutput>
+    </testPoints>
+    <testType>WithAssertion</testType>
+</FlowTest>
