@@ -1,0 +1,21 @@
+{
+    "Description": "Description",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": false,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "Miguel OmniScript 1",
+    "OmniProcessElement": "test123_test4_English_Element_Step1.json",
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "test123_test4_English_PropertySetConfig.json",
+    "SubType": "test4",
+    "Type": "test123",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/test123/test4/English"
+}
