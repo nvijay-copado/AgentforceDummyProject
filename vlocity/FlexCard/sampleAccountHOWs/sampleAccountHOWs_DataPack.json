@@ -1,0 +1,46 @@
+{
+    "AuthorName": "Salesforce",
+    "ClonedFromOmniUiCardKey": "sampleAccount/Salesforce/1.0",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 4,
+                    "name": "recordId",
+                    "val": ""
+                }
+            ],
+            "orderBy": {
+                "isReverse": false,
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "AccountId": "{recordId}"
+                },
+                "ipMethod": "sample_getAccountContactDetails",
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": "[\"Account\"]",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "Use for the HOWs console",
+    "IsManagedUsingStdDesigner": false,
+    "IsTrackingEnabled": false,
+    "Name": "sampleAccountHOWs",
+    "Namespace": "",
+    "OmniUiCardKey": "sampleAccountHOWs/Salesforce/1.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "sampleAccountHOWs.json",
+    "SampleDataSourceResponse": "{}",
+    "StylingConfiguration": "{\"styleObjects\":{\"AccountFieldStyle\":{\"sizeClass\":\"slds-size_11-of-12 \",\"padding\":[{\"type\":\"around\",\"size\":\"x-small\",\"label\":\"around:x-small\"}],\"margin\":[{\"type\":\"left\",\"size\":\"small\",\"label\":\"left:small\"}],\"background\":{\"color\":\"\",\"image\":\"\",\"size\":\"\",\"repeat\":\"\",\"position\":\"\"},\"size\":{\"isResponsive\":false,\"default\":\"11\"},\"container\":{\"class\":\"\"},\"border\":{\"type\":\"\",\"width\":\"\",\"color\":\"\",\"radius\":\"\",\"style\":\"\"},\"elementStyleProperties\":{},\"text\":{\"align\":\"\",\"color\":\"\"},\"inlineStyle\":\"\",\"class\":\"slds-p-around_x-small slds-m-left_small \",\"style\":\"      \\n         \",\"selectedStyles\":\"AccountFieldStyle\",\"element\":\"outputField\"}},\"styleDefaults\":{}}",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/sampleAccountHOWs"
+}

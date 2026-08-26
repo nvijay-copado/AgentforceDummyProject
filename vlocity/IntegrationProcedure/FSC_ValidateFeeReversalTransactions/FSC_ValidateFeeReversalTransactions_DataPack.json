@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "FSC_ValidateFeeReversalTransactions_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "FSCValidateFeeReversalTransactions",
+    "OmniProcessElement": [
+        "FSC_ValidateFeeReversalTransactions_Element_DRFSCFeeReversalTransactionAge.json",
+        "FSC_ValidateFeeReversalTransactions_Element_ResponseValidatedTransactions.json"
+    ],
+    "OmniProcessKey": "FSC_ValidateFeeReversalTransactions",
+    "OmniProcessType": "Integration Procedure",
+    "OverrideKey": "fscserviceprocess__FSC_ValidateFeeReversalTransactions_Procedure_1",
+    "PropertySetConfig": "FSC_ValidateFeeReversalTransactions_PropertySetConfig.json",
+    "SubType": "ValidateFeeReversalTransactions",
+    "Type": "FSC",
+    "UniqueName": "FSC_ValidateFeeReversalTransactions_Procedure_1",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/FSC/ValidateFeeReversalTransactions/Procedure"
+}

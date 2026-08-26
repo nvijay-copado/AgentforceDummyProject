@@ -1,0 +1,26 @@
+{
+    "%vlocity_namespace%__GlobalKey__c": "ExpSetCloned V1",
+    "CalculationProcedure.Name": "ExpSetCloned",
+    "CalculationProcedureId": {
+        "Name": "ExpSetCloned",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationProcedure/ExpSetCloned",
+        "VlocityRecordSObjectType": "CalculationProcedure"
+    },
+    "Constants": "",
+    "Description": "",
+    "EndDateTime": "",
+    "IsLoopingEnabled": false,
+    "LastSimulatedVariablesInput": "",
+    "LoopEnd": "",
+    "LoopIncrement": "",
+    "LoopStart": "",
+    "Name": "ExpSetCloned V1",
+    "Namespace": "",
+    "Rank": 1,
+    "StartDateTime": "2023-11-03T10:19:08.000Z",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedureVersion",
+    "VlocityRecordSourceKey": "CalculationProcedureVersion/1/CalculationProcedure/ExpSetCloned"
+}

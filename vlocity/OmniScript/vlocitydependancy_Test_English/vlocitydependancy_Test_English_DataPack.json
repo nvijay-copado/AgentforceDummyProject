@@ -1,0 +1,24 @@
+{
+    "Description": "vlocity dependancy test",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": false,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "dependancy",
+    "OmniProcessElement": [
+        "vlocitydependancy_Test_English_Element_Step1.json",
+        "vlocitydependancy_Test_English_Element_DataRaptorExtractAction1.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "vlocitydependancy_Test_English_PropertySetConfig.json",
+    "SubType": "Test",
+    "Type": "vlocitydependancy",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/vlocitydependancy/Test/English"
+}

@@ -1,0 +1,26 @@
+{
+    "%vlocity_namespace%__GlobalKey__c": "VlocityExpressionSet V1",
+    "CalculationProcedure.Name": "VlocityExpressionSet",
+    "CalculationProcedureId": {
+        "Name": "VlocityExpressionSet",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationProcedure/VlocityExpressionSet",
+        "VlocityRecordSObjectType": "CalculationProcedure"
+    },
+    "Constants": "",
+    "Description": "",
+    "EndDateTime": "",
+    "IsLoopingEnabled": false,
+    "LastSimulatedVariablesInput": "",
+    "LoopEnd": "",
+    "LoopIncrement": "",
+    "LoopStart": "",
+    "Name": "VlocityExpressionSet V1",
+    "Namespace": "",
+    "Rank": 399,
+    "StartDateTime": "2023-09-29T00:46:48.000Z",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedureVersion",
+    "VlocityRecordSourceKey": "CalculationProcedureVersion/1/CalculationProcedure/VlocityExpressionSet"
+}
