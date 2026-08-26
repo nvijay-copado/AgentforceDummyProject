@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "Demo_ChangeSendEmail_SampleInput.json",
+    "Description": "Sends a welcome email to confirm a change of service (i.e. upgrade, downgrade)",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Change of Service Confirmation Email",
+    "OmniProcessElement": [
+        "Demo_ChangeSendEmail_Element_GetAccountDetails.json",
+        "Demo_ChangeSendEmail_Element_SendConfirmationEmail.json",
+        "Demo_ChangeSendEmail_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_ChangeSendEmail",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_ChangeSendEmail_PropertySetConfig.json",
+    "SubType": "ChangeSendEmail",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/ChangeSendEmail/Procedure"
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "ApiName": "Test",
+        "CalculationMatrixId": {
+            "Name": "SampleteamSLARetentionCopy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/SampleteamSLARetentionCopy",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Input",
+        "DataType": "Text",
+        "DisplaySequence": 1,
+        "IsWildcardColumn": false,
+        "Name": "Test",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated-855875",
+        "WildcardColumnValue": ""
+    },
+    {
+        "ApiName": "Test12",
+        "CalculationMatrixId": {
+            "Name": "SampleteamSLARetentionCopy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/SampleteamSLARetentionCopy",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Input",
+        "DataType": "Text",
+        "DisplaySequence": 2,
+        "IsWildcardColumn": false,
+        "Name": "Test12",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated-512846690",
+        "WildcardColumnValue": ""
+    },
+    {
+        "ApiName": "Vlaue",
+        "CalculationMatrixId": {
+            "Name": "SampleteamSLARetentionCopy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/SampleteamSLARetentionCopy",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Input",
+        "DataType": "Text",
+        "DisplaySequence": 3,
+        "IsWildcardColumn": false,
+        "Name": "Vlaue",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated873518981",
+        "WildcardColumnValue": ""
+    }
+]

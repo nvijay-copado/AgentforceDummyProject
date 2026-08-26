@@ -1,0 +1,47 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Match",
+    "OmniProcessId": {
+        "Name": "AbstractionService",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "MatchDataBlock",
+        "OmniProcessId": {
+            "Name": "AbstractionService",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/MatchDataBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "MatchDataBlock",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "cacheBlockOutput": {
+            "MatchData": "%MatchData%"
+        },
+        "cacheKeys": {
+            "AbstractServiceResult": "%Get:GetData:QueryResult%",
+            "AttributeValue": "%IntegrationKeysValues%",
+            "AttributeValueGroup": "%TargetGroupsValues%"
+        },
+        "cacheType": "Org Cache",
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "ignoreCacheConditionalFormula": "IF(%IgnoreCacheMatchData% !=null AND %IgnoreCacheMatchData% !='', %IgnoreCacheMatchData%, false)",
+        "label": "CacheBlock3",
+        "refreshCacheConditionalFormula": "IF(%RefreshCacheMatchData% !=null AND %RefreshCacheMatchData% !='', %RefreshCacheMatchData%, false)",
+        "show": null,
+        "ttlMinutes": 2880
+    },
+    "Type": "Cache Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/Match"
+}

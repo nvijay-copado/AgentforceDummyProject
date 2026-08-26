@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "Demo_GetAccountContactById_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "DemoGetContactById",
+    "OmniProcessElement": [
+        "Demo_GetAccountContactById_Element_svContactId.json",
+        "Demo_GetAccountContactById_Element_ipDemoGetContact.json",
+        "Demo_GetAccountContactById_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "Demo_GetAccountContactById",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_GetAccountContactById_PropertySetConfig.json",
+    "SubType": "GetAccountContactById",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/GetAccountContactById/Procedure"
+}

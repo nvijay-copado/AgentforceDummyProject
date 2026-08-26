@@ -1,0 +1,23 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "This method runs cart pricing on carts that are associated with MultiSite group members.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Run Cart Pricing",
+    "OmniProcessElement": "MultiService_RunCartPricing_Element_RunCartPricing.json",
+    "OmniProcessKey": "MultiService_RunCartPricing",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "MultiService_RunCartPricing_PropertySetConfig.json",
+    "SubType": "RunCartPricing",
+    "Type": "MultiService",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/MultiService/RunCartPricing/Procedure"
+}

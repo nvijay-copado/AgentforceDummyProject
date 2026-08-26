@@ -1,0 +1,21 @@
+[
+    {
+        "CalculationMatrixVersionId": {
+            "CalculationMatrix.Name": "testmahi123",
+            "VersionNumber": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrixVersion/1/CalculationMatrix/testmahi123",
+            "VlocityRecordSObjectType": "CalculationMatrixVersion"
+        },
+        "InputData": {
+            "input-1": "abc"
+        },
+        "IsVersionEnabled": true,
+        "Name": "28b901b9c09eabd4effd28a1f9bec8d4",
+        "OutputData": {
+            "output": "def"
+        },
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixRow"
+    }
+]

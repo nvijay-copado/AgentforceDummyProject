@@ -1,0 +1,39 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseIdentifyUserTypeAndRoles",
+    "OmniProcessId": {
+        "Name": "VPL-IdentifyUserTypeAndRoles",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/vpl/IdentifyUserTypeAndRoles/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "LoggedInUserName": "=ExtractUserTypeAndRoles:UserName",
+            "PriceListId": "=ExtractUserTypeAndRoles:PriceListId",
+            "UserType": "=ExtractUserTypeAndRoles:UserType",
+            "baseURL": "=GetVPLMetadataByLabel:VPLMetadata|1:VPL_Config_Value__c"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/vpl/IdentifyUserTypeAndRoles/Procedure/ResponseIdentifyUserTypeAndRoles"
+}

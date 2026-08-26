@@ -1,0 +1,191 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "userId",
+        "GlobalKey": "VPL-GetUserTypeAndRoles-103-1Customa191U000000JvgoQACItem4",
+        "InputFieldName": "Id",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetUserTypeAndRoles",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetUserTypeAndRoles",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetUserTypeAndRoles",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "loggedUser",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "loggedUser:ProfileId",
+        "GlobalKey": "VPL-GetUserTypeAndRoles-103-1Customa191U000000JvgoQACItem5",
+        "InputFieldName": "Label",
+        "InputObjectName": "VPL_Metadata_Config__mdt",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetUserTypeAndRoles",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetUserTypeAndRoles",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetUserTypeAndRoles",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "metadataConfig",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'PriceListId'",
+        "GlobalKey": "VPL-GetUserTypeAndRolesCustom337",
+        "InputFieldName": "Label",
+        "InputObjectName": "VPL_Metadata_Config__mdt",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetUserTypeAndRoles",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetUserTypeAndRoles",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetUserTypeAndRoles",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "PriceList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "%accContRole:Role%",
+        "FormulaResultPath": "listOfRoles",
+        "FormulaSequence": 1,
+        "GlobalKey": "VPL-GetUserTypeAndRoles-103-1Customa191U000000JvgoQACItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetUserTypeAndRoles",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetUserTypeAndRoles",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetUserTypeAndRoles",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetUserTypeAndRolesCustom4479",
+        "InputFieldName": "PriceList:VPL_Config_Value__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetUserTypeAndRoles",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetUserTypeAndRoles",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetUserTypeAndRoles",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriceListId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetUserTypeAndRolesCustom1829",
+        "InputFieldName": "RecordTypeId:Label",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetUserTypeAndRoles",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetUserTypeAndRoles",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetUserTypeAndRoles",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetUserTypeAndRoles-103-1Customa191U000000JvgoQACItem9",
+        "InputFieldName": "listOfRoles",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetUserTypeAndRoles",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetUserTypeAndRoles",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetUserTypeAndRoles",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Multi-Select",
+        "OutputFieldName": "Role",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetUserTypeAndRolesCustom3969",
+        "InputFieldName": "loggedUser:Username",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetUserTypeAndRoles",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetUserTypeAndRoles",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetUserTypeAndRoles",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "UserName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetUserTypeAndRoles-103-1Customa191U000000JvgoQACItem10",
+        "InputFieldName": "metadataConfig:VPL_Config_Value__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetUserTypeAndRoles",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetUserTypeAndRoles",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetUserTypeAndRoles",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "UserType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

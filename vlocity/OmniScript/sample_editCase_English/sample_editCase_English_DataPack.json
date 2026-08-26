@@ -1,0 +1,31 @@
+{
+    "Description": "sample of an OmniScript to edit Case information.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": false,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "Sample Edit Case",
+    "OmniProcessElement": [
+        "sample_editCase_English_Element_IPGetCaseDetails.json",
+        "sample_editCase_English_Element_StepCase.json",
+        "sample_editCase_English_Element_CaseNumber.json",
+        "sample_editCase_English_Element_Subject.json",
+        "sample_editCase_English_Element_LineBreak1.json",
+        "sample_editCase_English_Element_CreatedDate.json",
+        "sample_editCase_English_Element_Status.json",
+        "sample_editCase_English_Element_IPSaveCaseDetails.json",
+        "sample_editCase_English_Element_NavigateAction1.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "sample_editCase_English_PropertySetConfig.json",
+    "SubType": "editCase",
+    "Type": "sample",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/sample/editCase/English"
+}

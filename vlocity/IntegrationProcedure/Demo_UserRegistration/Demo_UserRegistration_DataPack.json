@@ -1,0 +1,29 @@
+{
+    "CustomJavaScript": "Demo_UserRegistration_SampleInput.json",
+    "Description": "Creates a new Account, Contact, and Community User.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Demo User Registration",
+    "OmniProcessElement": [
+        "Demo_UserRegistration_Element_CreateAccount.json",
+        "Demo_UserRegistration_Element_CreateContact.json",
+        "Demo_UserRegistration_Element_GetUserProfile.json",
+        "Demo_UserRegistration_Element_CreateCommunityUser.json",
+        "Demo_UserRegistration_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "Demo_UserRegistration",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_UserRegistration_PropertySetConfig.json",
+    "SubType": "UserRegistration",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/UserRegistration/Procedure"
+}

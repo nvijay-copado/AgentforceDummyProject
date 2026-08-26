@@ -1,0 +1,49 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SendWelcomeEmail",
+    "OmniProcessId": {
+        "Name": "New Install Send Email",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Demo/NewInstallSendEmail/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "OrgWideEmailAddress": "service@nuslice.com",
+        "actionMessage": "",
+        "attachmentList": "",
+        "chainOnStep": false,
+        "contentVersionList": "",
+        "disOnTplt": false,
+        "emailInformation": {
+            "bccAddressList": [
+            ],
+            "ccAddressList": [
+            ],
+            "emailBody": "​<body>\n<div style=\"margin:0 auto; width: 60vw;\">\n\n  <img src=\"https://vlocitydemodx-cdn.herokuapp.com/content/industry/cmt/commsB2C/nuslice-logo-blue.png\" alt=\"NuSlice Logo\">\n  \n  <p style='color: #666666; font-family: \"Salesforce-Sans\", sans-serif; font-size: 16px; line-height: 22px; margin-top: 20px;'>Hi %GetAccountDetails:ContactFirstName%!</p>\n  \n  <p style='color: #666666; font-family: \"Salesforce-Sans\", sans-serif; font-size: 16px; line-height: 22px; margin-top: 20px;'>This email is to let you know that your welcome package has shipped and should arrive within 3-5 business days.  The package will contain a self installation kit to quickly get you surfing using your new Blaze Internet service.</p>\n\n  <p style='color: #666666; font-family: \"Salesforce-Sans\", sans-serif; font-size: 16px; font-weight: 700; line-height: 22px; margin-top: 20px; margin-bottom: 20px;'>Your Order Number is: <strong style='color: #333333; font-weight: 700;'>#%GetOrderDetails:ShortOrderNumber%</strong></p>\n  <p style='color: #666666; font-family: \"Salesforce-Sans\", sans-serif; font-size: 16px; font-weight: 700; line-height: 22px; margin-top: 20px; margin-bottom: 20px;'>Your Username is: <strong style='color: #333333; font-weight: 700;'>%GetAccountDetails:ContactUsername%</strong></p>\n\n  <p style='color: #666666; font-family: \"Salesforce-Sans\", sans-serif; font-size: 16px; line-height: 22px; margin-top: 20px;'>Once you receive and connect your equipment, <strong style='color: #333333; font-weight: 700;'>click the button below</strong> to activate your service!</p> \n  <p style='color: #666666; font-family: \"Salesforce-Sans\", sans-serif; font-size: 16px; line-height: 22px; margin-top: 20px;'>Happy Surfing!</p>\n​\n  <div style='margin: 0 auto; margin-top: 40px; text-align: center;'>\n    <a style='background-color: #2C9AD9; border-radius: 10px; color: #ffffff; font-family: \"Salesforce-Sans\", sans-serif; font-size: 16px; padding: 20px 40px; text-align: center; text-decoration: none; width: 250px;' href=\"%GetCommunityDetails:SiteURL%/s/selfinstall\">Activate My Service</a>\n  </div>\n  \n</div>\n</body>\n​",
+            "emailSubject": "Welcome to NuSlice",
+            "setHtmlBody": true,
+            "toAddressList": [
+                "%GetAccountDetails:ContactEmail%"
+            ]
+        },
+        "emailTemplateInformation": {
+            "emailTargetObjectId": "",
+            "emailTemplateName": "",
+            "saveAsActivity": false,
+            "whatId": ""
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "EmailAction2",
+        "show": null,
+        "staticDocList": [
+        ],
+        "useTemplate": false
+    },
+    "Type": "Email Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Demo/NewInstallSendEmail/Procedure/SendWelcomeEmail"
+}

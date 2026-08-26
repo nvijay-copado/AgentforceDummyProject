@@ -1,0 +1,23 @@
+{
+    "CustomJavaScript": "CPQ_DeleteCartPromotion_SampleInput.json",
+    "Description": "This IP is used to delete an applied promotion in cart",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQDeleteCartPromotion",
+    "OmniProcessElement": "CPQ_DeleteCartPromotion_Element_DeleteCartPromotion.json",
+    "OmniProcessKey": "CPQ_DeleteCartPromotion",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_DeleteCartPromotion_PropertySetConfig.json",
+    "SubType": "DeleteCartPromotion",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/DeleteCartPromotion/Procedure"
+}

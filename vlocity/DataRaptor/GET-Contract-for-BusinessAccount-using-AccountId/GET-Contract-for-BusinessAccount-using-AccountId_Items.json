@@ -1,0 +1,261 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AccountId",
+        "GlobalKey": "GET Contract for BusinessAccount using AccountId5950233531414573",
+        "InputFieldName": "AccountId",
+        "InputObjectName": "Contract",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET Contract for BusinessAccount using AccountId",
+        "OmniDataTransformationId": {
+            "Name": "GET Contract for BusinessAccount using AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET Contract for BusinessAccount using AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Contract",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "AccountId",
+        "GlobalKey": "GET Contract for BusinessAccount using AccountId8465856378670678",
+        "InputFieldName": "Account.%vlocity_namespace%__RootAccountId__c",
+        "InputObjectName": "Contract",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET Contract for BusinessAccount using AccountId",
+        "OmniDataTransformationId": {
+            "Name": "GET Contract for BusinessAccount using AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET Contract for BusinessAccount using AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Contract",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET Contract for BusinessAccount using AccountId5900542549339796",
+        "InputFieldName": "Contract:Account.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET Contract for BusinessAccount using AccountId",
+        "OmniDataTransformationId": {
+            "Name": "GET Contract for BusinessAccount using AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET Contract for BusinessAccount using AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AccountName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET Contract for BusinessAccount using AccountIdCustom4273",
+        "InputFieldName": "Contract:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET Contract for BusinessAccount using AccountId",
+        "OmniDataTransformationId": {
+            "Name": "GET Contract for BusinessAccount using AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET Contract for BusinessAccount using AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContractId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET Contract for BusinessAccount using AccountIdCustom3237",
+        "InputFieldName": "Contract:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET Contract for BusinessAccount using AccountId",
+        "OmniDataTransformationId": {
+            "Name": "GET Contract for BusinessAccount using AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET Contract for BusinessAccount using AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContractName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET Contract for BusinessAccount using AccountId707469192453658",
+        "InputFieldName": "Contract:ContractNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET Contract for BusinessAccount using AccountId",
+        "OmniDataTransformationId": {
+            "Name": "GET Contract for BusinessAccount using AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET Contract for BusinessAccount using AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContractNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET Contract for BusinessAccount using AccountId6500679799601323",
+        "InputFieldName": "Contract:Description",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET Contract for BusinessAccount using AccountId",
+        "OmniDataTransformationId": {
+            "Name": "GET Contract for BusinessAccount using AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET Contract for BusinessAccount using AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Description",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET Contract for BusinessAccount using AccountId8255363792548165",
+        "InputFieldName": "Contract:StartDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET Contract for BusinessAccount using AccountId",
+        "OmniDataTransformationId": {
+            "Name": "GET Contract for BusinessAccount using AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET Contract for BusinessAccount using AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(MM/dd/yyyy)",
+        "OutputFieldName": "StartDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET Contract for BusinessAccount using AccountId29457142871560005",
+        "InputFieldName": "Contract:Status",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET Contract for BusinessAccount using AccountId",
+        "OmniDataTransformationId": {
+            "Name": "GET Contract for BusinessAccount using AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET Contract for BusinessAccount using AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Status",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET Contract for BusinessAccount using AccountId4003221115179616",
+        "InputFieldName": "Contract:ContractTerm",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET Contract for BusinessAccount using AccountId",
+        "OmniDataTransformationId": {
+            "Name": "GET Contract for BusinessAccount using AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET Contract for BusinessAccount using AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Term",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET Contract for BusinessAccount using AccountId8971669066589005",
+        "InputFieldName": "Contract:%vlocity_namespace%__TerminateDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET Contract for BusinessAccount using AccountId",
+        "OmniDataTransformationId": {
+            "Name": "GET Contract for BusinessAccount using AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET Contract for BusinessAccount using AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(MM/dd/yyyy)",
+        "OutputFieldName": "TerminateDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET Contract for BusinessAccount using AccountId21362419075369776",
+        "InputFieldName": "Contract:%vlocity_namespace%__TerminationReason__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET Contract for BusinessAccount using AccountId",
+        "OmniDataTransformationId": {
+            "Name": "GET Contract for BusinessAccount using AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET Contract for BusinessAccount using AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TerminateReason",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET Contract for BusinessAccount using AccountId8919412155128308",
+        "InputFieldName": "Contract:%vlocity_namespace%__TerminationType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET Contract for BusinessAccount using AccountId",
+        "OmniDataTransformationId": {
+            "Name": "GET Contract for BusinessAccount using AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET Contract for BusinessAccount using AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TerminateType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

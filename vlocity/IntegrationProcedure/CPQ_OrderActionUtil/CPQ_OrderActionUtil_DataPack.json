@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "CPQ_OrderActionUtil_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQOrderActionUtil",
+    "OmniProcessElement": [
+        "CPQ_OrderActionUtil_Element_getOrderDetail.json",
+        "CPQ_OrderActionUtil_Element_VOP_ReturnPlanId.json",
+        "CPQ_OrderActionUtil_Element_VOP_ReturnNoPlanId.json"
+    ],
+    "OmniProcessKey": "CPQ_OrderActionUtil",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_OrderActionUtil_PropertySetConfig.json",
+    "SubType": "OrderActionUtil",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/OrderActionUtil/Procedure"
+}

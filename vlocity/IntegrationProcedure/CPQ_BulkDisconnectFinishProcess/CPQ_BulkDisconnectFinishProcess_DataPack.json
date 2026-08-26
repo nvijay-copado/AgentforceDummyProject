@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "CPQ_BulkDisconnectFinishProcess_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Bulk Disconnect Finish Process",
+    "OmniProcessElement": [
+        "CPQ_BulkDisconnectFinishProcess_Element_SendAppNotification.json",
+        "CPQ_BulkDisconnectFinishProcess_Element_SendAppNotificationWithMessage.json",
+        "CPQ_BulkDisconnectFinishProcess_Element_SetExecuteNextStep.json"
+    ],
+    "OmniProcessKey": "CPQ_BulkDisconnectFinishProcess",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_BulkDisconnectFinishProcess_PropertySetConfig.json",
+    "SubType": "BulkDisconnectFinishProcess",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/BulkDisconnectFinishProcess/Procedure"
+}

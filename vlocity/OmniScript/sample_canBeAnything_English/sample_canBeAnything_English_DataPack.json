@@ -1,0 +1,24 @@
+{
+    "Description": "embedding reusable script here",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": false,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "emebedded Omniscript",
+    "OmniProcessElement": [
+        "sample_canBeAnything_English_Element_CompanyMailingAddress.json",
+        "sample_canBeAnything_English_Element_Step1.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "sample_canBeAnything_English_PropertySetConfig.json",
+    "SubType": "canBeAnything",
+    "Type": "sample",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/sample/canBeAnything/English"
+}

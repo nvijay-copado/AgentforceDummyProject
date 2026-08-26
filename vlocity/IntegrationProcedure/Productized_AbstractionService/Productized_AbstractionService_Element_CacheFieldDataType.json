@@ -1,0 +1,33 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CacheFieldDataType",
+    "OmniProcessId": {
+        "Name": "AbstractionService",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "cacheBlockOutput": {
+            "SObject": "%GetFieldDataType:SObject%",
+            "mapDataTypeByFieldName": "%GetFieldDataType:mapDataTypeByFieldName%"
+        },
+        "cacheKeys": {
+            "ObjectId": "%ObjectId%",
+            "sObjectName": "=IF(ISBLANK(%SObject%),\"OrderItem\",%SObject%)"
+        },
+        "cacheType": "Org Cache",
+        "disOnTplt": false,
+        "executionConditionalFormula": "IF(%RunOption% == 9 OR %RunOption% == 10 OR %RunOption% == 12 OR %Action% ==\"SetFieldTech\" OR %Action% ==\"SetAttributeFieldTech\", \n    IF(ISBLANK(%getFieldDataType%),true,\n        IF(%getFieldDataType% ==\"auto\", true, false)\n    ),false\n) OR Operation ==\"CacheFieldDataType\"",
+        "ignoreCacheConditionalFormula": "IF(%IgnoreCacheFieldDataType% !=null AND %IgnoreCacheFieldDataType% !='', %IgnoreCacheFieldDataType%, false)",
+        "label": "CacheBlock6",
+        "refreshCacheConditionalFormula": "IF(%RefreshCacheFieldDataType% !=null AND %RefreshCacheFieldDataType% !='', %RefreshCacheFieldDataType%, false)",
+        "show": null,
+        "ttlMinutes": 2880
+    },
+    "Type": "Cache Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/CacheFieldDataType"
+}

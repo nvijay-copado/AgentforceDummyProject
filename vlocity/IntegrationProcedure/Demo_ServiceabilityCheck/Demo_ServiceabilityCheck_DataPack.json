@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "Demo_ServiceabilityCheck_SampleInput.json",
+    "Description": "This is a simple Serviceability Check that will determine the highest possible bandwidth (Mbps) that can be provided to a given address.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Serviceability Check",
+    "OmniProcessElement": [
+        "Demo_ServiceabilityCheck_Element_ServiceabilityLookup.json",
+        "Demo_ServiceabilityCheck_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "Demo_ServiceabilityCheck",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_ServiceabilityCheck_PropertySetConfig.json",
+    "SubType": "ServiceabilityCheck",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/ServiceabilityCheck/Procedure"
+}

@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "Case_GetWorkOrders_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GET Work Orders with AccountId",
+    "OmniProcessElement": [
+        "Case_GetWorkOrders_Element_DR_GetWorkOrders.json",
+        "Case_GetWorkOrders_Element_Response.json"
+    ],
+    "OmniProcessKey": "Case_GetWorkOrders",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Case_GetWorkOrders_PropertySetConfig.json",
+    "SubType": "GetWorkOrders",
+    "Type": "Case",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Case/GetWorkOrders/Procedure"
+}

@@ -1,0 +1,23 @@
+{
+    "CustomJavaScript": "CPQ_ApplyAdjustment_SampleInput.json",
+    "Description": "INPUT MAP According to getPayload Method",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQApplyAdjustmentIP",
+    "OmniProcessElement": "CPQ_ApplyAdjustment_Element_ApplyAdjustmentRemoteAction.json",
+    "OmniProcessKey": "CPQ_ApplyAdjustment",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_ApplyAdjustment_PropertySetConfig.json",
+    "SubType": "ApplyAdjustment",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/ApplyAdjustment/Procedure"
+}

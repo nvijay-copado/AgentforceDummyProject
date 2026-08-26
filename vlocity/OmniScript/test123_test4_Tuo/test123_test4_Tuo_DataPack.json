@@ -1,0 +1,21 @@
+{
+    "Description": "new description test case - mahi",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": false,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "拖",
+    "Name": "Chinese Omniscript",
+    "OmniProcessElement": "test123_test4_Tuo_Element_Step1.json",
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "test123_test4_Tuo_PropertySetConfig.json",
+    "SubType": "test4",
+    "Type": "test123",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/test123/test4/拖"
+}

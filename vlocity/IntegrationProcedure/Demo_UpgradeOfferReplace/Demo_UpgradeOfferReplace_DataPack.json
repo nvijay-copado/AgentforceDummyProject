@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "Demo_UpgradeOfferReplace_SampleInput.json",
+    "Description": "Performs an upgrade by replacing an existing offer with a new, upgraded offer.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Upgrade Offer (Replace)",
+    "OmniProcessElement": [
+        "Demo_UpgradeOfferReplace_Element_UpgradeLineItem.json",
+        "Demo_UpgradeOfferReplace_Element_GetCartItems.json",
+        "Demo_UpgradeOfferReplace_Element_GetCartSummary.json",
+        "Demo_UpgradeOfferReplace_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_UpgradeOfferReplace",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_UpgradeOfferReplace_PropertySetConfig.json",
+    "SubType": "UpgradeOfferReplace",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/UpgradeOfferReplace/Procedure"
+}

@@ -1,0 +1,22 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Create Contract Discounts",
+    "OmniProcessElement": "clm_CreateContractDiscounts_Element_CreateDiscounts.json",
+    "OmniProcessKey": "clm_CreateContractDiscounts",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "clm_CreateContractDiscounts_PropertySetConfig.json",
+    "SubType": "CreateContractDiscounts",
+    "Type": "clm",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/clm/CreateContractDiscounts/Procedure"
+}

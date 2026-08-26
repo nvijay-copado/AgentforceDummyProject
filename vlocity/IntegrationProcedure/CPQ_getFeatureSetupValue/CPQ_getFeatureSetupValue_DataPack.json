@@ -1,0 +1,30 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQFeatureSetupCheckIP",
+    "OmniProcessElement": [
+        "CPQ_getFeatureSetupValue_Element_GetFeatureSetupValue.json",
+        "CPQ_getFeatureSetupValue_Element_DeserializeResponse.json",
+        "CPQ_getFeatureSetupValue_Element_FeatureSetupList.json",
+        "CPQ_getFeatureSetupValue_Element_CPQFeatureSetupCondition.json",
+        "CPQ_getFeatureSetupValue_Element_CPQFeatureSetupValue.json",
+        "CPQ_getFeatureSetupValue_Element_AssignValue.json",
+        "CPQ_getFeatureSetupValue_Element_CPQFeatureSetupResponse.json"
+    ],
+    "OmniProcessKey": "CPQ_getFeatureSetupValue",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_getFeatureSetupValue_PropertySetConfig.json",
+    "SubType": "getFeatureSetupValue",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/getFeatureSetupValue/Procedure"
+}

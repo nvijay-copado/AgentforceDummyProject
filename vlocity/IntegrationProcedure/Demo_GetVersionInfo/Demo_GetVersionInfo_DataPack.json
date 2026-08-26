@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "Retrieves the Salesforce & CMT Version information",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Get Version Info",
+    "OmniProcessElement": [
+        "Demo_GetVersionInfo_Element_GetVersions.json",
+        "Demo_GetVersionInfo_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_GetVersionInfo",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_GetVersionInfo_PropertySetConfig.json",
+    "SubType": "GetVersionInfo",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/GetVersionInfo/Procedure"
+}
