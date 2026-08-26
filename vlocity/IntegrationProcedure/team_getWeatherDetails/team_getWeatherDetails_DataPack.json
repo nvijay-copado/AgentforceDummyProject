@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Team Stub Get Current and Forecast Weather Data",
+    "OmniProcessElement": [
+        "team_getWeatherDetails_Element_SetValues.json",
+        "team_getWeatherDetails_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "team_getWeatherDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "team_getWeatherDetails_PropertySetConfig.json",
+    "SubType": "getWeatherDetails",
+    "Type": "team",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/team/getWeatherDetails/Procedure"
+}

@@ -1,0 +1,29 @@
+{
+    "AuthorName": "Salesforce",
+    "ClonedFromOmniUiCardKey": "teamContactsParentFX/Salesforce/1.0/1639589620977",
+    "DataSourceConfig": {
+        "contextVariables": [
+        ],
+        "orderBy": {
+        },
+        "type": null,
+        "value": {
+        }
+    },
+    "Description": "",
+    "IsManagedUsingStdDesigner": false,
+    "IsTrackingEnabled": false,
+    "Name": "teamContactsParent",
+    "Namespace": "",
+    "OmniUiCardKey": "teamContactsParent/Salesforce/1.0/1639589690341",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "teamContactsParent.json",
+    "SampleDataSourceResponse": "",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/teamContactsParent"
+}

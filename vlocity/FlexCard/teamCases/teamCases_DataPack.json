@@ -1,0 +1,36 @@
+{
+    "AuthorName": "Salesforce",
+    "ClonedFromOmniUiCardKey": "teamStarterCases/Salesforce/1.0/1639077512875",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 2,
+                    "name": "recordId",
+                    "val": ""
+                }
+            ],
+            "orderBy": {
+            },
+            "type": null,
+            "value": {
+            }
+        }
+    },
+    "Description": "",
+    "IsManagedUsingStdDesigner": false,
+    "IsTrackingEnabled": false,
+    "Name": "teamCases",
+    "Namespace": "",
+    "OmniUiCardKey": "teamCases/Salesforce/1.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "teamCases.json",
+    "SampleDataSourceResponse": "",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/teamCases"
+}

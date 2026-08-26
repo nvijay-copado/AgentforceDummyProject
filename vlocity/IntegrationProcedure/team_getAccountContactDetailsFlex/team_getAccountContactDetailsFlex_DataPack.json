@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Team Stub Account Contact Flex",
+    "OmniProcessElement": [
+        "team_getAccountContactDetailsFlex_Element_SetValues.json",
+        "team_getAccountContactDetailsFlex_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "team_getAccountContactDetailsFlex",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "team_getAccountContactDetailsFlex_PropertySetConfig.json",
+    "SubType": "getAccountContactDetailsFlex",
+    "Type": "team",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/team/getAccountContactDetailsFlex/Procedure"
+}

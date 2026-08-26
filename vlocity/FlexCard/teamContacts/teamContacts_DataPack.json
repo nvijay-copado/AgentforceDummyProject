@@ -1,0 +1,46 @@
+{
+    "AuthorName": "Salesforce",
+    "ClonedFromOmniUiCardKey": "teamStarterContacts/Salesforce/1.0/1639069457438",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 5,
+                    "name": "recordId",
+                    "val": ""
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "AccountId": "{recordId}"
+                },
+                "ipMethod": "team_getAccountContactDetails",
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": "[\"Contact\"]",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsManagedUsingStdDesigner": false,
+    "IsTrackingEnabled": false,
+    "Name": "teamContacts",
+    "Namespace": "",
+    "OmniUiCardKey": "teamContacts/Salesforce/1.0",
+    "OmniUiCardType": "Child",
+    "OverrideKey": "",
+    "PropertySetConfig": "teamContacts.json",
+    "SampleDataSourceResponse": "{\"Contact\":[{\"ContactLastName\":\"Holder\",\"ContactTitle\":\"CEO\",\"ContactFirstName\":\"Place\",\"ContactId\":\"0033i0000029WovZZZ\",\"ContactEmail\":\"pholder@placeholderinc.com\",\"ContactPhone\":\"(123) 123-5678\"},{\"ContactLastName\":\"Holder\",\"ContactTitle\":\"SVP\",\"ContactFirstName\":\"Ana\",\"ContactId\":\"0033i0000029Wp0ZZZ\",\"ContactEmail\":\"aholder@placeholderinc.com\",\"ContactPhone\":\"(123) 123-6789\"}],\"Account\":{\"AccountName\":\"PlaceHolder Inc\",\"AccountPostalCode\":12345,\"AccountPriContact\":\"Ana Holder\",\"AccountWebsite\":\"www.placeholderinc.com\",\"AccountId\":\"0013i0000030LDyZZZ\",\"AccountPhone\":\"(123) 123-4567\"}}",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/teamContacts"
+}

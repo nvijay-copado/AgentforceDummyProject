@@ -1,0 +1,43 @@
+{
+    "AuthorName": "Salesforce",
+    "ClonedFromOmniUiCardKey": "teamCasesParentEG/Salesforce/1.0/1639081532717",
+    "DataSourceConfig": {
+        "contextVariables": [
+            {
+                "id": 2,
+                "name": "recordId",
+                "val": ""
+            }
+        ],
+        "orderBy": {
+            "isReverse": false,
+            "name": ""
+        },
+        "type": "IntegrationProcedures",
+        "value": {
+            "dsDelay": "",
+            "inputMap": {
+                "AccountId": "{recordId}"
+            },
+            "ipMethod": "team_getCaseList",
+            "resultVar": "",
+            "vlocityAsync": false
+        }
+    },
+    "Description": "",
+    "IsManagedUsingStdDesigner": false,
+    "IsTrackingEnabled": false,
+    "Name": "teamCasesParent",
+    "Namespace": "",
+    "OmniUiCardKey": "teamCasesParent/Salesforce/1.0/1639588695713",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "teamCasesParent.json",
+    "SampleDataSourceResponse": "{\"CaseSubject\":\"Placeholder Escalated\",\"CaseDescription\":\"Case escalated after client called in\",\"CaseId\":\"5003i000001YkPoZZZ\",\"CaseNumber\":\"00001002\",\"CaseOpenDate\":\"2021-11-20T18:16:09.000Z\",\"CaseStatus\":\"Escalated\"}",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/teamCasesParent"
+}

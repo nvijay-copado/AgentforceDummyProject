@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Team Stub Get Primary Contact Details",
+    "OmniProcessElement": [
+        "team_getPrimaryContactDetails_Element_SetValues.json",
+        "team_getPrimaryContactDetails_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "team_getPrimaryContactDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "team_getPrimaryContactDetails_PropertySetConfig.json",
+    "SubType": "getPrimaryContactDetails",
+    "Type": "team",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/team/getPrimaryContactDetails/Procedure"
+}

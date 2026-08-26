@@ -1,0 +1,46 @@
+{
+    "AuthorName": "Copado",
+    "ClonedFromOmniUiCardKey": "",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 2,
+                    "name": "recordId",
+                    "val": ""
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "IntegrationProcedures",
+            "value": {
+                "dsDelay": "",
+                "inputMap": {
+                    "AccountId": "{recordId}"
+                },
+                "ipMethod": "team_getAccountContactDetails",
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": "[\"Account\"]",
+                "vlocityAsync": false
+            }
+        }
+    },
+    "Description": "",
+    "IsManagedUsingStdDesigner": false,
+    "IsTrackingEnabled": false,
+    "Name": "teamAccount",
+    "Namespace": "",
+    "OmniUiCardKey": "teamAccount/Copado/3.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "teamAccount.json",
+    "SampleDataSourceResponse": "{\"Contact\":[{\"ContactLastName\":\"Holder\",\"ContactTitle\":\"CEO\",\"ContactFirstName\":\"Place\",\"ContactId\":\"0033i0000029WovZZZ\",\"ContactEmail\":\"pholder@placeholderinc.com\",\"ContactPhone\":\"(123) 123-5678\"},{\"ContactLastName\":\"Holder\",\"ContactTitle\":\"SVP\",\"ContactFirstName\":\"Ana\",\"ContactId\":\"0033i0000029Wp0ZZZ\",\"ContactEmail\":\"aholder@placeholderinc.com\",\"ContactPhone\":\"(123) 123-6789\"}],\"Account\":{\"AccountName\":\"PlaceHolder Inc\",\"AccountPostalCode\":12345,\"AccountPriContact\":\"Ana Holder\",\"AccountWebsite\":\"www.placeholderinc.com\",\"AccountId\":\"0013i0000030LDyZZZ\",\"AccountPhone\":\"(123) 123-4567\"}}",
+    "StylingConfiguration": "{\"styleObjects\":{\"AccountFieldsStyle\":{\"sizeClass\":\"slds-size_11-of-12 \",\"padding\":[{\"type\":\"around\",\"size\":\"x-small\",\"label\":\"around:x-small\"}],\"margin\":[{\"type\":\"left\",\"size\":\"small\",\"label\":\"left:small\"}],\"background\":{\"color\":\"\",\"image\":\"\",\"size\":\"\",\"repeat\":\"\",\"position\":\"\"},\"size\":{\"isResponsive\":false,\"default\":\"11\"},\"container\":{\"class\":\"\"},\"border\":{\"type\":\"\",\"width\":\"\",\"color\":\"\",\"radius\":\"\",\"style\":\"\"},\"elementStyleProperties\":{},\"text\":{\"align\":\"\",\"color\":\"\"},\"inlineStyle\":\"\",\"class\":\"slds-p-around_x-small slds-m-left_small \",\"style\":\"      \\n         \",\"selectedStyles\":\"AccountFieldsStyle\",\"element\":\"outputField\"}},\"styleDefaults\":{}}",
+    "UniqueName": "",
+    "VersionNumber": 3,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/teamAccount"
+}

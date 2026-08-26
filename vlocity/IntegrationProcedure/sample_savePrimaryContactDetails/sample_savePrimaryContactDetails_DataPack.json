@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Sample Save Primary Contact Details",
+    "OmniProcessElement": [
+        "sample_savePrimaryContactDetails_Element_DRUpdatePriContact.json",
+        "sample_savePrimaryContactDetails_Element_DRChangePriContact.json",
+        "sample_savePrimaryContactDetails_Element_DRCreatePriContact.json"
+    ],
+    "OmniProcessKey": "sample_savePrimaryContactDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "sample_savePrimaryContactDetails_PropertySetConfig.json",
+    "SubType": "savePrimaryContactDetails",
+    "Type": "sample",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/sample/savePrimaryContactDetails/Procedure"
+}
