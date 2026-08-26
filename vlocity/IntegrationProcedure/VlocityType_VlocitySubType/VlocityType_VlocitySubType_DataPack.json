@@ -1,0 +1,22 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "vlocity202504151038",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "VlocityCustomIntegrationProcedure",
+    "OmniProcessKey": "VlocityType_VlocitySubType",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "VlocityType_VlocitySubType_PropertySetConfig.json",
+    "SubType": "VlocitySubType",
+    "Type": "VlocityType",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/VlocityType/VlocitySubType/Procedure"
+}

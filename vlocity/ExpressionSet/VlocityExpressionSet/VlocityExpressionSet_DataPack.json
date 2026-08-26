@@ -1,0 +1,9 @@
+{
+    "Description": "vlocity202311072242",
+    "Name": "VlocityExpressionSet",
+    "Namespace": "",
+    "UniqueName": "VlocityExpressionSet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedure",
+    "VlocityRecordSourceKey": "CalculationProcedure/VlocityExpressionSet"
+}

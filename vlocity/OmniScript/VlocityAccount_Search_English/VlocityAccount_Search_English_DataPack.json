@@ -1,0 +1,21 @@
+{
+    "Description": "vlocityCLI202608260536",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": false,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "vlocity",
+    "OmniProcessElement": "VlocityAccount_Search_English_Element_Step1.json",
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "VlocityAccount_Search_English_PropertySetConfig.json",
+    "SubType": "Search",
+    "Type": "VlocityAccount",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/VlocityAccount/Search/English"
+}

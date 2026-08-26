@@ -1,0 +1,9 @@
+{
+    "Description": "",
+    "Name": "ExpSetCloned",
+    "Namespace": "",
+    "UniqueName": "ExpSetCloned",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedure",
+    "VlocityRecordSourceKey": "CalculationProcedure/ExpSetCloned"
+}
