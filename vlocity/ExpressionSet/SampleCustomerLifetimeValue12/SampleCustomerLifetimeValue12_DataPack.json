@@ -1,0 +1,9 @@
+{
+    "Description": "",
+    "Name": "SampleCustomerLifetimeValue12",
+    "Namespace": "",
+    "UniqueName": "SampleCustomerLifetimeValue12",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedure",
+    "VlocityRecordSourceKey": "CalculationProcedure/SampleCustomerLifetimeValue12"
+}

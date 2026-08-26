@@ -1,0 +1,22 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Sample Save Contact Details",
+    "OmniProcessElement": "sample_saveContactDetails_Element_DRSaveContactDetails.json",
+    "OmniProcessKey": "sample_saveContactDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "sample_saveContactDetails_PropertySetConfig.json",
+    "SubType": "saveContactDetails",
+    "Type": "sample",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/sample/saveContactDetails/Procedure"
+}

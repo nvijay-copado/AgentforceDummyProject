@@ -1,0 +1,9 @@
+{
+    "Description": "",
+    "Name": "ClonedExpressionSetDemo",
+    "Namespace": "",
+    "UniqueName": "ClonedExpressionSetDemo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedure",
+    "VlocityRecordSourceKey": "CalculationProcedure/ClonedExpressionSetDemo"
+}

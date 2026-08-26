@@ -1,0 +1,26 @@
+{
+    "%vlocity_namespace%__GlobalKey__c": "ClonedExpressionSetDemo V1",
+    "CalculationProcedure.Name": "ClonedExpressionSetDemo",
+    "CalculationProcedureId": {
+        "Name": "ClonedExpressionSetDemo",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationProcedure/ClonedExpressionSetDemo",
+        "VlocityRecordSObjectType": "CalculationProcedure"
+    },
+    "Constants": "",
+    "Description": "",
+    "EndDateTime": "",
+    "IsLoopingEnabled": false,
+    "LastSimulatedVariablesInput": "",
+    "LoopEnd": "",
+    "LoopIncrement": "",
+    "LoopStart": "",
+    "Name": "ClonedExpressionSetDemo V1",
+    "Namespace": "",
+    "Rank": 1,
+    "StartDateTime": "2022-01-27T17:32:54.000Z",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedureVersion",
+    "VlocityRecordSourceKey": "CalculationProcedureVersion/1/CalculationProcedure/ClonedExpressionSetDemo"
+}

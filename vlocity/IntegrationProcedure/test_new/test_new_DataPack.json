@@ -1,0 +1,22 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "PLACEHODLER",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Nov IP",
+    "OmniProcessKey": "test_new",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "test_new_PropertySetConfig.json",
+    "SubType": "new",
+    "Type": "test",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/test/new/Procedure"
+}
