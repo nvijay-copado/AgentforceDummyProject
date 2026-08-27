@@ -1,0 +1,316 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "'Disconnect'",
+        "GlobalKey": "VPL-GetAssetDetailsFromContextCustoma1V5w000008XpbJEASItem4",
+        "InputFieldName": "%vlocity_namespace%__Action__c",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAssetDetailsFromContext",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAssetDetailsFromContext",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAssetDetailsFromContext",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ContextId",
+        "GlobalKey": "VPL-GetAssetDetailsFromContextCustoma1V5w000008XpbJEASItem5",
+        "InputFieldName": "%vlocity_namespace%__SubscriptionId__c",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAssetDetailsFromContext",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAssetDetailsFromContext",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAssetDetailsFromContext",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ProductCode",
+        "GlobalKey": "VPL-GetAssetDetailsFromContextCustoma1V5w000008XpbJEASItem3",
+        "InputFieldName": "Product2.ProductCode",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAssetDetailsFromContext",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAssetDetailsFromContext",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAssetDetailsFromContext",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "LIMIT",
+        "FilterValue": "1",
+        "GlobalKey": "VPL-GetAssetDetailsFromContextCustoma1V5w000008XpbJEASItem0",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAssetDetailsFromContext",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAssetDetailsFromContext",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAssetDetailsFromContext",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "ContextId",
+        "GlobalKey": "VPL-GetAssetDetailsFromContextCustoma1V5w000008XpbJEASItem1",
+        "InputFieldName": "Id",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAssetDetailsFromContext",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAssetDetailsFromContext",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAssetDetailsFromContext",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Asset:%vlocity_namespace%__RootItemId__c",
+        "GlobalKey": "VPL-GetAssetDetailsFromContextCustoma1V5w000008XpbJEASItem2",
+        "InputFieldName": "Id",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAssetDetailsFromContext",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAssetDetailsFromContext",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAssetDetailsFromContext",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "RootAsset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAssetDetailsFromContextCustoma1V5w000008XpbJEASItem9",
+        "InputFieldName": "Asset:AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAssetDetailsFromContext",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAssetDetailsFromContext",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAssetDetailsFromContext",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAssetDetailsFromContextCustoma1V5w000008XpbJEASItem10",
+        "InputFieldName": "Asset:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAssetDetailsFromContext",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAssetDetailsFromContext",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAssetDetailsFromContext",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAssetDetailsFromContextCustoma1V5w000008XpbJEASItem11",
+        "InputFieldName": "Asset:Status",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAssetDetailsFromContext",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAssetDetailsFromContext",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAssetDetailsFromContext",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAssetDetailsFromContextCustoma1V5w000008XpbJEASItem8",
+        "InputFieldName": "Asset:Account.%vlocity_namespace%__PrimaryContactId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAssetDetailsFromContext",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAssetDetailsFromContext",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAssetDetailsFromContext",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContactId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAssetDetailsFromContextCustom4890",
+        "InputFieldName": "Asset:%vlocity_namespace%__ServiceIdentifier__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAssetDetailsFromContext",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAssetDetailsFromContext",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAssetDetailsFromContext",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MSISDN",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAssetDetailsFromContextCustoma1V5w000008XpbJEASItem14",
+        "InputFieldName": "Asset:%vlocity_namespace%__RootItemId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAssetDetailsFromContext",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAssetDetailsFromContext",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAssetDetailsFromContext",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RootId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAssetDetailsFromContextCustoma1V5w000008XpbJEASItem18",
+        "InputFieldName": "RootAsset:Product2.ProductCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAssetDetailsFromContext",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAssetDetailsFromContext",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAssetDetailsFromContext",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RootProductCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAssetDetailsFromContextCustoma1V5w000008XpbJEASItem15",
+        "InputFieldName": "Asset:%vlocity_namespace%__SubscriptionId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAssetDetailsFromContext",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAssetDetailsFromContext",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAssetDetailsFromContext",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SubscriptionId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAssetDetailsFromContextCustom6315",
+        "InputFieldName": "Asset:%vlocity_namespace%__SubscriptionId__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAssetDetailsFromContext",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAssetDetailsFromContext",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAssetDetailsFromContext",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SubscriptionName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

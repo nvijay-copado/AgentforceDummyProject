@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "Demo_CheckUsernameAvailability_SampleInput.json",
+    "Description": "Checks that a given username is available (i.e. not already used).",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Check Username Availability",
+    "OmniProcessElement": [
+        "Demo_CheckUsernameAvailability_Element_GetUser.json",
+        "Demo_CheckUsernameAvailability_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_CheckUsernameAvailability",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_CheckUsernameAvailability_PropertySetConfig.json",
+    "SubType": "CheckUsernameAvailability",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/CheckUsernameAvailability/Procedure"
+}

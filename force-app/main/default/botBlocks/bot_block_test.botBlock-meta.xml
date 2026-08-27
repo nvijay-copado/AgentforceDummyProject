@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BotBlock xmlns="http://soap.sforce.com/2006/04/metadata">
+    <botBlockVersions>
+        <fullName>Published</fullName>
+        <botDialogs>
+            <botSteps>
+                <stepIdentifier>118e9518-93b6-424a-8559-1caaca63483c</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>test_dialog</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>test dialog</label>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <conversationLanguages>en_US</conversationLanguages>
+        <mlDomain>
+            <label>bot block test</label>
+            <name>bot_block_test</name>
+        </mlDomain>
+        <permissionSet>Merchandiser</permissionSet>
+        <status>Published</status>
+    </botBlockVersions>
+    <masterLabel>bot block test</masterLabel>
+    <richContentEnabled>false</richContentEnabled>
+</BotBlock>

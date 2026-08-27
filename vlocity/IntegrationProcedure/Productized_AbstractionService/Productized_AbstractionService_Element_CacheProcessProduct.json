@@ -1,0 +1,49 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CacheProcessProduct",
+    "OmniProcessId": {
+        "Name": "AbstractionService",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PostDataBlock",
+        "OmniProcessId": {
+            "Name": "AbstractionService",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/PostDataBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PostDataBlock",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "cacheBlockOutput": {
+            "ProcessProduct": "%ProcessProduct%"
+        },
+        "cacheKeys": {
+            "ContextId": "%ContextId%",
+            "ObjectId": "%ObjectId%",
+            "OrderID": "%OrderId%",
+            "depth": "%depth%",
+            "targetProduct": "=FILTER(LIST(%Match:MatchData:ListAttributes%),\"TargetType == 'Product'\")"
+        },
+        "cacheType": "Org Cache",
+        "disOnTplt": false,
+        "executionConditionalFormula": "Action == \"DisconnectProduct\" OR Action == \"AddProduct\" OR RunOption ==4 OR RunOption ==5 OR RunOption ==6 OR RunOption ==7 OR RunOption ==8",
+        "ignoreCacheConditionalFormula": "IF(%IgnoreCacheProcessProduct% !=null AND %IgnoreCacheProcessProduct% !='', %IgnoreCacheProcessProduct%, true)",
+        "label": "CacheBlock4",
+        "refreshCacheConditionalFormula": "IF(%RefreshCacheProcessProduct%!=null,%RefreshCacheProcessProduct%, false)",
+        "show": null,
+        "ttlMinutes": 2880
+    },
+    "Type": "Cache Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/CacheProcessProduct"
+}

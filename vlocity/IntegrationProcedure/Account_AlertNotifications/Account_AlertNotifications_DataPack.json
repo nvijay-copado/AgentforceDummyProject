@@ -1,0 +1,33 @@
+{
+    "CustomJavaScript": "Account_AlertNotifications_SampleInput.json",
+    "Description": "Uses a series of DRs to determine if the account needs special attention to cases, opportunities, quotes, orders, or contracts.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GET Alert Notifications for Accounts",
+    "OmniProcessElement": [
+        "Account_AlertNotifications_Element_SetRecordAgeLimits.json",
+        "Account_AlertNotifications_Element_DR_GetCases.json",
+        "Account_AlertNotifications_Element_TRNS_CaseNotifications.json",
+        "Account_AlertNotifications_Element_DR_GetWorkOrders.json",
+        "Account_AlertNotifications_Element_TRNS_WorkOrderNotifications.json",
+        "Account_AlertNotifications_Element_DR_GetOrders.json",
+        "Account_AlertNotifications_Element_TRNS_OrderNotifications.json",
+        "Account_AlertNotifications_Element_ListMerge.json",
+        "Account_AlertNotifications_Element_Response.json"
+    ],
+    "OmniProcessKey": "Account_AlertNotifications",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Account_AlertNotifications_PropertySetConfig.json",
+    "SubType": "AlertNotifications",
+    "Type": "Account",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Account/AlertNotifications/Procedure"
+}

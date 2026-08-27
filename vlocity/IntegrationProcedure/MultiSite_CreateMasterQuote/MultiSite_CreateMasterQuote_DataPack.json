@@ -1,0 +1,29 @@
+{
+    "CustomJavaScript": "MultiSite_CreateMasterQuote_SampleInput.json",
+    "Description": "This IP is used to created a new Master Quote.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "MultiSiteCreateMasterQuote",
+    "OmniProcessElement": [
+        "MultiSite_CreateMasterQuote_Element_CreateMasterQuoteInput.json",
+        "MultiSite_CreateMasterQuote_Element_EmptyConditionalCheckBlock.json",
+        "MultiSite_CreateMasterQuote_Element_EmptyInputResponse.json",
+        "MultiSite_CreateMasterQuote_Element_ApexRemoteCall.json",
+        "MultiSite_CreateMasterQuote_Element_RemoteCallResponse.json"
+    ],
+    "OmniProcessKey": "MultiSite_CreateMasterQuote",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "MultiSite_CreateMasterQuote_PropertySetConfig.json",
+    "SubType": "CreateMasterQuote",
+    "Type": "MultiSite",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/MultiSite/CreateMasterQuote/Procedure"
+}

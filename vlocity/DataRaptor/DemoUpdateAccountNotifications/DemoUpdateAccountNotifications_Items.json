@@ -1,0 +1,250 @@
+[
+    {
+        "GlobalKey": "DemoUpdateAccountNotifications5248947848651411",
+        "InputFieldName": "Demo_Notification_Email_AutoPayReminder__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoUpdateAccountNotifications",
+        "OmniDataTransformationId": {
+            "Name": "DemoUpdateAccountNotifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoUpdateAccountNotifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Email_AutoPayReminder__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoUpdateAccountNotifications5433978350884927",
+        "InputFieldName": "Demo_Notification_Email_BillReady__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoUpdateAccountNotifications",
+        "OmniDataTransformationId": {
+            "Name": "DemoUpdateAccountNotifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoUpdateAccountNotifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Email_BillReady__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoUpdateAccountNotifications0803078242198414",
+        "InputFieldName": "Demo_Notification_Email_MalwareDetected__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoUpdateAccountNotifications",
+        "OmniDataTransformationId": {
+            "Name": "DemoUpdateAccountNotifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoUpdateAccountNotifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Email_MalwareDetected__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoUpdateAccountNotifications32385001213067155",
+        "InputFieldName": "Demo_Notification_Email_MidCyclePurchase__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoUpdateAccountNotifications",
+        "OmniDataTransformationId": {
+            "Name": "DemoUpdateAccountNotifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoUpdateAccountNotifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Email_MidCyclePurchase__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoUpdateAccountNotifications6653631824588684",
+        "InputFieldName": "Demo_Notification_Email_SystemAlerts__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoUpdateAccountNotifications",
+        "OmniDataTransformationId": {
+            "Name": "DemoUpdateAccountNotifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoUpdateAccountNotifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Email_SystemAlerts__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoUpdateAccountNotifications5961178228436885",
+        "InputFieldName": "Demo_Notification_Text_AutoPayReminder__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoUpdateAccountNotifications",
+        "OmniDataTransformationId": {
+            "Name": "DemoUpdateAccountNotifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoUpdateAccountNotifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Text_AutoPayReminder__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoUpdateAccountNotifications26494252948712216",
+        "InputFieldName": "Demo_Notification_Text_BillReady__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoUpdateAccountNotifications",
+        "OmniDataTransformationId": {
+            "Name": "DemoUpdateAccountNotifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoUpdateAccountNotifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Text_BillReady__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoUpdateAccountNotifications8457331947119393",
+        "InputFieldName": "Demo_Notification_Text_MalwareDetected__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoUpdateAccountNotifications",
+        "OmniDataTransformationId": {
+            "Name": "DemoUpdateAccountNotifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoUpdateAccountNotifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Text_MalwareDetected__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoUpdateAccountNotifications9874928022782143",
+        "InputFieldName": "Demo_Notification_Text_MidCyclePurchase__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoUpdateAccountNotifications",
+        "OmniDataTransformationId": {
+            "Name": "DemoUpdateAccountNotifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoUpdateAccountNotifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Text_MidCyclePurchase__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoUpdateAccountNotifications10344189404460291",
+        "InputFieldName": "Demo_Notification_Text_SystemAlerts__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoUpdateAccountNotifications",
+        "OmniDataTransformationId": {
+            "Name": "DemoUpdateAccountNotifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoUpdateAccountNotifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Text_SystemAlerts__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoUpdateAccountNotifications890106338226641",
+        "InputFieldName": "Demo_Paperless_Billing__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoUpdateAccountNotifications",
+        "OmniDataTransformationId": {
+            "Name": "DemoUpdateAccountNotifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoUpdateAccountNotifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Paperless_Billing__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoUpdateAccountNotifications26860004962604145",
+        "InputFieldName": "AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "DemoUpdateAccountNotifications",
+        "OmniDataTransformationId": {
+            "Name": "DemoUpdateAccountNotifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoUpdateAccountNotifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "DemoUpdateAccountNotifications6363617116061087",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DemoUpdateAccountNotifications",
+        "OmniDataTransformationId": {
+            "Name": "DemoUpdateAccountNotifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoUpdateAccountNotifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

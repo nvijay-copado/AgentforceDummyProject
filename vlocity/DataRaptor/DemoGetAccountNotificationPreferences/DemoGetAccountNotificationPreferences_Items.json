@@ -1,0 +1,235 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AccountId",
+        "GlobalKey": "DemoGetAccountNotificationPreferences2958517900078168",
+        "InputFieldName": "Id",
+        "InputObjectName": "Account",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoGetAccountNotificationPreferences",
+        "OmniDataTransformationId": {
+            "Name": "DemoGetAccountNotificationPreferences",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoGetAccountNotificationPreferences",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Account",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoGetAccountNotificationPreferences2731017435363199",
+        "InputFieldName": "Account:Demo_Notification_Email_AutoPayReminder__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoGetAccountNotificationPreferences",
+        "OmniDataTransformationId": {
+            "Name": "DemoGetAccountNotificationPreferences",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoGetAccountNotificationPreferences",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Email_AutoPayReminder__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoGetAccountNotificationPreferences8333258901964344",
+        "InputFieldName": "Account:Demo_Notification_Email_BillReady__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoGetAccountNotificationPreferences",
+        "OmniDataTransformationId": {
+            "Name": "DemoGetAccountNotificationPreferences",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoGetAccountNotificationPreferences",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Email_BillReady__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoGetAccountNotificationPreferences17468053178032217",
+        "InputFieldName": "Account:Demo_Notification_Email_MalwareDetected__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoGetAccountNotificationPreferences",
+        "OmniDataTransformationId": {
+            "Name": "DemoGetAccountNotificationPreferences",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoGetAccountNotificationPreferences",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Email_MalwareDetected__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoGetAccountNotificationPreferences7277015465626266",
+        "InputFieldName": "Account:Demo_Notification_Email_MidCyclePurchase__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoGetAccountNotificationPreferences",
+        "OmniDataTransformationId": {
+            "Name": "DemoGetAccountNotificationPreferences",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoGetAccountNotificationPreferences",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Email_MidCyclePurchase__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoGetAccountNotificationPreferences04266409875709698",
+        "InputFieldName": "Account:Demo_Notification_Email_SystemAlerts__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoGetAccountNotificationPreferences",
+        "OmniDataTransformationId": {
+            "Name": "DemoGetAccountNotificationPreferences",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoGetAccountNotificationPreferences",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Email_SystemAlerts__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoGetAccountNotificationPreferences43460774706252425",
+        "InputFieldName": "Account:Demo_Notification_Text_AutoPayReminder__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoGetAccountNotificationPreferences",
+        "OmniDataTransformationId": {
+            "Name": "DemoGetAccountNotificationPreferences",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoGetAccountNotificationPreferences",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Text_AutoPayReminder__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoGetAccountNotificationPreferences9091979815445137",
+        "InputFieldName": "Account:Demo_Notification_Text_BillReady__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoGetAccountNotificationPreferences",
+        "OmniDataTransformationId": {
+            "Name": "DemoGetAccountNotificationPreferences",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoGetAccountNotificationPreferences",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Text_BillReady__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoGetAccountNotificationPreferences052662341793065615",
+        "InputFieldName": "Account:Demo_Notification_Text_MalwareDetected__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoGetAccountNotificationPreferences",
+        "OmniDataTransformationId": {
+            "Name": "DemoGetAccountNotificationPreferences",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoGetAccountNotificationPreferences",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Text_MalwareDetected__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoGetAccountNotificationPreferences5462843833047897",
+        "InputFieldName": "Account:Demo_Notification_Text_MidCyclePurchase__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoGetAccountNotificationPreferences",
+        "OmniDataTransformationId": {
+            "Name": "DemoGetAccountNotificationPreferences",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoGetAccountNotificationPreferences",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Text_MidCyclePurchase__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoGetAccountNotificationPreferences8849232663198723",
+        "InputFieldName": "Account:Demo_Notification_Text_SystemAlerts__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoGetAccountNotificationPreferences",
+        "OmniDataTransformationId": {
+            "Name": "DemoGetAccountNotificationPreferences",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoGetAccountNotificationPreferences",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Notification_Text_SystemAlerts__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoGetAccountNotificationPreferences8392120102127034",
+        "InputFieldName": "Account:Demo_Paperless_Billing__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoGetAccountNotificationPreferences",
+        "OmniDataTransformationId": {
+            "Name": "DemoGetAccountNotificationPreferences",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoGetAccountNotificationPreferences",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Demo_Paperless_Billing__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

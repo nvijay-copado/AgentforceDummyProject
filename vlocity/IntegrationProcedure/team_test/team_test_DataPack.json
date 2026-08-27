@@ -1,0 +1,21 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "June      12 ------ Is your day going good?",
+    "OmniProcessKey": "team_test",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "team_test_PropertySetConfig.json",
+    "SubType": "test",
+    "Type": "team",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/team/test/Procedure"
+}

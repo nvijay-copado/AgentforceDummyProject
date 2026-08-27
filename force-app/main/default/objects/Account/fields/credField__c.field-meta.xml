@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>credField__c</fullName>
+    <description>deployment check</description>
+    <externalId>false</externalId>
+    <label>credField</label>
+    <type>AutoNumber</type>
+</CustomField>

@@ -1,0 +1,61 @@
+[
+    {
+        "DefaultValue": "Completed",
+        "GlobalKey": "OMSetOrchestrationItemCompleteCustom4514",
+        "InputFieldName": "OrchestrationItemStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "OMSetOrchestrationItemComplete",
+        "OmniDataTransformationId": {
+            "Name": "OMSetOrchestrationItemComplete",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/OMSetOrchestrationItemComplete",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__State__c",
+        "OutputObjectName": "%vlocity_namespace%__OrchestrationItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "OMSetOrchestrationItemCompleteCustom9860",
+        "InputFieldName": "OrchestrationItemId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "OMSetOrchestrationItemComplete",
+        "OmniDataTransformationId": {
+            "Name": "OMSetOrchestrationItemComplete",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/OMSetOrchestrationItemComplete",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__OrchestrationItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "OMSetOrchestrationItemCompleteCustom4219",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "OMSetOrchestrationItemComplete",
+        "OmniDataTransformationId": {
+            "Name": "OMSetOrchestrationItemComplete",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/OMSetOrchestrationItemComplete",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__OrchestrationItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

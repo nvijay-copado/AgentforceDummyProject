@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "Opportunity_GetOpportunityDetails_SampleInput.json",
+    "Description": "Gets opportunity details using an OpportunityId",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Get Opportunity from OpportunityId",
+    "OmniProcessElement": [
+        "Opportunity_GetOpportunityDetails_Element_DR_GetOpportunityDetails.json",
+        "Opportunity_GetOpportunityDetails_Element_Response.json"
+    ],
+    "OmniProcessKey": "Opportunity_GetOpportunityDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Opportunity_GetOpportunityDetails_PropertySetConfig.json",
+    "SubType": "GetOpportunityDetails",
+    "Type": "Opportunity",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Opportunity/GetOpportunityDetails/Procedure"
+}

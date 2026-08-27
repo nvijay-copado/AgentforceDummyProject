@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>test_f__c</fullName>
+    <description>HERE : hello comming from find and replce</description>
+    <externalId>false</externalId>
+    <label>test f</label>
+    <type>AutoNumber</type>
+</CustomField>

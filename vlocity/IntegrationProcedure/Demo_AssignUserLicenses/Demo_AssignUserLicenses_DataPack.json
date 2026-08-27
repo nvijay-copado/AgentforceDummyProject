@@ -1,0 +1,30 @@
+{
+    "CustomJavaScript": "Demo_AssignUserLicenses_SampleInput.json",
+    "Description": "Assigns the necessary licenses to newly created community users.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Assign User Licenses",
+    "OmniProcessElement": [
+        "Demo_AssignUserLicenses_Element_AssignManagedPackageLicense.json",
+        "Demo_AssignUserLicenses_Element_AssignCommsCloudPSL.json",
+        "Demo_AssignUserLicenses_Element_AssignOmniStudioPSL.json",
+        "Demo_AssignUserLicenses_Element_AssignCommsCloudPermissionSet.json",
+        "Demo_AssignUserLicenses_Element_AssignDemoPermissionSet.json",
+        "Demo_AssignUserLicenses_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_AssignUserLicenses",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_AssignUserLicenses_PropertySetConfig.json",
+    "SubType": "AssignUserLicenses",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/AssignUserLicenses/Procedure"
+}

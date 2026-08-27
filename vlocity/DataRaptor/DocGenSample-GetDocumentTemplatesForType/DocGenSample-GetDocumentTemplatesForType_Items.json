@@ -1,0 +1,131 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'JSON Based'",
+        "GlobalKey": "DocGenSample-GetDocumentTemplatesForTypeCustoma0O6g0000007AfAEAUItem1",
+        "InputFieldName": "%vlocity_namespace%__MappingType__c",
+        "InputObjectName": "%vlocity_namespace%__DocumentTemplate__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DocGenSample-GetDocumentTemplatesForType",
+        "OmniDataTransformationId": {
+            "Name": "DocGenSample-GetDocumentTemplatesForType",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DocGenSample-GetDocumentTemplatesForType",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "DocumentTemplate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "templateType",
+        "GlobalKey": "DocGenSample-GetDocumentTemplatesForTypeCustoma0O6g0000007AfAEAUItem2",
+        "InputFieldName": "%vlocity_namespace%__TemplateContentFormat__c",
+        "InputObjectName": "%vlocity_namespace%__DocumentTemplate__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DocGenSample-GetDocumentTemplatesForType",
+        "OmniDataTransformationId": {
+            "Name": "DocGenSample-GetDocumentTemplatesForType",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DocGenSample-GetDocumentTemplatesForType",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "DocumentTemplate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DocGenSample-GetDocumentTemplatesForTypeCustoma0O6g0000007AfAEAUItem3",
+        "InputFieldName": "DocumentTemplate:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DocGenSample-GetDocumentTemplatesForType",
+        "OmniDataTransformationId": {
+            "Name": "DocGenSample-GetDocumentTemplatesForType",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DocGenSample-GetDocumentTemplatesForType",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DocumentTemplate:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DocGenSample-GetDocumentTemplatesForTypeCustoma0O6g0000007AfAEAUItem6",
+        "InputFieldName": "DocumentTemplate:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DocGenSample-GetDocumentTemplatesForType",
+        "OmniDataTransformationId": {
+            "Name": "DocGenSample-GetDocumentTemplatesForType",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DocGenSample-GetDocumentTemplatesForType",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DocumentTemplate:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DocGenSample-GetDocumentTemplatesForTypeCustoma0O6g0000007AfAEAUItem4",
+        "InputFieldName": "DocumentTemplate:%vlocity_namespace%__TemplateContentFormat__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DocGenSample-GetDocumentTemplatesForType",
+        "OmniDataTransformationId": {
+            "Name": "DocGenSample-GetDocumentTemplatesForType",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DocGenSample-GetDocumentTemplatesForType",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DocumentTemplate:TemplateType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DocGenSample-GetDocumentTemplatesForTypeCustoma0O6g0000007AfAEAUItem5",
+        "InputFieldName": "DocumentTemplate:%vlocity_namespace%__VersionNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedObjectSequence": 0,
+        "Name": "DocGenSample-GetDocumentTemplatesForType",
+        "OmniDataTransformationId": {
+            "Name": "DocGenSample-GetDocumentTemplatesForType",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DocGenSample-GetDocumentTemplatesForType",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DocumentTemplate:VersionNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

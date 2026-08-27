@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "Demo_GetAccountBillingDetails_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Get Account Billing Details",
+    "OmniProcessElement": [
+        "Demo_GetAccountBillingDetails_Element_drReadAccountCurrentStatement.json",
+        "Demo_GetAccountBillingDetails_Element_drGetAccountBillingDetails.json",
+        "Demo_GetAccountBillingDetails_Element_SVCombineResults.json",
+        "Demo_GetAccountBillingDetails_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "Demo_GetAccountBillingDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_GetAccountBillingDetails_PropertySetConfig.json",
+    "SubType": "GetAccountBillingDetails",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/GetAccountBillingDetails/Procedure"
+}

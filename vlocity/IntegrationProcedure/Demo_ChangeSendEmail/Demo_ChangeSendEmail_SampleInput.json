@@ -1,0 +1,19 @@
+{
+    "account_id": "0015f000004mAoFAAU",
+    "orchestration_item_id": "a3A5e000000YMAeEAO",
+    "orchestration_item_name": "Send Welcome Email",
+    "order_id": "8015e000000pAZTAA2",
+    "order_items": [
+        {
+            "action": "Add",
+            "described_by": [
+            ],
+            "order_item_id": "a2C5e000000dxjDEAQ",
+            "specified_by": {
+                "specification_id": "01t5e000001raf4AAA",
+                "specification_name": "Self Install CFS"
+            }
+        }
+    ],
+    "responseUri": ""
+}

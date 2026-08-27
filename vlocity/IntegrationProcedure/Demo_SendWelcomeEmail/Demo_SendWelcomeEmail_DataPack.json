@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "Demo_SendWelcomeEmail_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Send Welcome Email",
+    "OmniProcessElement": [
+        "Demo_SendWelcomeEmail_Element_GetUserDetails.json",
+        "Demo_SendWelcomeEmail_Element_GetCommunityDetails.json",
+        "Demo_SendWelcomeEmail_Element_GetOrgDetails.json",
+        "Demo_SendWelcomeEmail_Element_SendWelcomeEmail.json",
+        "Demo_SendWelcomeEmail_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_SendWelcomeEmail",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_SendWelcomeEmail_PropertySetConfig.json",
+    "SubType": "SendWelcomeEmail",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/SendWelcomeEmail/Procedure"
+}

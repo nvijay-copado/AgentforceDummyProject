@@ -1,0 +1,22 @@
+{
+    "CustomJavaScript": "CPQ_updateCarts_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "UpdateCarts",
+    "OmniProcessElement": "CPQ_updateCarts_Element_UpdateCartsRA.json",
+    "OmniProcessKey": "CPQ_updateCarts",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_updateCarts_PropertySetConfig.json",
+    "SubType": "updateCarts",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/updateCarts/Procedure"
+}

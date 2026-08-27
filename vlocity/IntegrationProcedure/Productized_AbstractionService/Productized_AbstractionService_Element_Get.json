@@ -1,0 +1,50 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Get",
+    "OmniProcessId": {
+        "Name": "AbstractionService",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "GetDataBlock",
+        "OmniProcessId": {
+            "Name": "AbstractionService",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/GetDataBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "GetDataBlock",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "cacheBlockOutput": {
+            "GetData": "%GetData%"
+        },
+        "cacheKeys": {
+            "ContextId": "%ContextId%",
+            "FilterField": "%FilterField%",
+            "IgnoreActiveFlag": "=IF(ISBLANK(%IgnoreActiveMetadataFlag%),false,%IgnoreActiveMetadataFlag%)",
+            "Mode": "%Mode%",
+            "SelectedContext": "%SelectedContext%",
+            "SelectedEntity": "%SelectedEntity%"
+        },
+        "cacheType": "Org Cache",
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "ignoreCacheConditionalFormula": "IF(%IgnoreCacheGetData% !=null AND %IgnoreCacheGetData% !='', %IgnoreCacheGetData%, false)",
+        "label": "CacheBlock2",
+        "refreshCacheConditionalFormula": "IF(%RefreshCacheGetData% !=null AND %RefreshCacheGetData% !='', %RefreshCacheGetData%, false)",
+        "show": null,
+        "ttlMinutes": 2880
+    },
+    "Type": "Cache Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/Get"
+}

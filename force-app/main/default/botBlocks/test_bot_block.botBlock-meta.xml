@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BotBlock xmlns="http://soap.sforce.com/2006/04/metadata">
+    <botBlockVersions>
+        <fullName>Published</fullName>
+        <botDialogs>
+            <botSteps>
+                <botMessages>
+                    <message>hello, is anybody there</message>
+                    <messageIdentifier>06acffd4-54b1-c762-6cc3-dcf58847833e</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>73072a6c-7298-483a-b081-f00198120d25</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <stepIdentifier>dcf75ff4-48d9-46a2-bb06-69713f082117</stepIdentifier>
+                <type>Wait</type>
+            </botSteps>
+            <developerName>test_bot_block</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>test bot block</label>
+            <mlIntent>test_bot_block</mlIntent>
+            <mlIntentTrainingEnabled>false</mlIntentTrainingEnabled>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <conversationLanguages>en_US</conversationLanguages>
+        <mlDomain>
+            <label>test bot block</label>
+            <mlIntents>
+                <developerName>test_bot_block</developerName>
+                <label>test bot block</label>
+            </mlIntents>
+            <name>test_bot_block</name>
+        </mlDomain>
+        <permissionSet>OmniStudioAdmin</permissionSet>
+        <status>Published</status>
+    </botBlockVersions>
+    <masterLabel>test bot block</masterLabel>
+    <richContentEnabled>false</richContentEnabled>
+</BotBlock>

@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "Demo_GetUpgradeOptions_SampleInput.json",
+    "Description": "Determines the target offers that can be upgraded (or downgraded) within a cart",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Get Upgrade Options",
+    "OmniProcessElement": [
+        "Demo_GetUpgradeOptions_Element_GetSourceOffers.json",
+        "Demo_GetUpgradeOptions_Element_GetTargetOffers.json",
+        "Demo_GetUpgradeOptions_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_GetUpgradeOptions",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_GetUpgradeOptions_PropertySetConfig.json",
+    "SubType": "GetUpgradeOptions",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/GetUpgradeOptions/Procedure"
+}

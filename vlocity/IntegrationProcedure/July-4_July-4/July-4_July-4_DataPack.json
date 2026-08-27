@@ -1,0 +1,21 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "July 4    __ ------- ------_-______ Int_Procedure",
+    "OmniProcessKey": "July4__-------------_-_______July4__-------------_-______",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "July-4_July-4_PropertySetConfig.json",
+    "SubType": "July 4    __ ------- ------_-______",
+    "Type": "July 4    __ ------- ------_-______",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/July 4    __ ------- ------_-______/July 4    __ ------- ------_-______/Procedure"
+}

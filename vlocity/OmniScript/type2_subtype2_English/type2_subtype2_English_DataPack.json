@@ -1,0 +1,23 @@
+{
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": false,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "DR trst",
+    "OmniProcessElement": [
+        "type2_subtype2_English_Element_Step1.json",
+        "type2_subtype2_English_Element_DataRaptorExtractAction1.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "type2_subtype2_English_PropertySetConfig.json",
+    "SubType": "subtype2",
+    "Type": "type2",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/type2/subtype2/English"
+}

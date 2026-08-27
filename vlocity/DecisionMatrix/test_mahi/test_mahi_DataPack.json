@@ -1,0 +1,15 @@
+{
+    "CalculationMatrixColumn": "test_mahi_CalculationMatrixColumns.json",
+    "DecisionMatrixType": "DecisionMatrix",
+    "Description": "",
+    "GroupKey": "",
+    "Name": "test_mahi",
+    "Namespace": "",
+    "SubGroupKey": "",
+    "Type": "Standard",
+    "UniqueName": "test_mahi",
+    "UsageType": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrix",
+    "VlocityRecordSourceKey": "CalculationMatrix/test_mahi"
+}

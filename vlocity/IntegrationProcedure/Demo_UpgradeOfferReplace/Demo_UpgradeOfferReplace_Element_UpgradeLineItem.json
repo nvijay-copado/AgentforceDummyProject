@@ -1,0 +1,61 @@
+{
+    "Description": "Replaces a line item with a new, upgraded offer",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpgradeLineItem",
+    "OmniProcessId": {
+        "Name": "Upgrade Offer (Replace)",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Demo/UpgradeOfferReplace/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "cartId": "%cartId%",
+            "price": true,
+            "replaceIntentSpecification": {
+                "SourceIntent": [
+                    {
+                        "Action": "Replace",
+                        "ActionParameter": "%TargetItemId%",
+                        "GroupId": 1,
+                        "LineItemId": "%SourceLineItemId%"
+                    }
+                ],
+                "TargetIntent": {
+                    "1": "%TargetItemId%"
+                }
+            }
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "%vlocity_namespace%.CpqAppHandler",
+        "remoteMethod": "replaceOffers",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Demo/UpgradeOfferReplace/Procedure/UpgradeLineItem"
+}

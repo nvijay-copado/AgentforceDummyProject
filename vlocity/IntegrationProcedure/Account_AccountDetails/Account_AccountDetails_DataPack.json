@@ -1,0 +1,22 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "This is an integration procedure with special characters in the name.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "!--- __RODDDDDRRRRRR@@@#@#@#!!!!    [''\"*&8989",
+    "OmniProcessKey": "Account_AccountDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Account_AccountDetails_PropertySetConfig.json",
+    "SubType": "AccountDetails",
+    "Type": "Account",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Account/AccountDetails/Procedure"
+}

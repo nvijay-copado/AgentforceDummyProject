@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "Contract_GetContractDetails_SampleInput.json",
+    "Description": "Retrieves contract information using a Id",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GET Contract Details using Id",
+    "OmniProcessElement": [
+        "Contract_GetContractDetails_Element_DR_GetContract.json",
+        "Contract_GetContractDetails_Element_Response_SendDR.json"
+    ],
+    "OmniProcessKey": "Contract_GetContractDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Contract_GetContractDetails_PropertySetConfig.json",
+    "SubType": "GetContractDetails",
+    "Type": "Contract",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Contract/GetContractDetails/Procedure"
+}

@@ -1,0 +1,23 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "This VIP is responsible for pricing the line items.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Price LineItems",
+    "OmniProcessElement": "CPQ_PriceLineItems_Element_PriceLineItemsAction.json",
+    "OmniProcessKey": "CPQ_PriceLineItems",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_PriceLineItems_PropertySetConfig.json",
+    "SubType": "PriceLineItems",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/PriceLineItems/Procedure"
+}

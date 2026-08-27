@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DoNotSMS__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>select this checkbox if the person does not wish to receive messages on their mobile phone from COMPANY</inlineHelpText>
+    <label>Do Not SMS</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

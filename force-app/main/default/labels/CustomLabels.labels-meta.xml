@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>CheckRefreshList</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CheckRefreshList</shortDescription>
+        <value>Checking if after refresh list commit grid refreshes itself - newwsewe</value>
+    </labels>
+    <labels>
+        <fullName>May31Naman</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>May31Naman</shortDescription>
+        <value>May31Naman</value>
+    </labels>
+    <labels>
+        <fullName>My_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>My Label</shortDescription>
+        <value>my label</value>
+    </labels>
+    <labels>
+        <fullName>Test_naman</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Test naman</shortDescription>
+        <value>Test</value>
+    </labels>
+    <labels>
+        <fullName>newPartial</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>newPartial</shortDescription>
+        <value>This is a new label for testing</value>
+    </labels>
+    <labels>
+        <fullName>test123</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>test123</shortDescription>
+        <value>hello123 - new label and field</value>
+    </labels>
+    <labels>
+        <fullName>test456</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>test456</shortDescription>
+        <value>heloo test new label</value>
+    </labels>
+    <labels>
+        <fullName>translationLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>translationLabel</shortDescription>
+        <value>translation label test</value>
+    </labels>
+    <labels>
+        <fullName>translation_labe_l2</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>translation labe l2</shortDescription>
+        <value>sdgfkaiuhf</value>
+    </labels>
+    <labels>
+        <fullName>translation_label_1</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>translation label 1</shortDescription>
+        <value>label 1 from translation</value>
+    </labels>
+</CustomLabels>

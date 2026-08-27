@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "MultiSite_GetObjectFieldsDescribe_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "MultiSiteGetObjectFieldsDescribe",
+    "OmniProcessElement": [
+        "MultiSite_GetObjectFieldsDescribe_Element_GetObjectFieldsDescribeInput.json",
+        "MultiSite_GetObjectFieldsDescribe_Element_EmptyInputResponse.json",
+        "MultiSite_GetObjectFieldsDescribe_Element_ApexRemoteCall.json",
+        "MultiSite_GetObjectFieldsDescribe_Element_RemoteCallResponse.json"
+    ],
+    "OmniProcessKey": "MultiSite_GetObjectFieldsDescribe",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "MultiSite_GetObjectFieldsDescribe_PropertySetConfig.json",
+    "SubType": "GetObjectFieldsDescribe",
+    "Type": "MultiSite",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/MultiSite/GetObjectFieldsDescribe/Procedure"
+}

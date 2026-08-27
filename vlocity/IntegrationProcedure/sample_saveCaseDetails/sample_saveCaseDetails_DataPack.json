@@ -1,0 +1,22 @@
+{
+    "CustomJavaScript": "sample_saveCaseDetails_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Sample Save Case Details",
+    "OmniProcessElement": "sample_saveCaseDetails_Element_DRSaveCaseDetails.json",
+    "OmniProcessKey": "sample_saveCaseDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "sample_saveCaseDetails_PropertySetConfig.json",
+    "SubType": "saveCaseDetails",
+    "Type": "sample",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/sample/saveCaseDetails/Procedure"
+}

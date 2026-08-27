@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "WorkOrder_WorkOrderDetails_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GET Work Orders with AccountId",
+    "OmniProcessElement": [
+        "WorkOrder_WorkOrderDetails_Element_DR_GetWorkOrders.json",
+        "WorkOrder_WorkOrderDetails_Element_Response.json"
+    ],
+    "OmniProcessKey": "WorkOrder_WorkOrderDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "WorkOrder_WorkOrderDetails_PropertySetConfig.json",
+    "SubType": "WorkOrderDetails",
+    "Type": "WorkOrder",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/WorkOrder/WorkOrderDetails/Procedure"
+}

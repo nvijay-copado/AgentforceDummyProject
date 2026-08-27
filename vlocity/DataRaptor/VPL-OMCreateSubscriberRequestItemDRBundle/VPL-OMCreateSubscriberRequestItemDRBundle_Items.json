@@ -1,0 +1,120 @@
+[
+    {
+        "FormulaExpression": "orderItemsWithAttrs|1:attrs:MSISDN",
+        "FormulaResultPath": "MSISDN",
+        "FormulaSequence": 2,
+        "GlobalKey": "VPL-OMCreateSubscriberRequestItemDRBundle748145548374991",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-OMCreateSubscriberRequestItemDRBundle",
+        "OmniDataTransformationId": {
+            "Name": "VPL-OMCreateSubscriberRequestItemDRBundle",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-OMCreateSubscriberRequestItemDRBundle",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "orderItemsWithAttrs|1:attrs:SubscriberId",
+        "FormulaResultPath": "ExternalId",
+        "FormulaSequence": 1,
+        "GlobalKey": "VPL-OMCreateSubscriberRequestItemDRBundle5563835716484429",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-OMCreateSubscriberRequestItemDRBundle",
+        "OmniDataTransformationId": {
+            "Name": "VPL-OMCreateSubscriberRequestItemDRBundle",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-OMCreateSubscriberRequestItemDRBundle",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "MtxRequestSubscriberCreate",
+        "GlobalKey": "VPL-OMCreateSubscriberRequestItemDRBundle6336923333890483",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-OMCreateSubscriberRequestItemDRBundle",
+        "OmniDataTransformationId": {
+            "Name": "VPL-OMCreateSubscriberRequestItemDRBundle",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-OMCreateSubscriberRequestItemDRBundle",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "$",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-OMCreateSubscriberRequestItemDRBundle06321092186154598",
+        "InputFieldName": "ExternalId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-OMCreateSubscriberRequestItemDRBundle",
+        "OmniDataTransformationId": {
+            "Name": "VPL-OMCreateSubscriberRequestItemDRBundle",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-OMCreateSubscriberRequestItemDRBundle",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ExternalId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-OMCreateSubscriberRequestItemDRBundle8798293946730738",
+        "InputFieldName": "MSISDN",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-OMCreateSubscriberRequestItemDRBundle",
+        "OmniDataTransformationId": {
+            "Name": "VPL-OMCreateSubscriberRequestItemDRBundle",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-OMCreateSubscriberRequestItemDRBundle",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MSISDN",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "1",
+        "GlobalKey": "VPL-OMCreateSubscriberRequestItemDRBundle08993518852036209",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-OMCreateSubscriberRequestItemDRBundle",
+        "OmniDataTransformationId": {
+            "Name": "VPL-OMCreateSubscriberRequestItemDRBundle",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-OMCreateSubscriberRequestItemDRBundle",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Status",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,23 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "This VIP is responsible for cart rollup.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Rollup Cart",
+    "OmniProcessElement": "CPQ_RollupCart_Element_RollupCartAction.json",
+    "OmniProcessKey": "CPQ_RollupCart",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_RollupCart_PropertySetConfig.json",
+    "SubType": "RollupCart",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/RollupCart/Procedure"
+}

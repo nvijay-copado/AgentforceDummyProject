@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "Account_GetAssets_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GET Assets from ServiceAccountId",
+    "OmniProcessElement": [
+        "Account_GetAssets_Element_DR_GetAssets.json",
+        "Account_GetAssets_Element_Response.json"
+    ],
+    "OmniProcessKey": "Account_GetAssets",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Account_GetAssets_PropertySetConfig.json",
+    "SubType": "GetAssets",
+    "Type": "Account",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Account/GetAssets/Procedure"
+}

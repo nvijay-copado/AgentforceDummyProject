@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntitlementProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <SObjectType>Incident</SObjectType>
+    <active>true</active>
+    <entryStartDateField>Incident.CreatedDate</entryStartDateField>
+    <exitCriteriaFilterItems>
+        <field>Incident.IsClosed</field>
+        <operation>equals</operation>
+        <value>true</value>
+    </exitCriteriaFilterItems>
+</EntitlementProcess>

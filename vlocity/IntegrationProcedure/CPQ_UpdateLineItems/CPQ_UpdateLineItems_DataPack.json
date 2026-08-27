@@ -1,0 +1,23 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "This IP will invoke remote method to update line items",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "UpdateLineItems",
+    "OmniProcessElement": "CPQ_UpdateLineItems_Element_UpdateLineItems.json",
+    "OmniProcessKey": "CPQ_UpdateLineItems",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_UpdateLineItems_PropertySetConfig.json",
+    "SubType": "UpdateLineItems",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/UpdateLineItems/Procedure"
+}

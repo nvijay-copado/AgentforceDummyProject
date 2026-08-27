@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "Demo_UpdateContactDetails_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Update Contact Details",
+    "OmniProcessElement": [
+        "Demo_UpdateContactDetails_Element_DRDemoUpdateContactDetails.json",
+        "Demo_UpdateContactDetails_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "Demo_UpdateContactDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_UpdateContactDetails_PropertySetConfig.json",
+    "SubType": "UpdateContactDetails",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/UpdateContactDetails/Procedure"
+}
