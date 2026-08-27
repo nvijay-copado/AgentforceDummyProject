@@ -1,0 +1,22 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "This VIP is responsible for getting external pricing and updating into system.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Get External Pricing",
+    "OmniProcessKey": "MultiService_GetExternalPricing",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "MultiService_GetExternalPricing_PropertySetConfig.json",
+    "SubType": "GetExternalPricing",
+    "Type": "MultiService",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/MultiService/GetExternalPricing/Procedure"
+}

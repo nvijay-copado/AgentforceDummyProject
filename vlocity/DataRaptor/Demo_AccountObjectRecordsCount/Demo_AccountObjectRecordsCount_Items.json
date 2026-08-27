@@ -1,0 +1,266 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AccountId",
+        "GlobalKey": "Demo_AccountObjectRecordsCount9495679445700236",
+        "InputFieldName": "Id",
+        "InputObjectName": "Account",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Demo_AccountObjectRecordsCount",
+        "OmniDataTransformationId": {
+            "Name": "Demo_AccountObjectRecordsCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Demo_AccountObjectRecordsCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Account",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(\"Cases (\" COUNTQUERY ( \"SELECT COUNT() FROM Case WHERE AccountId = '{0}'\", AccountId),\")\")",
+        "FormulaResultPath": "CaseLink",
+        "FormulaSequence": 6,
+        "GlobalKey": "Demo_AccountObjectRecordsCount39537053260587784",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Demo_AccountObjectRecordsCount",
+        "OmniDataTransformationId": {
+            "Name": "Demo_AccountObjectRecordsCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Demo_AccountObjectRecordsCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(\"Contracts (\" COUNTQUERY ( \"SELECT COUNT() FROM Contract WHERE AccountId = '{0}' OR Account.%vlocity_namespace%__RootAccountId__c ='{0}' \", AccountId),\")\")",
+        "FormulaResultPath": "ContractLink",
+        "FormulaSequence": 4,
+        "GlobalKey": "Demo_AccountObjectRecordsCount9627310562596485",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Demo_AccountObjectRecordsCount",
+        "OmniDataTransformationId": {
+            "Name": "Demo_AccountObjectRecordsCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Demo_AccountObjectRecordsCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(\"Opportunities (\" COUNTQUERY ( \"SELECT COUNT() FROM Opportunity WHERE AccountId = '{0}'\", AccountId),\")\")",
+        "FormulaResultPath": "OpportunityLink",
+        "FormulaSequence": 3,
+        "GlobalKey": "Demo_AccountObjectRecordsCount514308522520357",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Demo_AccountObjectRecordsCount",
+        "OmniDataTransformationId": {
+            "Name": "Demo_AccountObjectRecordsCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Demo_AccountObjectRecordsCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(\"Orders (\" COUNTQUERY ( \"SELECT COUNT() FROM Order WHERE AccountId = '{0}'\", AccountId),\")\")",
+        "FormulaResultPath": "OrderLink",
+        "FormulaSequence": 5,
+        "GlobalKey": "Demo_AccountObjectRecordsCount8906182951971553",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Demo_AccountObjectRecordsCount",
+        "OmniDataTransformationId": {
+            "Name": "Demo_AccountObjectRecordsCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Demo_AccountObjectRecordsCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(\"Services & Equipment (\" COUNTQUERY ( \"SELECT COUNT() FROM Asset WHERE AccountId = '{0}' AND Is_Root__c=true AND %vlocity_namespace%__ProvisioningStatus__c = 'Active'\" , AccountId),\")\")",
+        "FormulaResultPath": "AssetLink",
+        "FormulaSequence": 2,
+        "GlobalKey": "Demo_AccountObjectRecordsCount19186488015480685",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Demo_AccountObjectRecordsCount",
+        "OmniDataTransformationId": {
+            "Name": "Demo_AccountObjectRecordsCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Demo_AccountObjectRecordsCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(\"Statements (\" COUNTQUERY ( \"SELECT COUNT() FROM %vlocity_namespace%__Statement__c WHERE %vlocity_namespace%__AccountId__c = '{0}'\" , AccountId),\")\")",
+        "FormulaResultPath": "StatementLink",
+        "FormulaSequence": 1,
+        "GlobalKey": "Demo_AccountObjectRecordsCount2783695333625522",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Demo_AccountObjectRecordsCount",
+        "OmniDataTransformationId": {
+            "Name": "Demo_AccountObjectRecordsCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Demo_AccountObjectRecordsCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Demo_AccountObjectRecordsCount7128386451807791",
+        "InputFieldName": "AssetLink",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Demo_AccountObjectRecordsCount",
+        "OmniDataTransformationId": {
+            "Name": "Demo_AccountObjectRecordsCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Demo_AccountObjectRecordsCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetLink",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Demo_AccountObjectRecordsCount391212858834312",
+        "InputFieldName": "CaseLink",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Demo_AccountObjectRecordsCount",
+        "OmniDataTransformationId": {
+            "Name": "Demo_AccountObjectRecordsCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Demo_AccountObjectRecordsCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CaseLink",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Demo_AccountObjectRecordsCount4681136412455802",
+        "InputFieldName": "ContractLink",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Demo_AccountObjectRecordsCount",
+        "OmniDataTransformationId": {
+            "Name": "Demo_AccountObjectRecordsCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Demo_AccountObjectRecordsCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContractLink",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Demo_AccountObjectRecordsCount06867718807928402",
+        "InputFieldName": "OpportunityLink",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Demo_AccountObjectRecordsCount",
+        "OmniDataTransformationId": {
+            "Name": "Demo_AccountObjectRecordsCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Demo_AccountObjectRecordsCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OpportunityLink",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Demo_AccountObjectRecordsCount3197068234928997",
+        "InputFieldName": "OrderLink",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Demo_AccountObjectRecordsCount",
+        "OmniDataTransformationId": {
+            "Name": "Demo_AccountObjectRecordsCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Demo_AccountObjectRecordsCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderLink",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Demo_AccountObjectRecordsCount7736142892446993",
+        "InputFieldName": "StatementLink",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Demo_AccountObjectRecordsCount",
+        "OmniDataTransformationId": {
+            "Name": "Demo_AccountObjectRecordsCount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Demo_AccountObjectRecordsCount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "StatementLink",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,48 @@
+{
+    "FilterField": [
+        {
+            "Name": "Flow",
+            "Value": "Bulk Preprovisioning Data"
+        }
+    ],
+    "OrderId": "8014x000000L4qmAAC",
+    "RunOption": 12,
+    "TargetGroupsValues": [
+        {
+            "TargetGroup": "VPL_BLKP_ATTR_MSISDN",
+            "Value": "7890976569"
+        },
+        {
+            "TargetGroup": "VPL_BLKP_ATTR_IMSI",
+            "Value": "780987898767899"
+        },
+        {
+            "TargetGroup": "VPL_BLKP_ATTR_ICCID",
+            "Value": "78098789876789767879"
+        },
+        {
+            "TargetGroup": "Subscription",
+            "Value": "a4a4x0000004WLBAA2"
+        },
+        {
+            "TargetGroup": "ServiceAccount",
+            "Value": "0014x000006SXAkAAO"
+        },
+        {
+            "TargetGroup": "BillingAccount",
+            "Value": "0014x000006SXAkAAO"
+        },
+        {
+            "TargetGroup": "SerialNumber",
+            "Value": "78098789876789767879"
+        },
+        {
+            "TargetGroup": "ServiceIdentifier",
+            "Value": "7890976569"
+        }
+    ],
+    "getFieldDataType": "auto",
+    "listGroupItemId": [
+        "8024x000000H69RAAS"
+    ]
+}

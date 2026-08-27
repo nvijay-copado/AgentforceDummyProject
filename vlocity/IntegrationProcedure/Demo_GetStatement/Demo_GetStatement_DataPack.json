@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "Demo_GetStatement_SampleInput.json",
+    "Description": "pull statement by statementId",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Get Statement",
+    "OmniProcessElement": [
+        "Demo_GetStatement_Element_drGetStatement.json",
+        "Demo_GetStatement_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_GetStatement",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_GetStatement_PropertySetConfig.json",
+    "SubType": "GetStatement",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/GetStatement/Procedure"
+}

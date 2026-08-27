@@ -1,0 +1,15 @@
+{
+    "CalculationMatrixColumn": "SampleteamSLARetentionCopy_CalculationMatrixColumns.json",
+    "DecisionMatrixType": "DecisionMatrix",
+    "Description": "",
+    "GroupKey": "",
+    "Name": "SampleteamSLARetentionCopy",
+    "Namespace": "",
+    "SubGroupKey": "",
+    "Type": "Standard",
+    "UniqueName": "SampleteamSLARetentionCopy",
+    "UsageType": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrix",
+    "VlocityRecordSourceKey": "CalculationMatrix/SampleteamSLARetentionCopy"
+}

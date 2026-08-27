@@ -1,0 +1,250 @@
+[
+    {
+        "GlobalKey": "VPL-UpdateInteractionTopicCustoma1V5w000008XjQnEAKItem1",
+        "InputFieldName": "accountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-UpdateInteractionTopic",
+        "OmniDataTransformationId": {
+            "Name": "VPL-UpdateInteractionTopic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-UpdateInteractionTopic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__AccountId__c",
+        "OutputObjectName": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-UpdateInteractionTopicCustoma1V5w000008XjQnEAKItem2",
+        "InputFieldName": "assetId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-UpdateInteractionTopic",
+        "OmniDataTransformationId": {
+            "Name": "VPL-UpdateInteractionTopic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-UpdateInteractionTopic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__AssetId__c",
+        "OutputObjectName": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-UpdateInteractionTopicCustoma1V5w000008XjQnEAKItem3",
+        "InputFieldName": "caseId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-UpdateInteractionTopic",
+        "OmniDataTransformationId": {
+            "Name": "VPL-UpdateInteractionTopic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-UpdateInteractionTopic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__CaseId__c",
+        "OutputObjectName": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-UpdateInteractionTopicCustoma1V5w000008XjQnEAKItem4",
+        "InputFieldName": "contractId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-UpdateInteractionTopic",
+        "OmniDataTransformationId": {
+            "Name": "VPL-UpdateInteractionTopic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-UpdateInteractionTopic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__ContractId__c",
+        "OutputObjectName": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-UpdateInteractionTopicCustoma1V5w000008XjQnEAKItem5",
+        "InputFieldName": "interactionId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-UpdateInteractionTopic",
+        "OmniDataTransformationId": {
+            "Name": "VPL-UpdateInteractionTopic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-UpdateInteractionTopic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__CustomerInteractionId__c",
+        "OutputObjectName": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-UpdateInteractionTopicCustoma1V5w000008XjQnEAKItem6",
+        "InputFieldName": "orderId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-UpdateInteractionTopic",
+        "OmniDataTransformationId": {
+            "Name": "VPL-UpdateInteractionTopic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-UpdateInteractionTopic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__OrderId__c",
+        "OutputObjectName": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-UpdateInteractionTopicCustoma1V5w000008XjQnEAKItem7",
+        "InputFieldName": "outcome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-UpdateInteractionTopic",
+        "OmniDataTransformationId": {
+            "Name": "VPL-UpdateInteractionTopic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-UpdateInteractionTopic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__Outcome__c",
+        "OutputObjectName": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-UpdateInteractionTopicCustom7256",
+        "InputFieldName": "ProcessName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-UpdateInteractionTopic",
+        "OmniDataTransformationId": {
+            "Name": "VPL-UpdateInteractionTopic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-UpdateInteractionTopic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__ProcessName__c",
+        "OutputObjectName": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-UpdateInteractionTopicCustoma1V5w000008XjQnEAKItem8",
+        "InputFieldName": "quoteId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-UpdateInteractionTopic",
+        "OmniDataTransformationId": {
+            "Name": "VPL-UpdateInteractionTopic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-UpdateInteractionTopic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__QuoteId__c",
+        "OutputObjectName": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-UpdateInteractionTopicCustoma1V5w000008XjQnEAKItem9",
+        "InputFieldName": "reason",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-UpdateInteractionTopic",
+        "OmniDataTransformationId": {
+            "Name": "VPL-UpdateInteractionTopic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-UpdateInteractionTopic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__Reason__c",
+        "OutputObjectName": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-UpdateInteractionTopicCustoma1V5w000008XjQnEAKItem11",
+        "InputFieldName": "subscriptionId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-UpdateInteractionTopic",
+        "OmniDataTransformationId": {
+            "Name": "VPL-UpdateInteractionTopic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-UpdateInteractionTopic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__SubscriptionId__c",
+        "OutputObjectName": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-UpdateInteractionTopicCustom1405",
+        "InputFieldName": "interactionTopicId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "VPL-UpdateInteractionTopic",
+        "OmniDataTransformationId": {
+            "Name": "VPL-UpdateInteractionTopic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-UpdateInteractionTopic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "VPL-UpdateInteractionTopicCustoma1V5w000008XjQnEAKItem0",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "VPL-UpdateInteractionTopic",
+        "OmniDataTransformationId": {
+            "Name": "VPL-UpdateInteractionTopic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-UpdateInteractionTopic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

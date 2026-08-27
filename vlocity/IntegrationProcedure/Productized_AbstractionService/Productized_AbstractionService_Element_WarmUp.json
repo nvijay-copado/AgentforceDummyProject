@@ -1,0 +1,63 @@
+{
+    "Description": "Preload classes for first run issue.\nAbsServiceHandler2,AbsServiceHandler3,AbsServiceHandler4,%vlocity_namespace%.CpqAppHandler%additionalClasses%",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "WarmUp",
+    "OmniProcessId": {
+        "Name": "AbstractionService",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "WarmService",
+        "OmniProcessId": {
+            "Name": "AbstractionService",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/WarmService",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "WarmService",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "listAbstractionClasses": "=%vlocity_namespace%.B2CCmexGetValue,%vlocity_namespace%.B2CCmexProcessProductsAndAttributes,%vlocity_namespace%.B2CCmexGetFieldDataTypeAndSetValue,%vlocity_namespace%.CpqAppHandler",
+            "listIndividualClasses": "%listIndividualClasses%",
+            "warmUpOnlyIndividualClasses": "=IF(ISBLANK(%warmUpOnlyIndividualClasses%),false,%warmUpOnlyIndividualClasses%)"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction15",
+        "remoteClass": "%vlocity_namespace%.B2CCmexWarmUpServiceGetAndMatchData",
+        "remoteMethod": "warmUpService",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/WarmUp"
+}

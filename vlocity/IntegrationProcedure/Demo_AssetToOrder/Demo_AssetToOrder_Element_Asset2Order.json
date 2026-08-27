@@ -1,0 +1,52 @@
+{
+    "Description": "Converts the asset to a change order.",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Asset2Order",
+    "OmniProcessId": {
+        "Name": "Asset to Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Demo/AssetToOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "ContextId": "%AssetId%",
+            "Request DateTime": {
+                "RequestDateTime": "%Init:DateOfChange%"
+            },
+            "accountId": "%GetAssetDetail:accountId%",
+            "assetIdList": "%GetAssetDetail:assetIdList%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction2",
+        "remoteClass": "%vlocity_namespace%.OmniFDOWrapper",
+        "remoteMethod": "createFDO",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Demo/AssetToOrder/Procedure/Asset2Order"
+}

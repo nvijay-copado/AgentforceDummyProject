@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "Demo_UpdateBillingAddress_SampleInput.json",
+    "Description": "Sets the Billing Address on an Account record and the Other Address on a Contact record.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Update Billing Address",
+    "OmniProcessElement": [
+        "Demo_UpdateBillingAddress_Element_Decrypt.json",
+        "Demo_UpdateBillingAddress_Element_SetBillingAddress.json",
+        "Demo_UpdateBillingAddress_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_UpdateBillingAddress",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_UpdateBillingAddress_PropertySetConfig.json",
+    "SubType": "UpdateBillingAddress",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/UpdateBillingAddress/Procedure"
+}

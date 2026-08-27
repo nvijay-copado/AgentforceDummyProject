@@ -1,0 +1,42 @@
+[
+    {
+        "ApiName": "input-1",
+        "CalculationMatrixId": {
+            "Name": "testmahi123",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/testmahi123",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Input",
+        "DataType": "Text",
+        "DisplaySequence": 1,
+        "IsWildcardColumn": false,
+        "Name": "input-1",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated-589364714",
+        "WildcardColumnValue": ""
+    },
+    {
+        "ApiName": "output",
+        "CalculationMatrixId": {
+            "Name": "testmahi123",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/testmahi123",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Output",
+        "DataType": "Text",
+        "DisplaySequence": 2,
+        "IsWildcardColumn": false,
+        "Name": "output",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated273775382",
+        "WildcardColumnValue": ""
+    }
+]

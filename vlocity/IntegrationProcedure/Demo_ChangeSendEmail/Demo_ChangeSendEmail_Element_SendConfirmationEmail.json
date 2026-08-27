@@ -1,0 +1,49 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SendConfirmationEmail",
+    "OmniProcessId": {
+        "Name": "Change of Service Confirmation Email",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Demo/ChangeSendEmail/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "OrgWideEmailAddress": "service@nuslice.com",
+        "actionMessage": "",
+        "attachmentList": "",
+        "chainOnStep": false,
+        "contentVersionList": "",
+        "disOnTplt": false,
+        "emailInformation": {
+            "bccAddressList": [
+            ],
+            "ccAddressList": [
+            ],
+            "emailBody": "​<body>\n<div style=\"margin:0 auto; width: 60vw;\">\n\n  <img src=\"https://vlocitydemodx-cdn.herokuapp.com/content/industry/cmt/commsB2C/nuslice-logo-blue.png\" alt=\"NuSlice Logo\">\n  \n  <p style='color: #666666; font-family: \"Salesforce-Sans\", sans-serif; font-size: 16px; line-height: 22px; margin-top: 20px;'>Hi %GetAccountDetails:ContactFirstName%!</p>\n  \n  <p style='color: #666666; font-family: \"Salesforce-Sans\", sans-serif; font-size: 16px; line-height: 22px; margin-top: 20px;'>This email is to let you know that the changes to your service have been completed.</p>\n\n  <p style='color: #666666; font-family: \"Salesforce-Sans\", sans-serif; font-size: 16px; line-height: 22px; margin-top: 20px;'>Happy Surfing!</p>\n  \n</div>\n</body>\n​",
+            "emailSubject": "NuSlice - Service Change",
+            "setHtmlBody": true,
+            "toAddressList": [
+                "%GetAccountDetails:ContactEmail%"
+            ]
+        },
+        "emailTemplateInformation": {
+            "emailTargetObjectId": "",
+            "emailTemplateName": "",
+            "saveAsActivity": false,
+            "whatId": ""
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "EmailAction2",
+        "show": null,
+        "staticDocList": [
+        ],
+        "useTemplate": false
+    },
+    "Type": "Email Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Demo/ChangeSendEmail/Procedure/SendConfirmationEmail"
+}

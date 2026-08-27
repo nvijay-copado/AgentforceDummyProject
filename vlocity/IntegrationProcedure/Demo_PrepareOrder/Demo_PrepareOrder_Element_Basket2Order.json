@@ -1,0 +1,71 @@
+{
+    "Description": "Convert the Digital Commerce Basket to an Order record.",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Basket2Order",
+    "OmniProcessId": {
+        "Name": "Prepare Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Demo/PrepareOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "DigitalCommerce",
+        "OmniProcessId": {
+            "Name": "Prepare Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Demo/PrepareOrder/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Demo/PrepareOrder/Procedure/DigitalCommerce",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "DigitalCommerce",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "accountId": "%AccountId%",
+            "apiName": "createEcomCart",
+            "cartContextKey": "%cartId%",
+            "catalogCode": "%CatalogCode%",
+            "isloggedin": false,
+            "methodName": "createEcomCart",
+            "price": false,
+            "requestURL": "/v3/carts",
+            "returnOrderNumber": false,
+            "validate": false,
+            "validatebasket": false
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "%vlocity_namespace%.CpqAppHandler",
+        "remoteMethod": "createEcomCart",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Demo/PrepareOrder/Procedure/Basket2Order"
+}

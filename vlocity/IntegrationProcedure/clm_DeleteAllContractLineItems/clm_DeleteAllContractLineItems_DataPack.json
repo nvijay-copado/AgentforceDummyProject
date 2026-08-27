@@ -1,0 +1,22 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CLM - Delete All Contract Line Items",
+    "OmniProcessElement": "clm_DeleteAllContractLineItems_Element_DeleteContractLineItem.json",
+    "OmniProcessKey": "clm_DeleteAllContractLineItems",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "clm_DeleteAllContractLineItems_PropertySetConfig.json",
+    "SubType": "DeleteAllContractLineItems",
+    "Type": "clm",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/clm/DeleteAllContractLineItems/Procedure"
+}

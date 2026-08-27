@@ -1,0 +1,62 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetAssetDetailsAbsLayer",
+    "OmniProcessId": {
+        "Name": "VPL-FetchAssetAndDevicesDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/vpl/FetchAssetAndDevicesDetails/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "FilterField": [
+                {
+                    "Name": "Flow",
+                    "Value": "%FlowName%"
+                }
+            ],
+            "RunOption": 16,
+            "TargetGroupsValues": [
+                {
+                    "TargetGroup": "MSISDN_CR"
+                },
+                {
+                    "TargetGroup": "ICCID"
+                },
+                {
+                    "TargetGroup": "ProvisioningStatus_CR"
+                }
+            ],
+            "listItemId": "%GetAssetDetails:AssetId%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": true,
+        "disOnTplt": false,
+        "disableChainable": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "integrationProcedureKey": "Productized_AbstractionService",
+        "label": "IntegrationProcedureAction3",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/vpl/FetchAssetAndDevicesDetails/Procedure/GetAssetDetailsAbsLayer"
+}

@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "Demo_GetPriceList_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Retrieve Pricelist Details",
+    "OmniProcessElement": [
+        "Demo_GetPriceList_Element_GetPriceList.json",
+        "Demo_GetPriceList_Element_EncryptSensitiveData.json",
+        "Demo_GetPriceList_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_GetPriceList",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_GetPriceList_PropertySetConfig.json",
+    "SubType": "GetPriceList",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/GetPriceList/Procedure"
+}

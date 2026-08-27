@@ -1,0 +1,66 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ProcessProduct",
+    "OmniProcessId": {
+        "Name": "AbstractionService",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CacheProcessProduct",
+        "OmniProcessId": {
+            "Name": "AbstractionService",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/CacheProcessProduct",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CacheProcessProduct",
+    "ParentElementType": "Cache Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "ContextId": "%ContextId%",
+            "ObjectId": "%ObjectId%",
+            "OrderID": "%OrderId%",
+            "depth": "%depth%",
+            "targetProduct": "=FILTER(LIST(%Match:MatchData:ListAttributes%),\"TargetType == 'Product'\")"
+        },
+        "additionalOutput": {
+            "targetProduct": "%ProcessProduct:targetProduct%"
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "%ServiceError:ErrorCode% !=\"00000\"",
+        "failureResponse": {
+            "ServiceError": "%ProcessProduct:ServiceError%"
+        },
+        "label": "RemoteAction6",
+        "remoteClass": "%vlocity_namespace%.B2CCmexProcessProductsAndAttributes",
+        "remoteMethod": "preProcessProduct",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/ProcessProduct"
+}

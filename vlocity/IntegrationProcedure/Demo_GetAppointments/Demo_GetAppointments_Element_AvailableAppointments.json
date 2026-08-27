@@ -1,0 +1,69 @@
+{
+    "Description": "Combines all possible appointment dates into a single list.",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "AvailableAppointments",
+    "OmniProcessId": {
+        "Name": "Get Appointments",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Demo/GetAppointments/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "advancedMerge": false,
+        "advancedMergeMap": [
+        ],
+        "allowMergeNulls": true,
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "dynamicOutputFields": "",
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "filterListFormula": "",
+        "hasPrimary": false,
+        "label": "ListAction1",
+        "mergeFields": [
+        ],
+        "mergeListsOrder": [
+            "slot1",
+            "slot2",
+            "slot3",
+            "slot4",
+            "slot5",
+            "slot6",
+            "slot7",
+            "slot8",
+            "slot9",
+            "slot10"
+        ],
+        "primaryListKey": "",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "sortBy": [
+        ],
+        "sortInDescendingOrder": false,
+        "updateFieldValue": {
+        },
+        "useFormulas": true
+    },
+    "Type": "List Merge Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Demo/GetAppointments/Procedure/AvailableAppointments"
+}

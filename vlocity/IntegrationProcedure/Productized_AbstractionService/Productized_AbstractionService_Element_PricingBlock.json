@@ -1,0 +1,23 @@
+{
+    "Description": "Pricing Cart:\n1) Pricing the cart - getCartsItems API\n2) Price an Item in the cart - getCartsItemsById API",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "PricingBlock",
+    "OmniProcessId": {
+        "Name": "AbstractionService",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "Operation == \"Pricing\"",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock11",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/PricingBlock"
+}

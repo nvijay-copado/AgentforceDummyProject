@@ -1,0 +1,59 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateList",
+    "OmniProcessId": {
+        "Name": "DemoGetAccountEquipment",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Demo/GetAccountEquipment/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "advancedMerge": false,
+        "advancedMergeMap": [
+        ],
+        "allowMergeNulls": true,
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "dynamicOutputFields": "",
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "filterListFormula": "",
+        "hasPrimary": false,
+        "label": "ListAction1",
+        "mergeFields": [
+        ],
+        "mergeListsOrder": [
+            "DRGetAccountEquipment"
+        ],
+        "primaryListKey": "",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "sortBy": [
+        ],
+        "sortInDescendingOrder": false,
+        "updateFieldValue": {
+        },
+        "useFormulas": true
+    },
+    "Type": "List Merge Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Demo/GetAccountEquipment/Procedure/CreateList"
+}

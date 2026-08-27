@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "Demo_ReparentOrder_SampleInput.json",
+    "Description": "Changes the account for a given order.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Reparent CPQ Order",
+    "OmniProcessElement": [
+        "Demo_ReparentOrder_Element_ReparentOrder.json",
+        "Demo_ReparentOrder_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_ReparentOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_ReparentOrder_PropertySetConfig.json",
+    "SubType": "ReparentOrder",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/ReparentOrder/Procedure"
+}

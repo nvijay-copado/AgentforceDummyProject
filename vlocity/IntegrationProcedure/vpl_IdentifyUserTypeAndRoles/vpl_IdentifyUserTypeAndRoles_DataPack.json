@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "Returns the user type such agent/customer based on the logged in user's profile and the base URL of the org.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "VPL-IdentifyUserTypeAndRoles",
+    "OmniProcessElement": [
+        "vpl_IdentifyUserTypeAndRoles_Element_ExtractUserTypeAndRoles.json",
+        "vpl_IdentifyUserTypeAndRoles_Element_GetVPLMetadataByLabel.json",
+        "vpl_IdentifyUserTypeAndRoles_Element_ResponseIdentifyUserTypeAndRoles.json"
+    ],
+    "OmniProcessKey": "vpl_IdentifyUserTypeAndRoles",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "vpl_IdentifyUserTypeAndRoles_PropertySetConfig.json",
+    "ResponseCacheType": "Session Cache",
+    "SubType": "IdentifyUserTypeAndRoles",
+    "Type": "vpl",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/vpl/IdentifyUserTypeAndRoles/Procedure"
+}

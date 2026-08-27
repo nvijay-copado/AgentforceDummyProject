@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "CPQ_GetReplacedLineItemIds_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQ_GetReplacedLineItemIds",
+    "OmniProcessElement": [
+        "CPQ_GetReplacedLineItemIds_Element_TransformIdsToObjects.json",
+        "CPQ_GetReplacedLineItemIds_Element_GetReplacedOrderLineItemIds.json",
+        "CPQ_GetReplacedLineItemIds_Element_GetReplacedQuoteLineItemIds.json",
+        "CPQ_GetReplacedLineItemIds_Element_TransformToArrayForOrder.json",
+        "CPQ_GetReplacedLineItemIds_Element_TransformToArrayForQuote.json"
+    ],
+    "OmniProcessKey": "CPQ_GetReplacedLineItemIds",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_GetReplacedLineItemIds_PropertySetConfig.json",
+    "SubType": "GetReplacedLineItemIds",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/GetReplacedLineItemIds/Procedure"
+}

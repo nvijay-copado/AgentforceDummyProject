@@ -1,0 +1,24 @@
+{
+    "Description": "Test",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": false,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "TestNaman",
+    "OmniProcessElement": [
+        "CPQ_Submit_English_Element_Step1.json",
+        "CPQ_Submit_English_Element_MatrixAction123.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "CPQ_Submit_English_PropertySetConfig.json",
+    "SubType": "Submit",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/Submit/English"
+}

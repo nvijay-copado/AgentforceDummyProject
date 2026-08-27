@@ -1,0 +1,22 @@
+{
+    "EmbeddedOmniScriptKey": "Reusable|Sample|English",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CompanyMailingAddress",
+    "OmniProcessId": {
+        "Name": "emebedded Omniscript",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/sample/canBeAnything/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "Language": "English",
+        "Sub Type": "Sample",
+        "Type": "Reusable",
+        "show": null
+    },
+    "Type": "OmniScript",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/sample/canBeAnything/English/CompanyMailingAddress"
+}

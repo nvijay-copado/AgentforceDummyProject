@@ -1,0 +1,24 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "GlobalKey": "Naman Dr2Custom1215",
+        "InputObjectName": "AccountContactRole",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Naman Dr2",
+        "OmniDataTransformationId": {
+            "Name": "Naman Dr2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Naman Dr2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "qwerty",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

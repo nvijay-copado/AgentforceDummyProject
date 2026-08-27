@@ -1,0 +1,22 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "description - 2 - final conflict resolution",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Int-test",
+    "OmniProcessKey": "adding%special()characet__--[tocheckcommit]._[testrun1]",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "adding-special-characet_-to-check-commit_-test-run-1_PropertySetConfig.json",
+    "SubType": "[test run 1]",
+    "Type": "adding%special()characet__-- [to check commit] .",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Generated328507295"
+}

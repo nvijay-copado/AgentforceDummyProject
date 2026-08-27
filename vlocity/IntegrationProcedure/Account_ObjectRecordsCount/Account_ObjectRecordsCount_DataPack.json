@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "Account_ObjectRecordsCount_SampleInput.json",
+    "Description": "Counts the number of records for the objects configured. Used in the CiConsole ObjectLinks_Card",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "AccountObjectRecordsCount",
+    "OmniProcessElement": [
+        "Account_ObjectRecordsCount_Element_DR_GetObjectLinks.json",
+        "Account_ObjectRecordsCount_Element_Response.json"
+    ],
+    "OmniProcessKey": "Account_ObjectRecordsCount",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Account_ObjectRecordsCount_PropertySetConfig.json",
+    "SubType": "ObjectRecordsCount",
+    "Type": "Account",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Account/ObjectRecordsCount/Procedure"
+}

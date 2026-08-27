@@ -1,0 +1,21 @@
+{
+    "ContextId": null,
+    "Step1": {
+        "Radio1": null
+    },
+    "Step2": {
+        "CustomLWC1": null
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "DataRaptorPostAction1": null,
+        "Step1": null,
+        "Step2": null
+    }
+}

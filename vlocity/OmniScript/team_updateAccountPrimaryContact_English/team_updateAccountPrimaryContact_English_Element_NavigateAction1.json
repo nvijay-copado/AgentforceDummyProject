@@ -1,0 +1,89 @@
+{
+    "Description": "IF(%UpdateLastName%=null&&%TAChangeContact%=null&&%CreateLastName%=null, \"NotOK\", \"OK\")",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NavigateAction1",
+    "OmniProcessId": {
+        "Name": "Team Starter Update Account Primary Contact",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/team/updateAccountPrimaryContact/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconPositionOptions": [
+            "left",
+            "right"
+        ],
+        "iconVariant": "",
+        "label": "NavigateAction1",
+        "message": {
+        },
+        "objectAction": "home",
+        "objectActionOptions": [
+            "home",
+            "list",
+            "new"
+        ],
+        "pubsub": true,
+        "recordAction": "view",
+        "recordActionOptions": [
+            "clone",
+            "edit",
+            "view"
+        ],
+        "replace": true,
+        "replaceOptions": [
+            {
+                "label": "No",
+                "value": false
+            },
+            {
+                "label": "Yes",
+                "value": true
+            }
+        ],
+        "show": null,
+        "targetFilter": "Recent",
+        "targetId": "%ContextId%",
+        "targetLWCLayout": "lightning",
+        "targetLWCLayoutOptions": [
+            "lightning",
+            "newport"
+        ],
+        "targetName": "Account",
+        "targetType": "Record",
+        "targetTypeOptions": [
+            "Component",
+            "Current Page",
+            "Knowledge Article",
+            "Named Page",
+            "Navigation Item",
+            "Object",
+            "Record",
+            "Record Relationship",
+            "Web Page",
+            "Vlocity OmniScript"
+        ],
+        "validationRequired": null,
+        "variant": "brand",
+        "variantOptions": [
+            "brand",
+            "outline-brand",
+            "neutral",
+            "success",
+            "destructive",
+            "text-destructive",
+            "inverse",
+            "link"
+        ]
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/team/updateAccountPrimaryContact/English/NavigateAction1"
+}

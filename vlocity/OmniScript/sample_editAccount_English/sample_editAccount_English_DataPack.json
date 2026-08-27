@@ -1,0 +1,32 @@
+{
+    "Description": "sample of an OmniScript to edit Account information.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": false,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "Sample Edit Account",
+    "OmniProcessElement": [
+        "sample_editAccount_English_Element_IPGetAccountDetails.json",
+        "sample_editAccount_English_Element_StepAccount.json",
+        "sample_editAccount_English_Element_Name.json",
+        "sample_editAccount_English_Element_LineBreak1.json",
+        "sample_editAccount_English_Element_Phone.json",
+        "sample_editAccount_English_Element_LineBreak2.json",
+        "sample_editAccount_English_Element_Website.json",
+        "sample_editAccount_English_Element_IPSaveAccountDetails.json",
+        "sample_editAccount_English_Element_NavigateAction1.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "sample_editAccount_English_PropertySetConfig.json",
+    "SubType": "editAccount",
+    "Type": "sample",
+    "UniqueName": "sample_editAccount_English_1",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/sample/editAccount/English"
+}

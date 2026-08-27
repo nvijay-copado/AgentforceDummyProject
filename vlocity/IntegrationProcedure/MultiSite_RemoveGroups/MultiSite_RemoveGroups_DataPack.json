@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "MultiSite_RemoveGroups_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "MultiSiteRemoveGroups",
+    "OmniProcessElement": [
+        "MultiSite_RemoveGroups_Element_RemoveGroupsInput.json",
+        "MultiSite_RemoveGroups_Element_ApexRemoteCall.json",
+        "MultiSite_RemoveGroups_Element_RemoteCallResponse.json"
+    ],
+    "OmniProcessKey": "MultiSite_RemoveGroups",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "MultiSite_RemoveGroups_PropertySetConfig.json",
+    "SubType": "RemoveGroups",
+    "Type": "MultiSite",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/MultiSite/RemoveGroups/Procedure"
+}

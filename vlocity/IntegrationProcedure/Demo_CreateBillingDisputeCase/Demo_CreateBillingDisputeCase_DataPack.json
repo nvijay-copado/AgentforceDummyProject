@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Create Billing Dispute Case",
+    "OmniProcessElement": [
+        "Demo_CreateBillingDisputeCase_Element_DRDemoCreateDisputeCase.json",
+        "Demo_CreateBillingDisputeCase_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_CreateBillingDisputeCase",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_CreateBillingDisputeCase_PropertySetConfig.json",
+    "SubType": "CreateBillingDisputeCase",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/CreateBillingDisputeCase/Procedure"
+}

@@ -1,0 +1,197 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "IntegrationKey",
+        "GlobalKey": "VPL-GetAbstractionRecordByIntegrationKeyCustom7827",
+        "InputFieldName": "%vlocity_namespace%__VPLIntegrationKey__c",
+        "InputObjectName": "%vlocity_namespace%__VPLAbstractionLayerSetup__mdt",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "AbstractionRecord",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAbstractionRecordByIntegrationKeyCustom7552",
+        "InputFieldName": "AbstractionRecord:%vlocity_namespace%__VPLFlow__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Flow",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAbstractionRecordByIntegrationKeyCustom230",
+        "InputFieldName": "AbstractionRecord:%vlocity_namespace%__VPLActive__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsActive",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAbstractionRecordByIntegrationKeyCustom9891",
+        "InputFieldName": "AbstractionRecord:%vlocity_namespace%__VPLParentEntity__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ParentEntity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAbstractionRecordByIntegrationKeyCustom7907",
+        "InputFieldName": "AbstractionRecord:%vlocity_namespace%__VPLParentEntityContext__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ParentEntityContext",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAbstractionRecordByIntegrationKeyCustom4946",
+        "InputFieldName": "AbstractionRecord:%vlocity_namespace%__VPLTarget__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Target",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAbstractionRecordByIntegrationKeyCustom8858",
+        "InputFieldName": "AbstractionRecord:%vlocity_namespace%__VPLTargetEntity__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TargetEntity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAbstractionRecordByIntegrationKeyCustom6149",
+        "InputFieldName": "AbstractionRecord:%vlocity_namespace%__VPLTargetEntityContext__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TargetEntityContext",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAbstractionRecordByIntegrationKeyCustom1676",
+        "InputFieldName": "AbstractionRecord:%vlocity_namespace%__VPLTargetGroup__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TargetGroup",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VPL-GetAbstractionRecordByIntegrationKeyCustom2305",
+        "InputFieldName": "AbstractionRecord:%vlocity_namespace%__VPLTargetType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+        "OmniDataTransformationId": {
+            "Name": "VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VPL-GetAbstractionRecordByIntegrationKey",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TargetType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]
