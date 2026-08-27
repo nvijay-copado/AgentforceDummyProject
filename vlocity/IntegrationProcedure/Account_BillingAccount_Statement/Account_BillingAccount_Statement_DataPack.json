@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "Account_BillingAccount_Statement_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GET CI Statement from BillingAccount",
+    "OmniProcessElement": [
+        "Account_BillingAccount_Statement_Element_DR_GetStatement.json",
+        "Account_BillingAccount_Statement_Element_Response.json"
+    ],
+    "OmniProcessKey": "Account_BillingAccount_Statement",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Account_BillingAccount_Statement_PropertySetConfig.json",
+    "SubType": "BillingAccount_Statement",
+    "Type": "Account",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Account/BillingAccount_Statement/Procedure"
+}

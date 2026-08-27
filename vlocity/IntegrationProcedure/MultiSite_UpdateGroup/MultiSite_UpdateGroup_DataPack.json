@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "MultiSite_UpdateGroup_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "MultiSiteUpdateGroup",
+    "OmniProcessElement": [
+        "MultiSite_UpdateGroup_Element_UpdateGroupInput.json",
+        "MultiSite_UpdateGroup_Element_ApexRemoteCall.json",
+        "MultiSite_UpdateGroup_Element_RemoteCallResponse.json"
+    ],
+    "OmniProcessKey": "MultiSite_UpdateGroup",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "MultiSite_UpdateGroup_PropertySetConfig.json",
+    "SubType": "UpdateGroup",
+    "Type": "MultiSite",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/MultiSite/UpdateGroup/Procedure"
+}

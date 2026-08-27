@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "Demo_GetAccountEquipment_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "DemoGetAccountEquipment",
+    "OmniProcessElement": [
+        "Demo_GetAccountEquipment_Element_DRGetAccountEquipment.json",
+        "Demo_GetAccountEquipment_Element_CreateList.json",
+        "Demo_GetAccountEquipment_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_GetAccountEquipment",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_GetAccountEquipment_PropertySetConfig.json",
+    "SubType": "GetAccountEquipment",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/GetAccountEquipment/Procedure"
+}

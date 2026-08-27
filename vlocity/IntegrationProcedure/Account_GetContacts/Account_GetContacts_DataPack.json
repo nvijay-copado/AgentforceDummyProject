@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "Account_GetContacts_SampleInput.json",
+    "Description": "Retrieves all contacts associated with the account",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Get Contacts from Account using AccountId",
+    "OmniProcessElement": [
+        "Account_GetContacts_Element_DR_GetContacts.json",
+        "Account_GetContacts_Element_Response.json"
+    ],
+    "OmniProcessKey": "Account_GetContacts",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Account_GetContacts_PropertySetConfig.json",
+    "SubType": "GetContacts",
+    "Type": "Account",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Account/GetContacts/Procedure"
+}

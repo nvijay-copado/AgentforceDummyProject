@@ -1,0 +1,37 @@
+{
+    "account_id": "0014W000026GuEMQA0",
+    "order_id": "a284W00000MzRN6QAN",
+    "order_items": [
+        {
+            "action": "Add",
+            "described_by": [
+                {
+                    "characteristic": "MSISDN",
+                    "value": "71454571671"
+                },
+                {
+                    "characteristic": "Activation Date",
+                    "value": ""
+                },
+                {
+                    "characteristic": "SubscriberId",
+                    "value": "Sub-ef4617cd-a818-c902-3604-5439a75b9294"
+                },
+                {
+                    "characteristic": "Product Code",
+                    "value": "B2CCmex_OFFERING_SIM_ONLY_OFFER"
+                },
+                {
+                    "characteristic": "IMSI",
+                    "value": "748234567900262"
+                }
+            ],
+            "order_item_id": "a274W000009oOPAQA2",
+            "specified_by": {
+                "specification_id": "01t4W00000BEgKjQAL",
+                "specification_name": "Charging Service CFS"
+            }
+        }
+    ],
+    "responseUri": "/services/apexrest/%vlocity_namespace%/asyncCallback/a2w4W000007M89IQAS"
+}

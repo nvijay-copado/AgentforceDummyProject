@@ -1,0 +1,31 @@
+{
+    "CustomJavaScript": "Demo_AssetToOrder_SampleInput.json",
+    "Description": "Creates a future-dated order (FDO) from an existing asset",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Asset to Order",
+    "OmniProcessElement": [
+        "Demo_AssetToOrder_Element_Init.json",
+        "Demo_AssetToOrder_Element_GetAssetDetail.json",
+        "Demo_AssetToOrder_Element_CanCreateOrder.json",
+        "Demo_AssetToOrder_Element_ReturnError.json",
+        "Demo_AssetToOrder_Element_Asset2Order.json",
+        "Demo_AssetToOrder_Element_UpdateOrder.json",
+        "Demo_AssetToOrder_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_AssetToOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_AssetToOrder_PropertySetConfig.json",
+    "SubType": "AssetToOrder",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/AssetToOrder/Procedure"
+}

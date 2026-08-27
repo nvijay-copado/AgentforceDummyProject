@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "vpl_UpdateInteractionTopics_SampleInput.json",
+    "Description": "Updates the outcome, and other relevant fields like subscription, Order, Asset in the interaction topic record  created in the begging of the Flow, when the flow is executed.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "VPL-UpdateInteractionTopicsIP",
+    "OmniProcessElement": [
+        "vpl_UpdateInteractionTopics_Element_UpdateInteractionTopic.json",
+        "vpl_UpdateInteractionTopics_Element_ResponseActionForUpdateIntTopic.json"
+    ],
+    "OmniProcessKey": "vpl_UpdateInteractionTopics",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "vpl_UpdateInteractionTopics_PropertySetConfig.json",
+    "SubType": "UpdateInteractionTopics",
+    "Type": "vpl",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/vpl/UpdateInteractionTopics/Procedure"
+}

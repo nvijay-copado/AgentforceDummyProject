@@ -1,0 +1,66 @@
+{
+    "Description": "Retrieves a list of offers from the catalog using a filter",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetProducts",
+    "OmniProcessId": {
+        "Name": "Get Catalog",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Demo/GetCatalog/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CPQv2",
+        "OmniProcessId": {
+            "Name": "Get Catalog",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Demo/GetCatalog/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Demo/GetCatalog/Procedure/CPQv2",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CPQv2",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "cartId": "%CreateOrder:records|1:Id%",
+            "filters": "==IF(%SetCatalogFilters:filterBySpec%, \"%SetCatalogFilters:filterBySpec%,%SetCatalogFilters:filterByCode%\", \"%SetCatalogFilters:filterByCode%\")",
+            "includeAttachment": true,
+            "includeAttributes": true,
+            "maxProdListHierarchy": 1,
+            "sortBy": "Product2.ProductCode_ASC"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction2",
+        "remoteClass": "%vlocity_namespace%.CpqAppHandler",
+        "remoteMethod": "getCartsProducts",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Demo/GetCatalog/Procedure/GetProducts"
+}

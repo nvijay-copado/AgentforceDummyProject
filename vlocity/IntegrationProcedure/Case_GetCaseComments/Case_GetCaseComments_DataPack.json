@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "Case_GetCaseComments_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GET Case Comments",
+    "OmniProcessElement": [
+        "Case_GetCaseComments_Element_DR_GetCaseComments.json",
+        "Case_GetCaseComments_Element_Response.json"
+    ],
+    "OmniProcessKey": "Case_GetCaseComments",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Case_GetCaseComments_PropertySetConfig.json",
+    "SubType": "GetCaseComments",
+    "Type": "Case",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Case/GetCaseComments/Procedure"
+}

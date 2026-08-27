@@ -1,0 +1,44 @@
+{
+    "additionalChainableResponse": {
+    },
+    "additionalOutput": {
+    },
+    "chainableActualTimeLimit": null,
+    "chainableCpuLimit": 2000,
+    "chainableDMLRowsLimit": null,
+    "chainableDMLStatementsLimit": null,
+    "chainableHeapSizeLimit": null,
+    "chainableQueriesLimit": 50,
+    "chainableQueryRowsLimit": null,
+    "chainableSoslQueriesLimit": null,
+    "columnsPropertyMap": [
+    ],
+    "description": "",
+    "executionConditionalFormula": "",
+    "includeAllActionsInResponse": false,
+    "labelPlural": "",
+    "labelSingular": "",
+    "linkToExternalObject": "",
+    "nameColumn": "",
+    "queueableChainableCpuLimit": 40000,
+    "queueableChainableHeapSizeLimit": 6,
+    "queueableChainableQueriesLimit": 120,
+    "relationshipFieldsMap": [
+    ],
+    "responseDefaultData": {
+    },
+    "responseFormat": "JSON",
+    "responseJSONNode": "",
+    "responseJSONPath": "",
+    "returnFullDataJSON": false,
+    "returnOnlyAdditionalOutput": false,
+    "rollbackOnError": false,
+    "sendJSONNode": "",
+    "sendJSONPath": "",
+    "trackingCustomData": {
+    },
+    "ttlMinutes": 5,
+    "useFormulas": true,
+    "vlcResponseHeaders": {
+    }
+}

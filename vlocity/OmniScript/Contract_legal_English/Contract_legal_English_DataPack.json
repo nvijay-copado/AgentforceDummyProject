@@ -1,0 +1,21 @@
+{
+    "Description": "SubhaTestDescription",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": false,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "SubhaTestOmni",
+    "OmniProcessElement": "Contract_legal_English_Element_Step1.json",
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "Contract_legal_English_PropertySetConfig.json",
+    "SubType": "legal",
+    "Type": "Contract",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Contract/legal/English"
+}

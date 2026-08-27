@@ -1,0 +1,78 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetValue",
+    "OmniProcessId": {
+        "Name": "AbstractionService",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CacheGetValue",
+        "OmniProcessId": {
+            "Name": "AbstractionService",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/CacheGetValue",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CacheGetValue",
+    "ParentElementType": "Cache Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "GetOption": "=IF(%RunOption% == 14 OR %Action%==\"GetAttribute\", \"Attribute\", \n    IF(%RunOption% == 15 OR %Action%==\"GetField\", \"Field\", \n        IF(%RunOption% ==16 OR %Action% ==\"GetAttributeField\",\"AttributeField\",\"Attribute\")\n    )\n)",
+            "ItemId": "%ItemId%",
+            "ListAttributesGroup": "=FILTER(LIST(%Match:MatchData:ListAttributes%),\"TargetType == 'Attribute'\")",
+            "ListFieldsGroup": "=FILTER(LIST(%Match:MatchData:ListAttributes%),\"TargetType == 'Field'\")",
+            "ObjectId": "%ObjectId%",
+            "SObject": "%SObject%",
+            "attributeList": "%attributeList%",
+            "ignoreProductInMetadata": "%ignoreProductInMetadata%",
+            "listAccountId": "%listAccountId%",
+            "listContextId": "%listContextId%",
+            "listItemId": "%listItemId%",
+            "listOpportunityId": "%listOpportunityId%",
+            "listOrderId": "%listOrderId%",
+            "listQuoteId": "%listQuoteId%",
+            "listRootAssetId": "%listRootAssetId%",
+            "listRootItemId": "%listRootItemId%",
+            "listSubscriptionId": "%listSubscriptionId%",
+            "searchLogic": "%searchLogic%",
+            "useMetadataStructure": "%useMetadataStructure%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction13",
+        "remoteClass": "%vlocity_namespace%.B2CCmexGetValue",
+        "remoteMethod": "getValue",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/GetValue"
+}

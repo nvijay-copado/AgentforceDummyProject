@@ -1,0 +1,218 @@
+[
+    {
+        "FormulaExpression": "IF(AND(DR_GetOrders:OrderAgeNotification=\"DoNotNotify\",DR_GetOrders:OrderStartDateDiff<SetRecordAgeLimits:OrderUpcoming),\"Upcoming\",DR_GetOrders:OrderAgeNotification)",
+        "FormulaResultPath": "DR_GetOrders:OrderUpcomingNotification",
+        "FormulaSequence": 3,
+        "GlobalKey": "Transform Orders into Order NotificationsCustom3860",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Orders into Order Notifications",
+        "OmniDataTransformationId": {
+            "Name": "Transform Orders into Order Notifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Orders into Order Notifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AND(DR_GetOrders:OrderStartDateDiff>SetRecordAgeLimits:OrderOpenAge,DR_GetOrders:OrderStatus!=\"Activated\"),\"Overdue\",\"DoNotNotify\")",
+        "FormulaResultPath": "DR_GetOrders:OrderAgeNotification",
+        "FormulaSequence": 2,
+        "GlobalKey": "Transform Orders into Order NotificationsCustom9362",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Orders into Order Notifications",
+        "OmniDataTransformationId": {
+            "Name": "Transform Orders into Order Notifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Orders into Order Notifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "SUM(0-DATEDIFF(TODAY,DR_GetOrders:StartDate))",
+        "FormulaResultPath": "DR_GetOrders:OrderStartDateDiff",
+        "FormulaSequence": 1,
+        "GlobalKey": "Transform Orders into Order NotificationsCustom7348",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Orders into Order Notifications",
+        "OmniDataTransformationId": {
+            "Name": "Transform Orders into Order Notifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Orders into Order Notifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Transform Orders into Order NotificationsCustom611",
+        "InputFieldName": "DR_GetOrders:OrderStartDateDiff",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Orders into Order Notifications",
+        "OmniDataTransformationId": {
+            "Name": "Transform Orders into Order Notifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Orders into Order Notifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DateDiffCalc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Transform Orders into Order NotificationsCustom6648",
+        "InputFieldName": "DR_GetOrders:OrderAgeNotification",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Orders into Order Notifications",
+        "OmniDataTransformationId": {
+            "Name": "Transform Orders into Order Notifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Orders into Order Notifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NotificationType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Transform Orders into Order NotificationsCustom4795",
+        "InputFieldName": "DR_GetOrders:OrderUpcomingNotification",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Orders into Order Notifications",
+        "OmniDataTransformationId": {
+            "Name": "Transform Orders into Order Notifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Orders into Order Notifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NotificationType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "order",
+        "GlobalKey": "Transform Orders into Order NotificationsCustom5673",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Orders into Order Notifications",
+        "OmniDataTransformationId": {
+            "Name": "Transform Orders into Order Notifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Orders into Order Notifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ObjectType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Transform Orders into Order NotificationsCustom2163",
+        "InputFieldName": "DR_GetOrders:OrderId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Orders into Order Notifications",
+        "OmniDataTransformationId": {
+            "Name": "Transform Orders into Order Notifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Orders into Order Notifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Transform Orders into Order NotificationsCustom1145",
+        "InputFieldName": "DR_GetOrders:OrderNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Orders into Order Notifications",
+        "OmniDataTransformationId": {
+            "Name": "Transform Orders into Order Notifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Orders into Order Notifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Transform Orders into Order NotificationsCustom7091",
+        "InputFieldName": "DR_GetOrders:StartDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Orders into Order Notifications",
+        "OmniDataTransformationId": {
+            "Name": "Transform Orders into Order Notifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Orders into Order Notifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(MM/dd/yyyy)",
+        "OutputFieldName": "RecordStartDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Transform Orders into Order NotificationsCustom5180",
+        "InputFieldName": "DR_GetOrders:OrderStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Orders into Order Notifications",
+        "OmniDataTransformationId": {
+            "Name": "Transform Orders into Order Notifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Orders into Order Notifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "CPQ_BulkUpdateCartGroupIdsFinishProcess_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQ_BulkUpdateCartGroupIdsFinishProcess",
+    "OmniProcessElement": [
+        "CPQ_BulkUpdateCartGroupIdsFinishProcess_Element_SendAppNotification.json",
+        "CPQ_BulkUpdateCartGroupIdsFinishProcess_Element_SendAppNotificationWithMessage.json",
+        "CPQ_BulkUpdateCartGroupIdsFinishProcess_Element_SetExecuteNextStep.json"
+    ],
+    "OmniProcessKey": "CPQ_BulkUpdateCartGroupIdsFinishProcess",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_BulkUpdateCartGroupIdsFinishProcess_PropertySetConfig.json",
+    "SubType": "BulkUpdateCartGroupIdsFinishProcess",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/BulkUpdateCartGroupIdsFinishProcess/Procedure"
+}

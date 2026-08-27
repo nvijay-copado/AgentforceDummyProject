@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "Demo_CreateTroubleshootingCase_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Create Troubleshooting Case",
+    "OmniProcessElement": [
+        "Demo_CreateTroubleshootingCase_Element_CreateCase.json",
+        "Demo_CreateTroubleshootingCase_Element_GetCaseDetails.json",
+        "Demo_CreateTroubleshootingCase_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_CreateTroubleshootingCase",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_CreateTroubleshootingCase_PropertySetConfig.json",
+    "SubType": "CreateTroubleshootingCase",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/CreateTroubleshootingCase/Procedure"
+}

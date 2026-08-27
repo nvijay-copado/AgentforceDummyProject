@@ -1,0 +1,261 @@
+[
+    {
+        "FormulaExpression": "CONCAT(\"20\", SUBSTRING(%CardExpiration%, 2, 4))",
+        "FormulaResultPath": "CardExpirationYear",
+        "FormulaSequence": 3,
+        "GlobalKey": "DemoAddPaymentMethod175894109823179",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoAddPaymentMethod",
+        "OmniDataTransformationId": {
+            "Name": "DemoAddPaymentMethod",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoAddPaymentMethod",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(SUBSTRING(%CardNumber%, 0, 1)==\"4\", \"VISA\", IF(SUBSTRING(%CardNumber%, 0, 1)==\"5\", \"Master Card\", \"DISCOVER\"))",
+        "FormulaResultPath": "CardType",
+        "FormulaSequence": 1,
+        "GlobalKey": "DemoAddPaymentMethod6344547491136794",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoAddPaymentMethod",
+        "OmniDataTransformationId": {
+            "Name": "DemoAddPaymentMethod",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoAddPaymentMethod",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "SUBSTRING(%CardExpiration%, 0, 2)",
+        "FormulaResultPath": "CardExpirationMonth",
+        "FormulaSequence": 2,
+        "GlobalKey": "DemoAddPaymentMethod4250929224042561",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoAddPaymentMethod",
+        "OmniDataTransformationId": {
+            "Name": "DemoAddPaymentMethod",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoAddPaymentMethod",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoAddPaymentMethod8104555132334832",
+        "InputFieldName": "AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "DemoAddPaymentMethod",
+        "OmniDataTransformationId": {
+            "Name": "DemoAddPaymentMethod",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoAddPaymentMethod",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__AccountId__c",
+        "OutputObjectName": "%vlocity_namespace%__PaymentMethod__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoAddPaymentMethod850948951725121",
+        "InputFieldName": "CardHolderName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "DemoAddPaymentMethod",
+        "OmniDataTransformationId": {
+            "Name": "DemoAddPaymentMethod",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoAddPaymentMethod",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "%vlocity_namespace%__CardHolderName__c",
+        "OutputObjectName": "%vlocity_namespace%__PaymentMethod__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoAddPaymentMethod8655701629973265",
+        "InputFieldName": "CardNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoAddPaymentMethod",
+        "OmniDataTransformationId": {
+            "Name": "DemoAddPaymentMethod",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoAddPaymentMethod",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__CardNumber__c",
+        "OutputObjectName": "%vlocity_namespace%__PaymentMethod__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoAddPaymentMethod37380303498325373",
+        "InputFieldName": "CardType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "DemoAddPaymentMethod",
+        "OmniDataTransformationId": {
+            "Name": "DemoAddPaymentMethod",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoAddPaymentMethod",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "%vlocity_namespace%__CardType__c",
+        "OutputObjectName": "%vlocity_namespace%__PaymentMethod__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoAddPaymentMethod2389468855960415",
+        "InputFieldName": "CardExpirationMonth",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoAddPaymentMethod",
+        "OmniDataTransformationId": {
+            "Name": "DemoAddPaymentMethod",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoAddPaymentMethod",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__ExpirationMonth__c",
+        "OutputObjectName": "%vlocity_namespace%__PaymentMethod__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DemoAddPaymentMethod6370347325382437",
+        "InputFieldName": "CardExpirationYear",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoAddPaymentMethod",
+        "OmniDataTransformationId": {
+            "Name": "DemoAddPaymentMethod",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoAddPaymentMethod",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__ExpirationYear__c",
+        "OutputObjectName": "%vlocity_namespace%__PaymentMethod__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "DemoAddPaymentMethod13980749310630358",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoAddPaymentMethod",
+        "OmniDataTransformationId": {
+            "Name": "DemoAddPaymentMethod",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoAddPaymentMethod",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "%vlocity_namespace%__IsActive__c",
+        "OutputObjectName": "%vlocity_namespace%__PaymentMethod__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "DemoAddPaymentMethod7253032509698101",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoAddPaymentMethod",
+        "OmniDataTransformationId": {
+            "Name": "DemoAddPaymentMethod",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoAddPaymentMethod",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "%vlocity_namespace%__IsPrimary__c",
+        "OutputObjectName": "%vlocity_namespace%__PaymentMethod__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Credit Card",
+        "GlobalKey": "DemoAddPaymentMethod761498134857578",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DemoAddPaymentMethod",
+        "OmniDataTransformationId": {
+            "Name": "DemoAddPaymentMethod",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoAddPaymentMethod",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "%vlocity_namespace%__MethodType__c",
+        "OutputObjectName": "%vlocity_namespace%__PaymentMethod__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "DemoAddPaymentMethod22536438349354682",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DemoAddPaymentMethod",
+        "OmniDataTransformationId": {
+            "Name": "DemoAddPaymentMethod",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DemoAddPaymentMethod",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__PaymentMethod__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

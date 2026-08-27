@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "vpl_ValidateVoucherCodeStatus_SampleInput.json",
+    "Description": "VIP to Validate Voucher Code using mock IO and provides  Voucher Status (Success/ Failure) along with balance amount. 26 April 2021 - updated to call webhook API",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "VPL-ValidateVoucherCodeStatus",
+    "OmniProcessElement": [
+        "vpl_ValidateVoucherCodeStatus_Element_ValidateVoucherCodeSuccess.json",
+        "vpl_ValidateVoucherCodeStatus_Element_ValidateVoucherCodeFailure.json",
+        "vpl_ValidateVoucherCodeStatus_Element_UpdateInteractionTopic.json",
+        "vpl_ValidateVoucherCodeStatus_Element_VoucherResponseAction.json"
+    ],
+    "OmniProcessKey": "vpl_ValidateVoucherCodeStatus",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "vpl_ValidateVoucherCodeStatus_PropertySetConfig.json",
+    "SubType": "ValidateVoucherCodeStatus",
+    "Type": "vpl",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/vpl/ValidateVoucherCodeStatus/Procedure"
+}

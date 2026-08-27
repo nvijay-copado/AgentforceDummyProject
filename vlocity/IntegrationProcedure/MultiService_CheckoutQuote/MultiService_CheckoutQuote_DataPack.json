@@ -1,0 +1,29 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "Creates Order-Member, Sub-Quote checkout (creates Sub-Order), establishes parent and group relationships",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CheckoutQuote",
+    "OmniProcessElement": [
+        "MultiService_CheckoutQuote_Element_GetQuoteAndOrderMember.json",
+        "MultiService_CheckoutQuote_Element_CreateOrUpdateOrderMember.json",
+        "MultiService_CheckoutQuote_Element_CreateOrder.json",
+        "MultiService_CheckoutQuote_Element_UpdateSubOrder.json",
+        "MultiService_CheckoutQuote_Element_SetResponse.json"
+    ],
+    "OmniProcessKey": "MultiService_CheckoutQuote",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "MultiService_CheckoutQuote_PropertySetConfig.json",
+    "SubType": "CheckoutQuote",
+    "Type": "MultiService",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/MultiService/CheckoutQuote/Procedure"
+}

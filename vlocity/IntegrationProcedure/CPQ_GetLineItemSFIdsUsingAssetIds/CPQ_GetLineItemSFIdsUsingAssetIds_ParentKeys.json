@@ -1,0 +1,6 @@
+[
+    "DataRaptor/CPQ - Transform To Array",
+    "DataRaptor/GetOrderLineItemSFIdsUsingAssetIds",
+    "DataRaptor/GetQuoteLineItemSFIdsUsingAssetIds",
+    "DataRaptor/TransformIdsToObjects"
+]

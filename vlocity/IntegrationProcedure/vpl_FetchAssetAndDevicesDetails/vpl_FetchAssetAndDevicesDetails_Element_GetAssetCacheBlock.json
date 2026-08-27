@@ -1,0 +1,29 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetAssetCacheBlock",
+    "OmniProcessId": {
+        "Name": "VPL-FetchAssetAndDevicesDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/vpl/FetchAssetAndDevicesDetails/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "cacheBlockOutput": {
+        },
+        "cacheKeys": {
+        },
+        "cacheType": "Session Cache",
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "ignoreCacheConditionalFormula": "",
+        "label": "CacheBlock3",
+        "refreshCacheConditionalFormula": "",
+        "show": null,
+        "ttlMinutes": 5
+    },
+    "Type": "Cache Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/vpl/FetchAssetAndDevicesDetails/Procedure/GetAssetCacheBlock"
+}

@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "Interaction_handleInteractionFieldClick_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "InteractionClick",
+    "OmniProcessElement": [
+        "Interaction_handleInteractionFieldClick_Element_createInteractionTopic.json",
+        "Interaction_handleInteractionFieldClick_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "Interaction_handleInteractionFieldClick",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Interaction_handleInteractionFieldClick_PropertySetConfig.json",
+    "SubType": "handleInteractionFieldClick",
+    "Type": "Interaction",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Interaction/handleInteractionFieldClick/Procedure"
+}

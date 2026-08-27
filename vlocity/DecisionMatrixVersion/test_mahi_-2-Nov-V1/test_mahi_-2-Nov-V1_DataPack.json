@@ -1,0 +1,27 @@
+{
+    "ApiName": "test_mahi_2_Nov_V1",
+    "CalculationMatrix.Name": "test_mahi_ 2 Nov",
+    "CalculationMatrixId": {
+        "Name": "test_mahi_ 2 Nov",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationMatrix/test_mahi_ 2 Nov",
+        "VlocityRecordSObjectType": "CalculationMatrix"
+    },
+    "CalculationMatrixRow": "test_mahi_-2-Nov-V1_Rows.json",
+    "DecisionMatrixDefinitionVerId": "9QOIg000000PAtCOAW",
+    "DscnModelNoteExportStatus": "",
+    "EndDateTime": "",
+    "GroupKey": "",
+    "GroupKeyValue": "",
+    "MatrixType": "Standard",
+    "Name": "test_mahi_ 2 Nov V1",
+    "Namespace": "",
+    "Rank": 1,
+    "StartDateTime": "2023-11-02T06:42:35.000Z",
+    "SubGroupKey": "",
+    "SubGroupKeyValue": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrixVersion",
+    "VlocityRecordSourceKey": "CalculationMatrixVersion/1/CalculationMatrix/test_mahi_ 2 Nov"
+}

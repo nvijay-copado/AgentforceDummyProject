@@ -1,0 +1,21 @@
+{
+    "Description": "new description",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": false,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "Japanese 振り仮名",
+    "Name": "test 73847 - mahi",
+    "OmniProcessElement": "test123_test4_Japanese-Zhen-riJia-Ming_Element_Step1.json",
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "test123_test4_Japanese-Zhen-riJia-Ming_PropertySetConfig.json",
+    "SubType": "test4",
+    "Type": "test123",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/test123/test4/Japanese 振り仮名"
+}

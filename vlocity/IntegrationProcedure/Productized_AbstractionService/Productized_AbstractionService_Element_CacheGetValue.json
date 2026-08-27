@@ -1,0 +1,63 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CacheGetValue",
+    "OmniProcessId": {
+        "Name": "AbstractionService",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "GetValueBlock",
+        "OmniProcessId": {
+            "Name": "AbstractionService",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/GetValueBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "GetValueBlock",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "cacheBlockOutput": {
+            "GetValue": "%GetValue%"
+        },
+        "cacheKeys": {
+            "GetOption": "=IF(%RunOption% == 14 OR %Action%==\"GetAttribute\", \"Attribute\", \n    IF(%RunOption% == 15 OR %Action%==\"GetField\", \"Field\", \n        IF(%RunOption% ==16 OR %Action% ==\"GetAttributeField\",\"AttributeField\",\"Attribute\")\n    )\n)",
+            "ItemId": "%ItemId%",
+            "ListAttributesGroup": "=FILTER(LIST(%Match:MatchData:ListAttributes%),\"TargetType == 'Attribute'\")",
+            "ListFieldsGroup": "=FILTER(LIST(%Match:MatchData:ListAttributes%),\"TargetType == 'Field'\")",
+            "ObjectId": "%ObjectId%",
+            "SObject": "%SObject%",
+            "attributeList": "%attributeList%",
+            "ignoreProductInMetadata": "%ignoreProductInMetadata%",
+            "listAccountId": "%listAccountId%",
+            "listContextId": "%listContextId%",
+            "listItemId": "%listItemId%",
+            "listOpportunityId": "%listOpportunityId%",
+            "listOrderId": "%listOrderId%",
+            "listQuoteId": "%listQuoteId%",
+            "listRootAssetId": "%listRootAssetId%",
+            "listRootItemId": "%listRootItemId%",
+            "listSubscriptionId": "%listSubscriptionId%",
+            "searchLogic": "%searchLogic%",
+            "useMetadataStructure": "%useMetadataStructure%"
+        },
+        "cacheType": "Org Cache",
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "ignoreCacheConditionalFormula": "IF(%IgnoreCacheGetValue% !=null AND %IgnoreCacheGetValue% !='', %IgnoreCacheGetValue%, true)",
+        "label": "CacheBlock6",
+        "refreshCacheConditionalFormula": "IF(%RefreshCacheGetValue% !=null AND %RefreshCacheGetValue% !='', %RefreshCacheGetValue%, false)",
+        "show": null,
+        "ttlMinutes": 2880
+    },
+    "Type": "Cache Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/CacheGetValue"
+}

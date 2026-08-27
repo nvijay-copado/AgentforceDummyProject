@@ -1,0 +1,22 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQ_UpdateCartItem",
+    "OmniProcessElement": "CPQ_UpdateCartItem_Element_RemoteAction1.json",
+    "OmniProcessKey": "CPQ_UpdateCartItem",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_UpdateCartItem_PropertySetConfig.json",
+    "SubType": "UpdateCartItem",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/UpdateCartItem/Procedure"
+}

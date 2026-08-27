@@ -1,0 +1,23 @@
+{
+    "CustomJavaScript": "CPQ_GetCartLineItemPrices_SampleInput.json",
+    "Description": "This Integration Procedure is used to fetch cart line items' prices.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQ_GetCartLineItemPrices",
+    "OmniProcessElement": "CPQ_GetCartLineItemPrices_Element_GetCartLineItemPricesRemoteAction.json",
+    "OmniProcessKey": "CPQ_GetCartLineItemPrices",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_GetCartLineItemPrices_PropertySetConfig.json",
+    "SubType": "GetCartLineItemPrices",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/GetCartLineItemPrices/Procedure"
+}

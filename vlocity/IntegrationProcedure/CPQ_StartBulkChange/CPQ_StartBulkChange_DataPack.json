@@ -1,0 +1,30 @@
+{
+    "CustomJavaScript": "CPQ_StartBulkChange_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQ_StartBulkChange",
+    "OmniProcessElement": [
+        "CPQ_StartBulkChange_Element_SetUserId.json",
+        "CPQ_StartBulkChange_Element_StartAsyncJobForQuote.json",
+        "CPQ_StartBulkChange_Element_StartAsyncJobForOrder.json",
+        "CPQ_StartBulkChange_Element_sendNotificationStarted.json",
+        "CPQ_StartBulkChange_Element_sendNotificationFailedToStart.json",
+        "CPQ_StartBulkChange_Element_QuoteResponse.json",
+        "CPQ_StartBulkChange_Element_OrderResponse.json"
+    ],
+    "OmniProcessKey": "CPQ_StartBulkChange",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_StartBulkChange_PropertySetConfig.json",
+    "SubType": "StartBulkChange",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/StartBulkChange/Procedure"
+}

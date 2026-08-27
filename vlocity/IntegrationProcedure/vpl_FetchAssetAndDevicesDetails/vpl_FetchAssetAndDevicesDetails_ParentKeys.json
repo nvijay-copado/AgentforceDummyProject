@@ -1,0 +1,6 @@
+[
+    "DataRaptor/VPL-GetAbstractionRecordByIntegrationKey",
+    "DataRaptor/VPL-GetAssetDetailsFromContext",
+    "IntegrationProcedure/Productized_AbstractionService",
+    "IntegrationProcedure/vpl_IdentifyUserTypeAndRoles"
+]

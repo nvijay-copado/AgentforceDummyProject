@@ -1,0 +1,6 @@
+[
+    "DataRaptor/CPQ - Get Root OpportunityItems",
+    "DataRaptor/CPQ - Get Root OrderItems",
+    "DataRaptor/CPQ - Get Root QuoteLineItems",
+    "IntegrationProcedure/CPQ_SendAppNotification"
+]

@@ -1,0 +1,42 @@
+{
+    "AuthorName": "Mahi",
+    "ClonedFromOmniUiCardKey": "",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 3,
+                    "name": "recordId",
+                    "val": "0012w00001LOOWPAA5"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "Query",
+            "value": {
+                "dsDelay": "",
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "query": "Select id, name , CustomerPriority__c, Active__c, QtrlyCheck__c, (Select id, name, TrackingNumber__c , Type,StageName from Opportunities) from Account where id = '{recordId}'",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "",
+    "IsManagedUsingStdDesigner": false,
+    "IsTrackingEnabled": false,
+    "Name": "flexCard1_dryRun",
+    "Namespace": "",
+    "OmniUiCardKey": "flexCard1_dryRun/Mahi/1.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "flexCard1_dryRun.json",
+    "SampleDataSourceResponse": "[{\"attributes\":{\"type\":\"Account\",\"url\":\"/services/data/v57.0/sobjects/Account/0012w00001LOOWPAA5\"},\"Id\":\"0012w00001LOOWPAA5\",\"Name\":\"Dickenson plc\",\"CustomerPriority__c\":\"Low\",\"Active__c\":\"Yes\",\"QtrlyCheck__c\":false,\"Opportunities\":{\"totalSize\":2,\"done\":true,\"records\":[{\"attributes\":{\"type\":\"Opportunity\",\"url\":\"/services/data/v57.0/sobjects/Opportunity/0062w00000Hg6NDAAZ\"},\"AccountId\":\"0012w00001LOOWPAA5\",\"Id\":\"0062w00000Hg6NDAAZ\",\"Name\":\"Dickenson Mobile Generators -1\",\"TrackingNumber__c\":\"TN-000001\",\"Type\":\"Existing Customer - Replacement\",\"StageName\":\"Id. Decision Makers\"},{\"attributes\":{\"type\":\"Opportunity\",\"url\":\"/services/data/v57.0/sobjects/Opportunity/0062w00000JynGIAAZ\"},\"AccountId\":\"0012w00001LOOWPAA5\",\"Id\":\"0062w00000JynGIAAZ\",\"Name\":\"Dickenson Mobile Generators\",\"TrackingNumber__c\":\"TN-000002\",\"Type\":\"New Customer\",\"StageName\":\"Qualification\"}]}}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/flexCard1_dryRun"
+}

@@ -1,0 +1,48 @@
+{
+    "Description": "This may not be necessary post 238 with the move to Permission Set Licenses",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "AssignManagedPackageLicense",
+    "OmniProcessId": {
+        "Name": "Assign User Licenses",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Demo/AssignUserLicenses/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "License": "%vlocity_namespace%",
+            "UserId": "=DECRYPT_IF_NECESSARY(%UserId%)"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "DemoUserRegistration",
+        "remoteMethod": "assignLicense",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Demo/AssignUserLicenses/Procedure/AssignManagedPackageLicense"
+}

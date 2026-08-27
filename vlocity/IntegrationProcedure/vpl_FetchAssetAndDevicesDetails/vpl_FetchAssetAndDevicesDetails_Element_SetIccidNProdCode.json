@@ -1,0 +1,31 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetIccidNProdCode",
+    "OmniProcessId": {
+        "Name": "VPL-FetchAssetAndDevicesDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/vpl/FetchAssetAndDevicesDetails/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "ICCIDValue": "=FILTER(LIST(%GetAssetDetailsAbsLayer:result:VALUES%),'(IntegrationKey == \"VPL_MLNS_ATTR_ICCID\")')",
+            "SimCardProductCode": "%GetAssetDetailsAbsLayer:result:ProductCode%"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/vpl/FetchAssetAndDevicesDetails/Procedure/SetIccidNProdCode"
+}

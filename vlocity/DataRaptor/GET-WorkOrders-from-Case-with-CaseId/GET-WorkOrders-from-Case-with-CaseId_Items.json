@@ -1,0 +1,159 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "CaseId",
+        "GlobalKey": "GET WorkOrders from Case with CaseIdCustoma0h4x00000ADqfgAADItem0",
+        "InputFieldName": "CaseId",
+        "InputObjectName": "WorkOrder",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET WorkOrders from Case with CaseId",
+        "OmniDataTransformationId": {
+            "Name": "GET WorkOrders from Case with CaseId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET WorkOrders from Case with CaseId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "WorkOrder",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET WorkOrders from Case with CaseIdCustom4376",
+        "InputFieldName": "WorkOrder:CaseId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET WorkOrders from Case with CaseId",
+        "OmniDataTransformationId": {
+            "Name": "GET WorkOrders from Case with CaseId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET WorkOrders from Case with CaseId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkOrder:CaseId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET WorkOrders from Case with CaseIdCustoma0h4x00000ADqfgAADItem4",
+        "InputFieldName": "WorkOrder:StartDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET WorkOrders from Case with CaseId",
+        "OmniDataTransformationId": {
+            "Name": "GET WorkOrders from Case with CaseId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET WorkOrders from Case with CaseId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkOrder:Date",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET WorkOrders from Case with CaseIdCustoma0h4x00000ADqfgAADItem3",
+        "InputFieldName": "WorkOrder:Description",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET WorkOrders from Case with CaseId",
+        "OmniDataTransformationId": {
+            "Name": "GET WorkOrders from Case with CaseId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET WorkOrders from Case with CaseId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkOrder:Description",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET WorkOrders from Case with CaseIdCustoma0h4x00000ADqfgAADItem5",
+        "InputFieldName": "WorkOrder:Status",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET WorkOrders from Case with CaseId",
+        "OmniDataTransformationId": {
+            "Name": "GET WorkOrders from Case with CaseId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET WorkOrders from Case with CaseId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkOrder:Status",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET WorkOrders from Case with CaseIdCustoma0h4x00000ADqfgAADItem6",
+        "InputFieldName": "WorkOrder:Subject",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET WorkOrders from Case with CaseId",
+        "OmniDataTransformationId": {
+            "Name": "GET WorkOrders from Case with CaseId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET WorkOrders from Case with CaseId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkOrder:Subject",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET WorkOrders from Case with CaseIdCustoma0h4x00000ADqfgAADItem7",
+        "InputFieldName": "WorkOrder:WorkOrderNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET WorkOrders from Case with CaseId",
+        "OmniDataTransformationId": {
+            "Name": "GET WorkOrders from Case with CaseId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET WorkOrders from Case with CaseId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkOrder:WONumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GET WorkOrders from Case with CaseIdCustom8246",
+        "InputFieldName": "WorkOrder:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GET WorkOrders from Case with CaseId",
+        "OmniDataTransformationId": {
+            "Name": "GET WorkOrders from Case with CaseId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GET WorkOrders from Case with CaseId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkOrder:WorkOrderId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,50 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ReturnDevices",
+    "OmniProcessId": {
+        "Name": "VPL-FetchAssetAndDevicesDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/vpl/FetchAssetAndDevicesDetails/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "AccountId": "%GetAssetDetails:AccountId%",
+            "AssetDetails": "%GetAssetDetailsAbsLayer:result:VALUES%",
+            "AssetId": "%GetAssetDetails:AssetId%",
+            "AssetStatus": "%GetAssetDetails:AssetStatus%",
+            "ContactId": "%GetAssetDetails:ContactId%",
+            "CurrentUserType": "%GetUserType:UserType%",
+            "FullName": "%GetAssetDetails:FullName%",
+            "ICCID": "%SetIccidNProdCode:ICCIDValue:Value%",
+            "MSISDN": "%GetAssetDetails:MSISDN%",
+            "RootId": "%GetAssetDetails:RootId%",
+            "SimProductCode": "%SetIccidNProdCode:SimCardProductCode%",
+            "SubscriptionId": "%GetAssetDetails:SubscriptionId%",
+            "SubscriptionName": "%GetAssetDetails:SubscriptionName%",
+            "UserType": "%GetUserType:UserType%",
+            "baseURL": "%GetUserType:baseURL%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "DeviceInfo",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "AllDevices",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/vpl/FetchAssetAndDevicesDetails/Procedure/ReturnDevices"
+}

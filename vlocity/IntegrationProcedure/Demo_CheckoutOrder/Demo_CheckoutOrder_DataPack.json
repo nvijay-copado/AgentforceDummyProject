@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "Demo_CheckoutOrder_SampleInput.json",
+    "Description": "Performs the final Order Checkout Step which will create the Orchestration Plan (if configured).",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Checkout Order",
+    "OmniProcessElement": [
+        "Demo_CheckoutOrder_Element_Checkout.json",
+        "Demo_CheckoutOrder_Element_GetOrderDetails.json",
+        "Demo_CheckoutOrder_Element_UpdateOrderOwnership.json",
+        "Demo_CheckoutOrder_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_CheckoutOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_CheckoutOrder_PropertySetConfig.json",
+    "SubType": "CheckoutOrder",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/CheckoutOrder/Procedure"
+}

@@ -1,0 +1,38 @@
+{
+    "Description": "If a future dated order cannot be created, an error will be returned to the client.",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ReturnError",
+    "OmniProcessId": {
+        "Name": "Asset to Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Demo/AssetToOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "error": "Unable to create Future Dated Order.  There may be another change-order in progress for this asset.",
+            "errorDetails": "%CanCreateOrder%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "%CanCreateOrder:canCreateFDO% == $Vlocity.FALSE",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Demo/AssetToOrder/Procedure/ReturnError"
+}

@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "CPQ_GetPriceDetail_SampleInput.json",
+    "Description": "This Integration Procedure will fetch price detail for a line item in a cart for specified charge type.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQGetPriceDetailIP",
+    "OmniProcessElement": [
+        "CPQ_GetPriceDetail_Element_SetChargeTypeFields.json",
+        "CPQ_GetPriceDetail_Element_GetPriceDetailRemoteAction.json",
+        "CPQ_GetPriceDetail_Element_GetPriceDetailResponseAction.json"
+    ],
+    "OmniProcessKey": "CPQ_GetPriceDetail",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_GetPriceDetail_PropertySetConfig.json",
+    "SubType": "GetPriceDetail",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/GetPriceDetail/Procedure"
+}

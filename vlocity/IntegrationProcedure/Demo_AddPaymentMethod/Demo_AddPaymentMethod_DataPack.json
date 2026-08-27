@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "Demo_AddPaymentMethod_SampleInput.json",
+    "Description": "Adds a Payment Method to an Account record.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Add Payment Method",
+    "OmniProcessElement": [
+        "Demo_AddPaymentMethod_Element_AddPaymentMethod.json",
+        "Demo_AddPaymentMethod_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_AddPaymentMethod",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_AddPaymentMethod_PropertySetConfig.json",
+    "SubType": "AddPaymentMethod",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/AddPaymentMethod/Procedure"
+}

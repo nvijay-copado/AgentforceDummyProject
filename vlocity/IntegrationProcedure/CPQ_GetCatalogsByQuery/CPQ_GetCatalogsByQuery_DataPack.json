@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "CPQ_GetCatalogsByQuery_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQGetCatalogsByQuery",
+    "OmniProcessElement": [
+        "CPQ_GetCatalogsByQuery_Element_RemoteAction1.json",
+        "CPQ_GetCatalogsByQuery_Element_LoopBlock1.json",
+        "CPQ_GetCatalogsByQuery_Element_DataRaptorTransformAction1.json",
+        "CPQ_GetCatalogsByQuery_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "CPQ_GetCatalogsByQuery",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_GetCatalogsByQuery_PropertySetConfig.json",
+    "SubType": "GetCatalogsByQuery",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/GetCatalogsByQuery/Procedure"
+}

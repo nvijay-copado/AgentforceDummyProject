@@ -1,0 +1,23 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "This IP will invoke remote method that executes adding child line items for the given set of rootIds",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ExecuteAddLineItems",
+    "OmniProcessElement": "CPQ_ExecuteAddLineItems_Element_ExecuteAddLineItems.json",
+    "OmniProcessKey": "CPQ_ExecuteAddLineItems",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_ExecuteAddLineItems_PropertySetConfig.json",
+    "SubType": "ExecuteAddLineItems",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/ExecuteAddLineItems/Procedure"
+}

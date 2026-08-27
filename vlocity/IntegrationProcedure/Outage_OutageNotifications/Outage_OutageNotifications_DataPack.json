@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "Outage_OutageNotifications_SampleInput.json",
+    "Description": "Gets outages from public_outage_external using a ServiceAccountId",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GET Outage Notifications from Public_Outage_External with ServiceAccountId",
+    "OmniProcessElement": [
+        "Outage_OutageNotifications_Element_DR_GetOutages.json",
+        "Outage_OutageNotifications_Element_Response.json"
+    ],
+    "OmniProcessKey": "Outage_OutageNotifications",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Outage_OutageNotifications_PropertySetConfig.json",
+    "SubType": "OutageNotifications",
+    "Type": "Outage",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Outage/OutageNotifications/Procedure"
+}

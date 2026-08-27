@@ -1,0 +1,215 @@
+[
+    {
+        "FormulaExpression": "IF(DR_GetCases:DateDiffCalc>SetRecordAgeLimits:CaseOpenAge,\"Overdue\",\"DoNotNotify\")",
+        "FormulaResultPath": "DR_GetCases:NotificationType",
+        "FormulaSequence": 2,
+        "GlobalKey": "Transform Case into Case Notifications StandardizedCustoma0h4x00000ADscbAADItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Case into Case Notifications Standardized",
+        "OmniDataTransformationId": {
+            "Name": "Transform Case into Case Notifications Standardized",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Case into Case Notifications Standardized",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "SUM(0-(DATEDIFF(TODAY,DR_GetCases:CreatedDate)))",
+        "FormulaResultPath": "DR_GetCases:DateDiffCalc",
+        "FormulaSequence": 1,
+        "GlobalKey": "Transform Case into Case Notifications StandardizedCustoma0h4x00000ADscbAADItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Case into Case Notifications Standardized",
+        "OmniDataTransformationId": {
+            "Name": "Transform Case into Case Notifications Standardized",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Case into Case Notifications Standardized",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Transform Case into Case Notifications StandardizedCustoma0h4x00000ADscbAADItem3",
+        "InputFieldName": "DR_GetCases:DateDiffCalc",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Case into Case Notifications Standardized",
+        "OmniDataTransformationId": {
+            "Name": "Transform Case into Case Notifications Standardized",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Case into Case Notifications Standardized",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DateDiffCalc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Transform Case into Case Notifications StandardizedCustoma0h4x00000ADscbAADItem2",
+        "InputFieldName": "DR_GetCases:NotificationType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Case into Case Notifications Standardized",
+        "OmniDataTransformationId": {
+            "Name": "Transform Case into Case Notifications Standardized",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Case into Case Notifications Standardized",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NotificationType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "case",
+        "GlobalKey": "Transform Case into Case Notifications StandardizedCustom3479",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Case into Case Notifications Standardized",
+        "OmniDataTransformationId": {
+            "Name": "Transform Case into Case Notifications Standardized",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Case into Case Notifications Standardized",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ObjectType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Transform Case into Case Notifications StandardizedCustoma0h4x00000ADscbAADItem6",
+        "InputFieldName": "DR_GetCases:CreatedDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Case into Case Notifications Standardized",
+        "OmniDataTransformationId": {
+            "Name": "Transform Case into Case Notifications Standardized",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Case into Case Notifications Standardized",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordCreatedDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Transform Case into Case Notifications StandardizedCustoma0h4x00000ADscbAADItem4",
+        "InputFieldName": "DR_GetCases:CaseId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Case into Case Notifications Standardized",
+        "OmniDataTransformationId": {
+            "Name": "Transform Case into Case Notifications Standardized",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Case into Case Notifications Standardized",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Transform Case into Case Notifications StandardizedCustoma0h4x00000ADscbAADItem5",
+        "InputFieldName": "DR_GetCases:CaseNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Case into Case Notifications Standardized",
+        "OmniDataTransformationId": {
+            "Name": "Transform Case into Case Notifications Standardized",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Case into Case Notifications Standardized",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Transform Case into Case Notifications StandardizedCustoma0h4x00000ADscbAADItem7",
+        "InputFieldName": "DR_GetCases:Status",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Case into Case Notifications Standardized",
+        "OmniDataTransformationId": {
+            "Name": "Transform Case into Case Notifications Standardized",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Case into Case Notifications Standardized",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Transform Case into Case Notifications StandardizedCustoma0h4x00000ADscbAADItem8",
+        "InputFieldName": "DR_GetCases:Subject",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Case into Case Notifications Standardized",
+        "OmniDataTransformationId": {
+            "Name": "Transform Case into Case Notifications Standardized",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Case into Case Notifications Standardized",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordSubject",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Transform Case into Case Notifications StandardizedCustom1827",
+        "InputFieldName": "DR_GetCases:Type",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Transform Case into Case Notifications Standardized",
+        "OmniDataTransformationId": {
+            "Name": "Transform Case into Case Notifications Standardized",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Transform Case into Case Notifications Standardized",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

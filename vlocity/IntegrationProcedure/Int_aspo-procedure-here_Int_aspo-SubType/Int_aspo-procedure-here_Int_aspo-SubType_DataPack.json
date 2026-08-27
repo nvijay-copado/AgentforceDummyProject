@@ -1,0 +1,22 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "description for US -2",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Int__aspo%$^*#@$--/[procedure here]New Integration Procedure",
+    "OmniProcessKey": "Int__aspo%$^*#@$--/[procedurehere]_Int__aspo%$^*#@$--/[SubType]",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Int_aspo-procedure-here_Int_aspo-SubType_PropertySetConfig.json",
+    "SubType": "Int__aspo%$^*#@$--/[SubType]",
+    "Type": "Int__aspo%$^*#@$--/[procedure here]",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Generated-862435169"
+}

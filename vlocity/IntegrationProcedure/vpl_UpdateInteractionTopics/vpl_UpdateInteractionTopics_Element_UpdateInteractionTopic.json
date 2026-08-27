@@ -1,0 +1,47 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateInteractionTopic",
+    "OmniProcessId": {
+        "Name": "VPL-UpdateInteractionTopicsIP",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/vpl/UpdateInteractionTopics/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "ProcessName": "%ProcessName%",
+            "assetId": "%assetId%",
+            "caseId": "%caseId%",
+            "interactionTopicId": "%interactionTopicId%",
+            "orderId": "%orderId%",
+            "outcome": "%outcome%",
+            "subscriptionId": "%subscriptionId%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "VPL-UpdateInteractionTopic",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "%vlocity_namespace%__CustomerInteractionTopic__c_1",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/vpl/UpdateInteractionTopics/Procedure/UpdateInteractionTopic"
+}

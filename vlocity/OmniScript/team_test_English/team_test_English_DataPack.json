@@ -1,0 +1,23 @@
+{
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": false,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "English",
+    "Name": "omni - 13 june",
+    "OmniProcessElement": [
+        "team_test_English_Element_DataRaptorExtractAction1.json",
+        "team_test_English_Element_Step1.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "team_test_English_PropertySetConfig.json",
+    "SubType": "test",
+    "Type": "team",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/team/test/English"
+}

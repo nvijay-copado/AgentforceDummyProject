@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "VDO_CheckOutage_SampleInput.json",
+    "Description": "Checks for outage against outage region for customer.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "New Integration Procedure",
+    "OmniProcessElement": [
+        "VDO_CheckOutage_Element_GetCustomerRegionStatus.json",
+        "VDO_CheckOutage_Element_SetOutage.json",
+        "VDO_CheckOutage_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "VDO_CheckOutage",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "VDO_CheckOutage_PropertySetConfig.json",
+    "SubType": "CheckOutage",
+    "Type": "VDO",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/VDO/CheckOutage/Procedure"
+}

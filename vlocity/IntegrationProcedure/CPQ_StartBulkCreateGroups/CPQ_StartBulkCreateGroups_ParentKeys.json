@@ -1,0 +1,7 @@
+[
+    "DataRaptor/CPQ-CreateOpportunity",
+    "DataRaptor/CPQ-Get-Groups-To-Create-List",
+    "DataRaptor/CPQ-Get-Products-From-Assets",
+    "DataRaptor/CreateOrderRequestData",
+    "DataRaptor/CreateQuoteRequestData"
+]
