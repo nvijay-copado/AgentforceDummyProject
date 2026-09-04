@@ -1,0 +1,225 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AccountId",
+        "GlobalKey": "Get WorkOrders for Account with AccountId9999981617617182",
+        "InputFieldName": "AccountId",
+        "InputObjectName": "WorkOrder",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Get WorkOrders for Account with AccountId",
+        "OmniDataTransformationId": {
+            "Name": "Get WorkOrders for Account with AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Get WorkOrders for Account with AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "WorkOrder",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "AccountId",
+        "GlobalKey": "Get WorkOrders for Account with AccountId02634773687574743",
+        "InputFieldName": "Account.%vlocity_namespace%__RootAccountId__c",
+        "InputObjectName": "WorkOrder",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Get WorkOrders for Account with AccountId",
+        "OmniDataTransformationId": {
+            "Name": "Get WorkOrders for Account with AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Get WorkOrders for Account with AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "WorkOrder",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(WorkOrderDateDiff>SetRecordAgeLimits:WorkOrderWithin,\"check\",\"donotcheck\")",
+        "FormulaResultPath": "WorkOrderWithinNotification",
+        "FormulaSequence": 2,
+        "GlobalKey": "Get WorkOrders for Account with AccountId4264028334645804",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Get WorkOrders for Account with AccountId",
+        "OmniDataTransformationId": {
+            "Name": "Get WorkOrders for Account with AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Get WorkOrders for Account with AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "SUM(0-(DATEDIFF(TODAY,WorkOrder:StartDate)))",
+        "FormulaResultPath": "WorkOrderDateDiff",
+        "FormulaSequence": 1,
+        "GlobalKey": "Get WorkOrders for Account with AccountId7404226267295799",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Get WorkOrders for Account with AccountId",
+        "OmniDataTransformationId": {
+            "Name": "Get WorkOrders for Account with AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Get WorkOrders for Account with AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Get WorkOrders for Account with AccountIdCustom3502",
+        "InputFieldName": "WorkOrder:AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Get WorkOrders for Account with AccountId",
+        "OmniDataTransformationId": {
+            "Name": "Get WorkOrders for Account with AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Get WorkOrders for Account with AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkOrderAccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Get WorkOrders for Account with AccountIdCustom5747",
+        "InputFieldName": "WorkOrder:Account.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Get WorkOrders for Account with AccountId",
+        "OmniDataTransformationId": {
+            "Name": "Get WorkOrders for Account with AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Get WorkOrders for Account with AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkOrderAccountName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Get WorkOrders for Account with AccountId9119942263811269",
+        "InputFieldName": "WorkOrder:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Get WorkOrders for Account with AccountId",
+        "OmniDataTransformationId": {
+            "Name": "Get WorkOrders for Account with AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Get WorkOrders for Account with AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkOrderId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Get WorkOrders for Account with AccountId31853991020942174",
+        "InputFieldName": "WorkOrder:WorkOrderNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Get WorkOrders for Account with AccountId",
+        "OmniDataTransformationId": {
+            "Name": "Get WorkOrders for Account with AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Get WorkOrders for Account with AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkOrderNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Get WorkOrders for Account with AccountId7836197456869327",
+        "InputFieldName": "WorkOrder:StartDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Get WorkOrders for Account with AccountId",
+        "OmniDataTransformationId": {
+            "Name": "Get WorkOrders for Account with AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Get WorkOrders for Account with AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkOrderStartDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Get WorkOrders for Account with AccountIdCustom8819",
+        "InputFieldName": "WorkOrder:Status",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Get WorkOrders for Account with AccountId",
+        "OmniDataTransformationId": {
+            "Name": "Get WorkOrders for Account with AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Get WorkOrders for Account with AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkOrderStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Get WorkOrders for Account with AccountIdCustom2172",
+        "InputFieldName": "WorkOrder:WorkType.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Get WorkOrders for Account with AccountId",
+        "OmniDataTransformationId": {
+            "Name": "Get WorkOrders for Account with AccountId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Get WorkOrders for Account with AccountId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkOrderType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

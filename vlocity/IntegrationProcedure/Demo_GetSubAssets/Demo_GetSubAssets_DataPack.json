@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "Demo_GetSubAssets_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Get Sub Assets",
+    "OmniProcessElement": [
+        "Demo_GetSubAssets_Element_GetAssetDetails.json",
+        "Demo_GetSubAssets_Element_DRGetAccountSubAssets.json",
+        "Demo_GetSubAssets_Element_PrepareResponse.json",
+        "Demo_GetSubAssets_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_GetSubAssets",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_GetSubAssets_PropertySetConfig.json",
+    "SubType": "GetSubAssets",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/GetSubAssets/Procedure"
+}

@@ -1,0 +1,32 @@
+{
+    "Description": "Logic currently is based on the State:\nNY - No service\nTX -  Up to 500 Mbps\nOther - Up to 1 Gbps",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ServiceabilityLookup",
+    "OmniProcessId": {
+        "Name": "Serviceability Check",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Demo/ServiceabilityCheck/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "result": "=IF(%address:State%=='NY', 0, IF(%address:State%=='TX', 500, 1000))",
+            "resultText": "=IF(%address:State%=='NY', '0 Mbps', IF(%address:State%=='TX', '500 Mbps', '1 Gbps'))"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Demo/ServiceabilityCheck/Procedure/ServiceabilityLookup"
+}

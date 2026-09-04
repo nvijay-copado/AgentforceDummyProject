@@ -1,0 +1,49 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SendWelcomeEmail",
+    "OmniProcessId": {
+        "Name": "Send Welcome Email",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Demo/SendWelcomeEmail/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "OrgWideEmailAddress": "",
+        "actionMessage": "",
+        "attachmentList": "",
+        "chainOnStep": false,
+        "contentVersionList": "",
+        "disOnTplt": false,
+        "emailInformation": {
+            "bccAddressList": [
+            ],
+            "ccAddressList": [
+            ],
+            "emailBody": "<div>\n<p>Hi %GetUserDetails:FirstName%,</p>\n<p>Welcome to the <a href=\"%GetCommunityDetails:CommunityLoginUrl%\">%CommunityName% community</a>!</p>\n<p></p>\n<p>Your username is: %GetUserDetails:Username%</p>\n<p></p>\n<p>Thanks,</p>\n<p>%GetOrgDetails:OrgName%</p>\n</div>",
+            "emailSubject": "Welcome to %CommunityName%",
+            "setHtmlBody": true,
+            "toAddressList": [
+                "%GetUserDetails:UserEmail%"
+            ]
+        },
+        "emailTemplateInformation": {
+            "emailTargetObjectId": "%UserId%",
+            "emailTemplateName": "CommunityWelcomeEmailTemplate",
+            "saveAsActivity": false,
+            "whatId": "%CommunityId%"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "EmailAction1",
+        "show": null,
+        "staticDocList": [
+        ],
+        "useTemplate": false
+    },
+    "Type": "Email Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Demo/SendWelcomeEmail/Procedure/SendWelcomeEmail"
+}

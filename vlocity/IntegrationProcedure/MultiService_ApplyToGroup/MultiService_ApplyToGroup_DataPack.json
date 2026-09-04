@@ -1,0 +1,22 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ApplyToGroup",
+    "OmniProcessElement": "MultiService_ApplyToGroup_Element_ApplyToGroup.json",
+    "OmniProcessKey": "MultiService_ApplyToGroup",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "MultiService_ApplyToGroup_PropertySetConfig.json",
+    "SubType": "ApplyToGroup",
+    "Type": "MultiService",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/MultiService/ApplyToGroup/Procedure"
+}

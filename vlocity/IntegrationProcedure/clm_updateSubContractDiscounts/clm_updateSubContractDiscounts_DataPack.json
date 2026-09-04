@@ -1,0 +1,22 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Update Sub Contract Discount",
+    "OmniProcessElement": "clm_updateSubContractDiscounts_Element_UpdateSubContractDiscount.json",
+    "OmniProcessKey": "clm_updateSubContractDiscounts",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "clm_updateSubContractDiscounts_PropertySetConfig.json",
+    "SubType": "updateSubContractDiscounts",
+    "Type": "clm",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/clm/updateSubContractDiscounts/Procedure"
+}

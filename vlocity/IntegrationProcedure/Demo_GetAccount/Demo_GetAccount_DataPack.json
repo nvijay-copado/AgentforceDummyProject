@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "Demo_GetAccount_SampleInput.json",
+    "Description": "Retrieves the account information for a given User Id",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Retrieve Account Details",
+    "OmniProcessElement": [
+        "Demo_GetAccount_Element_GetUserDetails.json",
+        "Demo_GetAccount_Element_ResponseAction.json",
+        "Demo_GetAccount_Element_GetGuestUserDetails.json",
+        "Demo_GetAccount_Element_ResponseAction4GuestUser.json"
+    ],
+    "OmniProcessKey": "Demo_GetAccount",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_GetAccount_PropertySetConfig.json",
+    "SubType": "GetAccount",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/GetAccount/Procedure"
+}

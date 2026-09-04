@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "Demo_GetAssetsCore_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "DemoGetAssetsCore",
+    "OmniProcessElement": [
+        "Demo_GetAssetsCore_Element_DRGetAccountAssetsCore.json",
+        "Demo_GetAssetsCore_Element_CreateList.json",
+        "Demo_GetAssetsCore_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_GetAssetsCore",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_GetAssetsCore_PropertySetConfig.json",
+    "SubType": "GetAssetsCore",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/GetAssetsCore/Procedure"
+}

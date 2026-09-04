@@ -1,0 +1,23 @@
+{
+    "Description": "GetData:\nGet Data from Abstraction Layer (stored in salesforce custom metadata type)",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetDataBlock",
+    "OmniProcessId": {
+        "Name": "AbstractionService",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "Operation == \"GetData\" OR RunOption >=1",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock8",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/GetDataBlock"
+}

@@ -1,0 +1,23 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "This IP will invoke a remote method that executes creating of suborder from a quote and set of service type ids",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ExecuteQuoteToOrder",
+    "OmniProcessElement": "CPQ_ExecuteQuoteToOrder_Element_ExecuteQuoteToOrder.json",
+    "OmniProcessKey": "CPQ_ExecuteQuoteToOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_ExecuteQuoteToOrder_PropertySetConfig.json",
+    "SubType": "ExecuteQuoteToOrder",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/ExecuteQuoteToOrder/Procedure"
+}

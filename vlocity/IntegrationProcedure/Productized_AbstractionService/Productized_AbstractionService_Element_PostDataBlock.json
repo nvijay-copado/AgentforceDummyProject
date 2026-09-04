@@ -1,0 +1,23 @@
+{
+    "Description": "PostData:\n1) Disconnect Product - deleteCartsItems API\n2) Add Product - postCartsItems API\n3) Update 1 Order Item: putCartsItems API",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "PostDataBlock",
+    "OmniProcessId": {
+        "Name": "AbstractionService",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "Operation == \"PostData\" OR RunOption > 2",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock3",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/PostDataBlock"
+}

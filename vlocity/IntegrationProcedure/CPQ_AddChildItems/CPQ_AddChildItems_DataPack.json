@@ -1,0 +1,23 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "This IP will invoke remote method to add child items",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Add Child Items",
+    "OmniProcessElement": "CPQ_AddChildItems_Element_AddChildItems.json",
+    "OmniProcessKey": "CPQ_AddChildItems",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_AddChildItems_PropertySetConfig.json",
+    "SubType": "AddChildItems",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/AddChildItems/Procedure"
+}

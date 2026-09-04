@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "CPQ_GetCartSummary_SampleInput.json",
+    "Description": "This Integration Procedure returns the cart details, including pricing, account, multi-site, and additional action information for a given cart.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CPQGetCartSummaryIP",
+    "OmniProcessElement": [
+        "CPQ_GetCartSummary_Element_GetCartsRemoteAction.json",
+        "CPQ_GetCartSummary_Element_GetPriceListsRemoteAction.json",
+        "CPQ_GetCartSummary_Element_CartSummaryResponseAction1.json",
+        "CPQ_GetCartSummary_Element_CartSummaryResponseAction2.json"
+    ],
+    "OmniProcessKey": "CPQ_GetCartSummary",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_GetCartSummary_PropertySetConfig.json",
+    "SubType": "GetCartSummary",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/GetCartSummary/Procedure"
+}

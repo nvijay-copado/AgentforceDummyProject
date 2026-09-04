@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "Demo_GetAccountCases_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Get Account Cases",
+    "OmniProcessElement": [
+        "Demo_GetAccountCases_Element_DR_GetCases.json",
+        "Demo_GetAccountCases_Element_PrepareResponse.json",
+        "Demo_GetAccountCases_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_GetAccountCases",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_GetAccountCases_PropertySetConfig.json",
+    "SubType": "GetAccountCases",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/GetAccountCases/Procedure"
+}

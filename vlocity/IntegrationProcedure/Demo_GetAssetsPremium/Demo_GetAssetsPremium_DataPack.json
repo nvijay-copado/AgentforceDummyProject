@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "Demo_GetAssetsPremium_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Get Premium Assets",
+    "OmniProcessElement": [
+        "Demo_GetAssetsPremium_Element_DRGetAssetsPremium.json",
+        "Demo_GetAssetsPremium_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_GetAssetsPremium",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_GetAssetsPremium_PropertySetConfig.json",
+    "SubType": "GetAssetsPremium",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/GetAssetsPremium/Procedure"
+}

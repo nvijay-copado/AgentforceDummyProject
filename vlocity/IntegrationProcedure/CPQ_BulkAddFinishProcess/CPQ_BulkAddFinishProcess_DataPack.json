@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "CPQ_BulkAddFinishProcess_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Bulk Add Finish Process",
+    "OmniProcessElement": [
+        "CPQ_BulkAddFinishProcess_Element_SendAppNotification.json",
+        "CPQ_BulkAddFinishProcess_Element_SendAppNotificationWithMessage.json",
+        "CPQ_BulkAddFinishProcess_Element_SetExecuteNextStep.json"
+    ],
+    "OmniProcessKey": "CPQ_BulkAddFinishProcess",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_BulkAddFinishProcess_PropertySetConfig.json",
+    "SubType": "BulkAddFinishProcess",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/BulkAddFinishProcess/Procedure"
+}

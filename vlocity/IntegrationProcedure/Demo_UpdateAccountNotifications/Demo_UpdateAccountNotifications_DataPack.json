@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "Community demo update account notifications",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Update Account Notifications",
+    "OmniProcessElement": [
+        "Demo_UpdateAccountNotifications_Element_DRDemoUpdateAccountNotifications.json",
+        "Demo_UpdateAccountNotifications_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "Demo_UpdateAccountNotifications",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_UpdateAccountNotifications_PropertySetConfig.json",
+    "SubType": "UpdateAccountNotifications",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/UpdateAccountNotifications/Procedure"
+}

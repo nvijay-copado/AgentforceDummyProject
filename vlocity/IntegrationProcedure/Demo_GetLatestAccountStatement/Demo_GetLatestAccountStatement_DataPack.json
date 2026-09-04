@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "Demo_GetLatestAccountStatement_SampleInput.json",
+    "Description": "pull the most recent account statement",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Get Latest Account Statement",
+    "OmniProcessElement": [
+        "Demo_GetLatestAccountStatement_Element_drReadAccountCurrentStatement.json",
+        "Demo_GetLatestAccountStatement_Element_Response.json"
+    ],
+    "OmniProcessKey": "Demo_GetLatestAccountStatement",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Demo_GetLatestAccountStatement_PropertySetConfig.json",
+    "SubType": "GetLatestAccountStatement",
+    "Type": "Demo",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Demo/GetLatestAccountStatement/Procedure"
+}

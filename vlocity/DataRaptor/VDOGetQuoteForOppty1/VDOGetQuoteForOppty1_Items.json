@@ -1,0 +1,803 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Id",
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem0",
+        "InputFieldName": "Id",
+        "InputObjectName": "Opportunity",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Opportunity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Opportunity:Id",
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem3",
+        "InputFieldName": "OpportunityId",
+        "InputObjectName": "Quote",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Opportunity:Quote",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "NOT LIKE",
+        "FilterValue": "\".\"",
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem5",
+        "InputFieldName": "%vlocity_namespace%__LineNumber__c",
+        "InputObjectName": "QuoteLineItem",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Opportunity:Quote:QuoteLine",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Opportunity:Quote:Id",
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem4",
+        "InputFieldName": "QuoteId",
+        "InputObjectName": "QuoteLineItem",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Opportunity:Quote:QuoteLine",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Opportunity:Quote:QuoteLine:%vlocity_namespace%__RootItemId__c",
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem6",
+        "InputFieldName": "%vlocity_namespace%__ParentItemId__c",
+        "InputObjectName": "QuoteLineItem",
+        "InputObjectQuerySequence": 4,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Opportunity:Quote:QuoteLine:Child",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Opportunity:Quote:QuoteLine:Product2Id",
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem2",
+        "InputFieldName": "Id",
+        "InputObjectName": "Product2",
+        "InputObjectQuerySequence": 5,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Opportunity:Quote:QuoteLine",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Opportunity:Quote:QuoteLine:Child:Product2Id",
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem1",
+        "InputFieldName": "Id",
+        "InputObjectName": "Product2",
+        "InputObjectQuerySequence": 6,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Opportunity:Quote:QuoteLine:Child",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Custom9731",
+        "InputFieldName": "Opportunity:Quote:VDOElectriityUsage__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:AnnualElectricityUsage",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Custom1625",
+        "InputFieldName": "Opportunity:Quote:Description",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:Description",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem10",
+        "InputFieldName": "Opportunity:Quote:ExpirationDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:ExpDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Custom3020",
+        "InputFieldName": "Opportunity:Quote:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Custom4617",
+        "InputFieldName": "Opportunity:Quote:VDOElectricityMonthlyLoadedAverage__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:MonthlyElectricityUsage",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem11",
+        "InputFieldName": "Opportunity:Quote:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Custom5011",
+        "InputFieldName": "Opportunity:Quote:%vlocity_namespace%__EffectiveOneTimeTotal__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "Quote:OneTimeTotal",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Custom8771",
+        "InputFieldName": "Opportunity:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:OpportunityId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Custom712",
+        "InputFieldName": "Opportunity:Quote:VDO_Pricing_Status__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:PricingStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem17",
+        "InputFieldName": "Opportunity:Quote:QuoteLine:Child:%vlocity_namespace%__RecurringUOM__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:QuoteLine:Child:BillFrequency",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem12",
+        "InputFieldName": "Opportunity:Quote:QuoteLine:Child:ProductName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:QuoteLine:Child:ChildName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem14",
+        "InputFieldName": "Opportunity:Quote:QuoteLine:Child:%vlocity_namespace%__OneTimeCharge__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:QuoteLine:Child:OTCharge",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem15",
+        "InputFieldName": "Opportunity:Quote:QuoteLine:Child:%vlocity_namespace%__OverageCharge__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:QuoteLine:Child:OverageCharge",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem13",
+        "InputFieldName": "Opportunity:Quote:QuoteLine:Child:Quantity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:QuoteLine:Child:Quantity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem16",
+        "InputFieldName": "Opportunity:Quote:QuoteLine:Child:%vlocity_namespace%__RecurringCharge__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:QuoteLine:Child:RecCharge",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Custom1596",
+        "InputFieldName": "Opportunity:Quote:QuoteLine:%vlocity_namespace%__EffectiveOneTimeTotal__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:QuoteLine:EffectiveOneTimeTotal",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Custom6559",
+        "InputFieldName": "Opportunity:Quote:QuoteLine:%vlocity_namespace%__EffectiveQuantity__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:QuoteLine:EffectiveQuantity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Custom8758",
+        "InputFieldName": "Opportunity:Quote:QuoteLine:%vlocity_namespace%__EffectiveRecurringTotal__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:QuoteLine:EffectiveRecurringTotal",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Custom5985",
+        "InputFieldName": "Opportunity:Quote:QuoteLine:VDOLineItemMargin__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:QuoteLine:LineItemMargin",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem20",
+        "InputFieldName": "Opportunity:Quote:QuoteLine:%vlocity_namespace%__OneTimeCharge__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:QuoteLine:LineOTCharge",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem21",
+        "InputFieldName": "Opportunity:Quote:QuoteLine:%vlocity_namespace%__OverageCharge__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:QuoteLine:LineOverageCharge",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem22",
+        "InputFieldName": "Opportunity:Quote:QuoteLine:%vlocity_namespace%__RecurringCharge__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:QuoteLine:LineRecCharge",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem18",
+        "InputFieldName": "Opportunity:Quote:QuoteLine:ProductName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:QuoteLine:ProductName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem19",
+        "InputFieldName": "Opportunity:Quote:QuoteLine:Quantity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:QuoteLine:Quantity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Custom9114",
+        "InputFieldName": "Opportunity:Quote:%vlocity_namespace%__QuoteMarginTotal__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Number",
+        "OutputFieldName": "Quote:QuoteMargin",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Custom8057",
+        "InputFieldName": "Opportunity:Quote:QuoteNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:QuoteNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem24",
+        "InputFieldName": "Opportunity:Quote:%vlocity_namespace%__EffectiveOneTimeTotal__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "Quote:QuoteOTTotal",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem25",
+        "InputFieldName": "Opportunity:Quote:%vlocity_namespace%__EffectiveRecurringTotal__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "Quote:QuoteRECTotal",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Custom8630",
+        "InputFieldName": "Opportunity:Quote:SolarMonthlyCost__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:SolarMonthlyCost",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Custom2448",
+        "InputFieldName": "Opportunity:Quote:VDO_Submission_Status__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:SubmissionStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Custom288",
+        "InputFieldName": "Opportunity:Quote:%vlocity_namespace%__NumberOfContractedMonths__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote:Term",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Custom6468",
+        "InputFieldName": "Opportunity:Quote:%vlocity_namespace%__EffectiveQuoteTotal__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "Quote:TotalAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VDOGetQuoteForOppty1Customa0hf200000d9OvGAAUItem23",
+        "InputFieldName": "Opportunity:Quote:VDO_UAN__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VDOGetQuoteForOppty1",
+        "OmniDataTransformationId": {
+            "Name": "VDOGetQuoteForOppty1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VDOGetQuoteForOppty1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Object",
+        "OutputFieldName": "Quote:UAN",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

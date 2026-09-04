@@ -1,0 +1,22 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "Special characters in type.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegProcdSignatureAvl": false,
+    "IsIntegrationProcedure": true,
+    "IsManagedUsingStdDesigner": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "12.07 RTORO !!??",
+    "OmniProcessKey": "!-------___@@@%%%%_+_+??_!-------___@@@%%%%_+_+??123",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "123_PropertySetConfig.json",
+    "SubType": "!---    ---- ___ @@@ %%%% _+_+??123",
+    "Type": "!---    ---- ___ @@@ %%%% _+_+??",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/!---    ---- ___ @@@ %%%% _+_+??/!---    ---- ___ @@@ %%%% _+_+??123/Procedure"
+}

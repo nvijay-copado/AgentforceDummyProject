@@ -1,0 +1,23 @@
+{
+    "Description": "MatchData:\nMatch Output from Abstraction Layer (custom metadata) to values from the flows by using IntegrationKey",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "MatchDataBlock",
+    "OmniProcessId": {
+        "Name": "AbstractionService",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Productized/AbstractionService/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "Operation == \"MatchData\" OR RunOption >=2",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock9",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Productized/AbstractionService/Procedure/MatchDataBlock"
+}
