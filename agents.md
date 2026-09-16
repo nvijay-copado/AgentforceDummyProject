@@ -1,3 +1,7 @@
+- Copado context for this workspace (always use these; do not invent IDs):
+  - Project: `a0oWV000001DDi1YAG` (Naman DX 2026)
+  - Pipeline: `a0MWV000001M7zx2AC` (Naman DX 2026)
+  - Copado org: `generic_test14`
 - There's a Copado CLI available that grants capabilities for Salesforce ALM and DevOps this are the available capabilities for you to use
   - `sf copado story display` will show the header of the currently set user story
   - `sf copado story push` will sync local commits with Copado

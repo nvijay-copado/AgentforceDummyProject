@@ -5,6 +5,7 @@
 # Salesforce cache
 .sf/
 .sfdx/
+.agentia/
 .copado/
 .localdevserver/
 deploy-options.json
