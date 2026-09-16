@@ -1,20 +1,100 @@
-- Copado context for this workspace (always use these; do not invent IDs):
-  - Project: `a0oWV000001DDi1YAG` (Naman DX 2026)
-  - Pipeline: `a0MWV000001M7zx2AC` (Naman DX 2026)
-  - Copado org: `generic_test14`
-- There's a Copado CLI available that grants capabilities for Salesforce ALM and DevOps this are the available capabilities for you to use
-  - `sf copado story display` will show the header of the currently set user story
-  - `sf copado story push` will sync local commits with Copado
-  - `sf copado story open` can open the contextual user story in Copado
-  - `sf copado job list --story <user story id>` can list the job executions for a user story, such as commits, quality gates and so on
-  - `sf copado job open -i <job id>` can open a job execution in Copado to inspect the detail of the failure
-  - `sf copado story submit` can submit a user story that is ready to be promoted
-  - `sf copado dependency get --from-changes` can detect missing dependencies in the target environment
-- When you're doing some changes in the implementation you should be runnin the following to push the changes to the developer org: `sf project deploy start --metadata=<value>` Metadata component names to deploy. Wildcards (`*`) supported as long as you use quotes, such as `ApexClass:MyClass*`.
-- You should be pulling the user story as mentioned above to check for the details and check the `copado__Functional_Specifications__c` and `copado__Technical_Specifications__c` to determine what to change
-- If you're asked to commit some changes you should:
-  - Commit to local Git
-  - Trigger missing dependency checking using `sf copado dependency get`
-  - Sync local commits with Copado
-- In case there are missing dependencies detected and that are not being committed, notify it as a missing dependency on destination and offer to retrieve them and commit them as well
-- All `sf` commands work with the `--json` flag so the output is JSON formatted and easier to process
+# Development Workflow
+
+## Copado defaults
+
+- Copado org: `generic_test14`
+- Project: `a0oWV000001DDi1YAG` (Naman DX 2026)
+- Pipeline: `a0MWV000001M7zx2AC` (Naman DX 2026)
+- Base branch: `dxstaging-main`
+
+## Basic delivery cycle
+
+### 1. Create or find the User Story
+
+Use `agentia cicd work list` to avoid duplicates. Create when needed:
+
+```bash
+agentia cicd work create \
+  --title "<TITLE>" \
+  --project "a0oWV000001DDi1YAG" \
+  --functional-requirements "<BEHAVIOR_AND_SCOPE>" \
+  --technical-specifications "<IMPLEMENTATION_APPROACH>" \
+  --acceptance-criteria "<ACTION -> EXPECTED RESULT>" \
+  --json
+```
+
+Read it back and retain its Salesforce ID and generated Copado name:
+
+```bash
+agentia cicd work get "<STORY_ID>" --json
+```
+
+Never guess IDs or generated names.
+
+### 2. Create the feature branch
+
+Require a clean working tree, then branch from the latest remote base:
+
+```bash
+git status --short
+git fetch origin dxstaging-main
+git switch -c "feature/<COPADO-STORY-NAME>" origin/dxstaging-main
+```
+
+### 3. Start development
+
+```bash
+agentia cicd work update "<STORY_ID>" \
+  --status "Development In Progress" \
+  --json
+```
+
+Implement and test the feature. Keep these story fields current:
+
+- `--functional-requirements`: behavior and scope
+- `--technical-specifications`: implementation details
+- `--acceptance-criteria`: short, verifiable checks
+- `--status`: current workflow status
+
+Read the story back after meaningful updates.
+
+### 4. Maintain architecture
+
+Maintain a root `architecture.md`. Update it only for meaningful changes to components, responsibilities, dependencies, boundaries, or runtime flows. Keep it concise and high-level.
+
+### 5. Complete and synchronize
+
+After the developer confirms the work is ready:
+
+```bash
+git fetch origin dxstaging-main
+git merge origin/dxstaging-main
+```
+
+Resolve conflicts, rerun tests, then push:
+
+```bash
+git push -u origin HEAD
+```
+
+### 6. Create the merge request
+
+Create the GitLab MR using `glab`, targeting `dxstaging-main`, and retain the actual MR URL.
+
+### 7. Complete the User Story update
+
+Preserve the existing specifications and add the MR URL:
+
+```bash
+agentia cicd work update "<STORY_ID>" \
+  --project "a0oWV000001DDi1YAG" \
+  --functional-requirements "<FINAL_BEHAVIOR_AND_SCOPE>" \
+  --technical-specifications "<IMPLEMENTATION_DETAILS_AND_MR_URL>" \
+  --acceptance-criteria "<ACTION -> EXPECTED RESULT>" \
+  --status "Ready for Test" \
+  --json
+
+agentia cicd work get "<STORY_ID>" --json
+```
+
+The cycle is complete when the branch is pushed, the MR exists, its URL is recorded, and the story is verified as `Ready for Test`.
