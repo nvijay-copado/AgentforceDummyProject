@@ -1,4 +1,4 @@
-public with sharing class DummyUat1Meta02 {
+public with sharing class DummyUat1Meta06 {
     public static String ping() {
         return 'dummy';
     }
