@@ -1,0 +1,25 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterValue": "123",
+        "GlobalKey": "Naman27Aug2026Custom5120",
+        "InputFieldName": "CreatedById",
+        "InputObjectName": "AcceptedEventRelation",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Naman27Aug2026",
+        "OmniDataTransformationId": {
+            "Name": "Naman27Aug2026",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Naman27Aug2026",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ddwdw",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]
