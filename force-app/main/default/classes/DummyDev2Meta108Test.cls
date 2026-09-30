@@ -1,5 +1,5 @@
 /**
- * Unit tests for DummyDev2Meta108, committed for US-0012427 (Agentia commit 8).
+ * Unit tests for DummyDev2Meta108, committed for US-0012428 (Agentia commit 9).
  */
 @isTest
 private class DummyDev2Meta108Test {
