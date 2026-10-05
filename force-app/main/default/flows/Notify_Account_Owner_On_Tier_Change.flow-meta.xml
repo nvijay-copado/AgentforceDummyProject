@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
-        <name>Notify_Account_Owner</name>
-        <label>Notify Account Owner</label>
+        <name>Send_Tier_Change_Notification</name>
+        <label>Send Tier Change Notification</label>
         <locationX>176</locationX>
-        <locationY>263</locationY>
+        <locationY>158</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -15,22 +15,15 @@
             </value>
         </inputParameters>
         <inputParameters>
-            <name>emailBody</name>
+            <name>emailSubject</name>
             <value>
-                <stringValue>Hello,
-
-The Customer Tier for account {!$Record.Name} has changed.
-
-Previous Tier: {!$Record__Prior.Customer_Tier__c}
-New Tier: {!$Record.Customer_Tier__c}
-
-This is an automated notification.</stringValue>
+                <elementReference>Email_Subject</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
-            <name>emailSubject</name>
+            <name>emailBody</name>
             <value>
-                <stringValue>Customer Tier Changed for {!$Record.Name}</stringValue>
+                <elementReference>Email_Body</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
@@ -41,24 +34,36 @@ This is an automated notification.</stringValue>
         </inputParameters>
         <nameSegment>emailSimple</nameSegment>
     </actionCalls>
-    <apiVersion>61.0</apiVersion>
+    <apiVersion>60.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
-    <interviewLabel>Notify Account Owner on Customer Tier Change {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Notify Account Owner on Customer Tier Change</label>
-    <processMetadataValues>
-        <name>BuilderType</name>
-        <value>
-            <stringValue>LightningFlowBuilder</stringValue>
-        </value>
-    </processMetadataValues>
+    <environments>Default</environments>
+    <formulas>
+        <name>Email_Body</name>
+        <dataType>String</dataType>
+        <expression>&quot;The Customer Tier for account &quot; &amp; {!$Record.Name} &amp; &quot; has changed from &quot; &amp; TEXT({!$Record__Prior.Customer_Tier__c}) &amp; &quot; to &quot; &amp; TEXT({!$Record.Customer_Tier__c}) &amp; &quot;.&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Email_Subject</name>
+        <dataType>String</dataType>
+        <expression>&quot;Customer Tier Change Notification: &quot; &amp; {!$Record.Name}</expression>
+    </formulas>
+    <interviewLabel>Notify Account Owner on Tier Change {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Notify Account Owner on Tier Change</label>
     <processType>AutoLaunchedFlow</processType>
     <start>
         <locationX>50</locationX>
-        <locationY>0</locationY>
+        <locationY>50</locationY>
         <connector>
-            <targetReference>Notify_Account_Owner</targetReference>
+            <targetReference>Send_Tier_Change_Notification</targetReference>
         </connector>
-        <filterFormula>ISCHANGED({!$Record.Customer_Tier__c})</filterFormula>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Customer_Tier__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
         <object>Account</object>
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
