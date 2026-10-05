@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email_to_Account_Owner</name>
+        <label>Send Email to Account Owner</label>
+        <locationX>176</locationX>
+        <locationY>240</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>Owner_Email_Formula</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>Email_Subject_Formula</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Email_Body_Formula</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>CurrentUser</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+    </actionCalls>
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Notifies the Account Owner by email when the Customer Tier field changes on an Account, including the old and new tier values. Does not fire for other field updates.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Email_Body_Formula</name>
+        <dataType>String</dataType>
+        <expression>&quot;The Customer Tier for account &quot; &amp; {!$Record.Name} &amp; &quot; has changed from &quot; &amp; TEXT(PRIORVALUE({!$Record.Customer_Tier__c})) &amp; &quot; to &quot; &amp; TEXT({!$Record.Customer_Tier__c}) &amp; &quot;.&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Email_Subject_Formula</name>
+        <dataType>String</dataType>
+        <expression>&quot;Customer Tier Changed for Account: &quot; &amp; {!$Record.Name}</expression>
+    </formulas>
+    <formulas>
+        <name>Owner_Email_Formula</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Owner.Email}</expression>
+    </formulas>
+    <interviewLabel>Account Notify Owner On Tier Change {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account Notify Owner On Tier Change</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Send_Email_to_Account_Owner</targetReference>
+        </connector>
+        <filterFormula>TEXT({!$Record.Customer_Tier__c}) &lt;&gt; TEXT(PRIORVALUE({!$Record.Customer_Tier__c}))</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
