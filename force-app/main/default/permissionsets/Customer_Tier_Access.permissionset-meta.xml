@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants read/edit field-level security on Account.Customer_Tier__c so Account owners and admins can update the Customer Tier field, which in turn triggers the owner notification flow.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Customer_Tier__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Customer Tier Access</label>
+</PermissionSet>
