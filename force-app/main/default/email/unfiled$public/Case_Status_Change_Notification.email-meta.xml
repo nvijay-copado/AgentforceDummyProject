@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notifies the Case Owner when a Case&apos;s Status field changes. Used by the Case_Status_Change_Alert workflow email alert, triggered from the Case_Status_Change_Email_Notification flow.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Case Status Change Notification</name>
+    <style>none</style>
+    <subject>Case {!Case.CaseNumber} status updated: {!Case.Previous_Status__c} to {!Case.Status}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
