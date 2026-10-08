@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants field-level access to Case.Previous_Status__c, used by the Case_Status_Change_Email_Notification flow (US-0012589) to populate the status change email merge fields.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Case.Previous_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Case Status Change Email Notification</label>
+</PermissionSet>

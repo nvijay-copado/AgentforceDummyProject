@@ -1,0 +1,12 @@
+Hello,
+
+The status of case {!Case.CaseNumber} has changed.
+
+Case Number: {!Case.CaseNumber}
+Previous Status: {!Case.Previous_Status__c}
+New Status: {!Case.Status}
+
+Please log in to Salesforce to review the case:
+{!Case.Link}
+
+This is an automated notification.
