@@ -7,11 +7,11 @@
     <duplicateRuleFilter xsi:nil="true"/>
     <duplicateRuleMatchRules>
         <matchRuleSObjectType>Contact</matchRuleSObjectType>
-        <matchingRule>Contact_Name_Email_Match</matchingRule>
+        <matchingRule>Naman_Contact_Name_Email_Match</matchingRule>
         <objectMapping xsi:nil="true"/>
     </duplicateRuleMatchRules>
     <isActive>true</isActive>
-    <masterLabel>Contact Duplicate Warning</masterLabel>
+    <masterLabel>Naman Contact Duplicate Warning</masterLabel>
     <operationsOnInsert>Alert</operationsOnInsert>
     <operationsOnInsert>Report</operationsOnInsert>
     <operationsOnUpdate>Alert</operationsOnUpdate>
