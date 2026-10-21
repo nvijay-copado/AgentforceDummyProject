@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Standard</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>epic.548a31a9f17f@orgfarm.salesforce.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>US,USA,United States,United States of America,Canada,Mexico</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>epic.548a31a9f17f@orgfarm.salesforce.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United Kingdom,UK,Germany,France,Spain,Italy,Netherlands,Ireland,United Arab Emirates,South Africa</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>epic.548a31a9f17f@orgfarm.salesforce.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>India,China,Japan,Australia,Singapore,South Korea,New Zealand</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>epic.548a31a9f17f@orgfarm.salesforce.com</assignedTo>
+            <assignedToType>User</assignedToType>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>
