@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Set_Next_Step</name>
+        <label>Set Next Step</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.NextStep</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NextStepText</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <formulas>
+        <name>NextStepText</name>
+        <dataType>String</dataType>
+        <expression>&quot;Stage changed to &quot; &amp; TEXT({!$Record.StageName}) &amp; &quot; on &quot; &amp; TEXT(TODAY())</expression>
+    </formulas>
+    <label>Opportunity Stage Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Next_Step</targetReference>
+        </connector>
+        <filterFormula>ISCHANGED({!$Record.StageName})</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
