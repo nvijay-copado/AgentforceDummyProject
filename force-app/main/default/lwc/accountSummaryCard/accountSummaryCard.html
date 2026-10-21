@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Account Summary" icon-name="standard:account">
+        <div class="slds-var-p-horizontal_medium">
+            <template lwc:if={isLoaded}>
+                <dl class="slds-list_horizontal slds-wrap">
+                    <dt class="slds-item_label slds-text-color_weak slds-truncate">Name</dt>
+                    <dd class="slds-item_detail slds-truncate">{name}</dd>
+                    <dt class="slds-item_label slds-text-color_weak slds-truncate">Industry</dt>
+                    <dd class="slds-item_detail slds-truncate">{industry}</dd>
+                    <dt class="slds-item_label slds-text-color_weak slds-truncate">Type</dt>
+                    <dd class="slds-item_detail slds-truncate">{type}</dd>
+                    <dt class="slds-item_label slds-text-color_weak slds-truncate">Phone</dt>
+                    <dd class="slds-item_detail slds-truncate">{phone}</dd>
+                    <dt class="slds-item_label slds-text-color_weak slds-truncate">Website</dt>
+                    <dd class="slds-item_detail slds-truncate">{website}</dd>
+                    <dt class="slds-item_label slds-text-color_weak slds-truncate">Owner</dt>
+                    <dd class="slds-item_detail slds-truncate">{owner}</dd>
+                </dl>
+            </template>
+            <template lwc:elseif={hasError}>
+                <p class="slds-text-color_error">Unable to load account summary.</p>
+            </template>
+            <template lwc:else>
+                <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+            </template>
+        </div>
+    </lightning-card>
+</template>
