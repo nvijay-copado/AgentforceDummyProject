@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="SLA Manager Dashboard" icon-name="standard:dashboard">
+        <div class="slds-p-horizontal_medium">
+            <lightning-combobox label="Priority" value={priority} options={priorityOptions} onchange={handlePriority}></lightning-combobox>
+            <lightning-combobox label="Minimum Escalation Level" value={minLevel} options={levelOptions} onchange={handleLevel}></lightning-combobox>
+        </div>
+        <template lwc:if={cases}>
+            <lightning-datatable key-field="Id" data={cases} columns={columns} hide-checkbox-column></lightning-datatable>
+            <template lwc:if={isEmpty}><p class="slds-p-around_medium">No at-risk or breached cases.</p></template>
+        </template>
+        <template lwc:if={error}><p class="slds-p-around_medium slds-text-color_error">{error}</p></template>
+    </lightning-card>
+</template>
