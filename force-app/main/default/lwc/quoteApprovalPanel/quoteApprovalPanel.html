@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Quote Discount Approval" icon-name="standard:approval">
+        <div class="slds-p-horizontal_medium">
+            <template if:true={view}>
+                <p><strong>{view.name}</strong> ({view.requiredLevel} approval, {view.discountPercent}% discount)</p>
+                <p>Decision: {view.decision} | Lifecycle: {view.lifecycle} | Escalation level: {view.escalationLevel}</p>
+                <p>Credit available: {view.availableCredit} of {view.creditLimit}</p>
+                <p if:true={view.creditReviewRequired} class="slds-text-color_error">Credit review required</p>
+                <p>ERP sync: {view.syncStatus} {view.erpReference}</p>
+                <p if:true={view.lastError} class="slds-text-color_error">{view.lastError}</p>
+                <p if:true={error} class="slds-text-color_error">{error}</p>
+                <div class="slds-m-top_small" if:true={showDecisionButtons}>
+                    <lightning-button variant="brand" label="Approve" data-decision="Approved" onclick={handleDecision}></lightning-button>
+                    <lightning-button class="slds-m-left_small" label="Reject" data-decision="Rejected" onclick={handleDecision}></lightning-button>
+                </div>
+                <div class="slds-m-top_small" if:true={showRetry}>
+                    <lightning-button label="Retry ERP sync" onclick={handleRetry}></lightning-button>
+                </div>
+            </template>
+            <template if:false={view}>
+                <p>No approval request for this opportunity.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

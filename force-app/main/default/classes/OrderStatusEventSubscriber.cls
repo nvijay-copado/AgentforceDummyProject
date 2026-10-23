@@ -24,7 +24,7 @@ public with sharing class OrderStatusEventSubscriber {
             }
         }
         Map<Id, Order> orders = new Map<Id, Order>(
-            [SELECT Id, OrderNumber, OwnerId FROM Order WHERE Id IN :orderIds]);
+            [SELECT Id, OrderNumber, OwnerId, Quote_Approval_Request__c FROM Order WHERE Id IN :orderIds]);
         List<Task> tasks = new List<Task>();
         for (Order_Status_Event__e e : events) {
             Order o = String.isBlank(e.Order_Id__c) ? null : orders.get((Id) e.Order_Id__c);
@@ -39,6 +39,37 @@ public with sharing class OrderStatusEventSubscriber {
         if (!tasks.isEmpty()) {
             insert tasks;
         }
+        syncApprovalLifecycle(events, orders);
         return tasks.size();
+    }
+
+    /** Activated orders fulfil their linked approval request, cancelled orders cancel it. Idempotent. */
+    private static void syncApprovalLifecycle(List<Order_Status_Event__e> events, Map<Id, Order> orders) {
+        Map<Id, String> target = new Map<Id, String>();
+        for (Order_Status_Event__e e : events) {
+            Order o = String.isBlank(e.Order_Id__c) ? null : orders.get((Id) e.Order_Id__c);
+            if (o == null || o.Quote_Approval_Request__c == null) {
+                continue;
+            }
+            if (e.New_Status__c == 'Activated') {
+                target.put(o.Quote_Approval_Request__c, 'Fulfilled');
+            } else if (e.New_Status__c == 'Cancelled' || e.New_Status__c == 'Canceled') {
+                target.put(o.Quote_Approval_Request__c, 'Cancelled');
+            }
+        }
+        if (target.isEmpty()) {
+            return;
+        }
+        List<Quote_Approval_Request__c> updates = new List<Quote_Approval_Request__c>();
+        for (Quote_Approval_Request__c r : [
+            SELECT Id, Lifecycle__c FROM Quote_Approval_Request__c WHERE Id IN :target.keySet()
+        ]) {
+            if (r.Lifecycle__c != target.get(r.Id)) {
+                updates.add(new Quote_Approval_Request__c(Id = r.Id, Lifecycle__c = target.get(r.Id)));
+            }
+        }
+        if (!updates.isEmpty()) {
+            update updates;
+        }
     }
 }
