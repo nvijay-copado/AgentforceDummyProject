@@ -4,6 +4,10 @@ trigger OpportunityTrigger on Opportunity (before update, after insert, after up
             Trigger.new,
             Trigger.oldMap
         );
+        OpportunityDiscountApprovalHandler.handleBeforeUpdate(
+            Trigger.new,
+            Trigger.oldMap
+        );
     } else {
         new QuoteApprovalTriggerHandler().run();
     }
