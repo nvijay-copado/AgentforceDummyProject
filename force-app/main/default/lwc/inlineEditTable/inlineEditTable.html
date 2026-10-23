@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title={title} icon-name="standard:table">
+        <div class="slds-p-horizontal_medium">
+            <template if:true={errorMessage}>
+                <div class="slds-text-color_error slds-m-bottom_small" role="alert">{errorMessage}</div>
+            </template>
+            <lightning-datatable
+                key-field="Id"
+                data={rows}
+                columns={columns}
+                draft-values={draftValues}
+                errors={tableErrors}
+                sorted-by={sortedBy}
+                sorted-direction={sortedDirection}
+                onsort={handleSort}
+                onsave={handleSave}
+                oncancel={handleCancel}
+                hide-checkbox-column
+                show-row-number-column
+            ></lightning-datatable>
+        </div>
+    </lightning-card>
+</template>
