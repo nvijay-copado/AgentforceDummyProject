@@ -1,0 +1,37 @@
+<template>
+    <lightning-card title="Account Search" icon-name="standard:account">
+        <div class="slds-var-p-around_medium">
+            <div class="slds-grid slds-gutters slds-wrap">
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-input label="Name" value={name} onchange={handleName}></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-input label="Industry" value={industry} onchange={handleIndustry}></lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-input label="Region (State)" value={region} onchange={handleRegion}></lightning-input>
+                </div>
+            </div>
+            <lightning-button class="slds-var-m-top_small" variant="brand" label="Search" onclick={handleSearch}></lightning-button>
+            <template if:true={error}>
+                <p class="slds-text-color_error slds-var-m-top_small">{error}</p>
+            </template>
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading"></lightning-spinner>
+            </template>
+            <template if:true={hasResults}>
+                <lightning-datatable class="slds-var-m-top_small" key-field="Id" data={records} columns={columns}
+                    sorted-by={sortedBy} sorted-direction={sortedDirection} onsort={handleSort} hide-checkbox-column>
+                </lightning-datatable>
+                <div class="slds-var-m-top_small slds-grid slds-grid_align-spread">
+                    <lightning-button label="Previous" onclick={handlePrev} disabled={disablePrev}></lightning-button>
+                    <span>Page {pageNumber} of {totalPages} ({totalCount} records)</span>
+                    <lightning-button label="Next" onclick={handleNext} disabled={disableNext}></lightning-button>
+                </div>
+            </template>
+            <template if:true={showEmpty}>
+                <p class="slds-var-m-top_small">No accounts match your search. Try different criteria.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
