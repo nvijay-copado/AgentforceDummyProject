@@ -1,0 +1,3 @@
+Hello {!Contact.FirstName},
+
+A new comment was added to your case {!Case.CaseNumber} ("{!Case.Subject}"). Please check the portal for details.
