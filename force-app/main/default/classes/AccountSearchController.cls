@@ -5,49 +5,35 @@ public with sharing class AccountSearchController {
     }
 
     @AuraEnabled(cacheable=true)
-    public static SearchResult search(String name, String industry, String region, Integer pageSize, Integer pageNumber) {
-        if (!Schema.sObjectType.Account.isAccessible()) {
-            throw new AuraHandledException('You do not have access to Account records.');
+    public static SearchResult searchAccounts(String name, String industry, String region, Integer pageSize, Integer pageNumber) {
+        if (!Schema.sObjectType.Account.isAccessible()
+            || !Schema.sObjectType.Account.fields.Name.isAccessible()
+            || !Schema.sObjectType.Account.fields.Industry.isAccessible()
+            || !Schema.sObjectType.Account.fields.BillingState.isAccessible()) {
+            throw new AuraHandledException('You do not have access to search accounts.');
         }
-        Integer size = (pageSize == null || pageSize < 1) ? 20 : Math.min(pageSize, 200);
+        Integer size = (pageSize == null || pageSize < 1 || pageSize > 200) ? 25 : pageSize;
         Integer page = (pageNumber == null || pageNumber < 1) ? 1 : pageNumber;
         Integer offset = (page - 1) * size;
         if (offset > 2000) {
-            throw new AuraHandledException('Please refine your search criteria.');
+            throw new AuraHandledException('Please refine your filters to see more results.');
         }
+        String nameLike = String.isBlank(name) ? null : '%' + String.escapeSingleQuotes(name.trim()) + '%';
+        String ind = String.isBlank(industry) ? null : industry.trim();
+        String reg = String.isBlank(region) ? null : region.trim();
 
-        List<String> conditions = new List<String>();
-        if (String.isNotBlank(name)) {
-            conditions.add('Name LIKE :namePattern');
-        }
-        if (String.isNotBlank(industry)) {
-            conditions.add('Industry = :industry');
-        }
-        if (String.isNotBlank(region)) {
-            conditions.add('BillingState = :region');
-        }
-        String namePattern = '%' + (String.isNotBlank(name) ? String.escapeSingleQuotes(name.trim()) : '') + '%';
-        String whereClause = conditions.isEmpty() ? '' : ' WHERE ' + String.join(conditions, ' AND ');
+        List<String> clauses = new List<String>();
+        Map<String, Object> binds = new Map<String, Object>{ 'nameLike' => nameLike, 'ind' => ind, 'reg' => reg, 'lim' => size, 'off' => offset };
+        if (nameLike != null) { clauses.add('Name LIKE :nameLike'); }
+        if (ind != null) { clauses.add('Industry = :ind'); }
+        if (reg != null) { clauses.add('BillingState = :reg'); }
+        String whereClause = clauses.isEmpty() ? '' : ' WHERE ' + String.join(clauses, ' AND ');
 
         SearchResult result = new SearchResult();
-        try {
-            result.totalCount = Database.countQueryWithBinds(
-                'SELECT COUNT() FROM Account' + whereClause,
-                new Map<String, Object>{ 'namePattern' => namePattern, 'industry' => industry, 'region' => region },
-                AccessLevel.USER_MODE
-            );
-            result.records = Database.queryWithBinds(
-                'SELECT Id, Name, Industry, BillingState, Phone FROM Account' + whereClause +
-                ' ORDER BY Name LIMIT :size OFFSET :offset',
-                new Map<String, Object>{
-                    'namePattern' => namePattern, 'industry' => industry, 'region' => region,
-                    'size' => size, 'offset' => offset
-                },
-                AccessLevel.USER_MODE
-            );
-        } catch (Exception e) {
-            throw new AuraHandledException('Account search failed: ' + e.getMessage());
-        }
+        result.totalCount = Database.countQueryWithBinds('SELECT COUNT() FROM Account' + whereClause, binds, AccessLevel.USER_MODE);
+        result.records = Database.queryWithBinds(
+            'SELECT Id, Name, Industry, BillingState FROM Account' + whereClause + ' ORDER BY Name ASC LIMIT :lim OFFSET :off',
+            binds, AccessLevel.USER_MODE);
         return result;
     }
 }

@@ -1,7 +1,8 @@
 import { LightningElement } from 'lwc';
-import search from '@salesforce/apex/AccountSearchController.search';
+import searchAccounts from '@salesforce/apex/AccountSearchController.searchAccounts';
 
-const PAGE_SIZE = 20;
+const PAGE_SIZE = 25;
+const DEBOUNCE_MS = 300;
 
 export default class AccountSearch extends LightningElement {
     name = '';
@@ -11,20 +12,23 @@ export default class AccountSearch extends LightningElement {
     totalCount = 0;
     pageNumber = 1;
     isLoading = false;
-    searched = false;
     error;
+    searched = false;
     sortedBy = 'Name';
     sortedDirection = 'asc';
-    cache = new Map();
+    timer;
 
     columns = [
         { label: 'Name', fieldName: 'Name', sortable: true },
         { label: 'Industry', fieldName: 'Industry', sortable: true },
-        { label: 'State', fieldName: 'BillingState', sortable: true },
-        { label: 'Phone', fieldName: 'Phone', type: 'phone' }
+        { label: 'Region', fieldName: 'BillingState', sortable: true }
     ];
 
-    get hasResults() {
+    connectedCallback() {
+        this.load();
+    }
+
+    get hasRecords() {
         return this.records.length > 0;
     }
     get showEmpty() {
@@ -33,78 +37,57 @@ export default class AccountSearch extends LightningElement {
     get totalPages() {
         return Math.max(1, Math.ceil(this.totalCount / PAGE_SIZE));
     }
-    get disablePrev() {
+    get isFirstPage() {
         return this.pageNumber <= 1;
     }
-    get disableNext() {
+    get isLastPage() {
         return this.pageNumber >= this.totalPages;
     }
 
-    handleName(e) {
-        this.name = e.target.value;
-    }
-    handleIndustry(e) {
-        this.industry = e.target.value;
-    }
-    handleRegion(e) {
-        this.region = e.target.value;
+    handleName(e) { this.name = e.target.value; this.debounce(); }
+    handleIndustry(e) { this.industry = e.target.value; this.debounce(); }
+    handleRegion(e) { this.region = e.target.value; this.debounce(); }
+
+    debounce() {
+        clearTimeout(this.timer);
+        this.timer = setTimeout(() => {
+            this.pageNumber = 1;
+            this.load();
+        }, DEBOUNCE_MS);
     }
 
-    handleSearch() {
-        this.pageNumber = 1;
-        this.load();
-    }
-    handlePrev() {
-        this.pageNumber -= 1;
-        this.load();
-    }
-    handleNext() {
-        this.pageNumber += 1;
-        this.load();
-    }
+    handlePrev() { this.pageNumber -= 1; this.load(); }
+    handleNext() { this.pageNumber += 1; this.load(); }
 
     handleSort(event) {
         this.sortedBy = event.detail.fieldName;
         this.sortedDirection = event.detail.sortDirection;
         const dir = this.sortedDirection === 'asc' ? 1 : -1;
-        const field = this.sortedBy;
-        this.records = [...this.records].sort((a, b) => {
-            const x = (a[field] || '').toString().toLowerCase();
-            const y = (b[field] || '').toString().toLowerCase();
-            return x > y ? dir : x < y ? -dir : 0;
-        });
+        const key = this.sortedBy;
+        this.records = [...this.records].sort((a, b) =>
+            dir * String(a[key] ?? '').localeCompare(String(b[key] ?? '')));
     }
 
     async load() {
-        const key = JSON.stringify([this.name, this.industry, this.region, this.pageNumber]);
-        this.error = undefined;
-        this.searched = true;
-        if (this.cache.has(key)) {
-            this.apply(this.cache.get(key));
-            return;
-        }
         this.isLoading = true;
+        this.error = undefined;
         try {
-            const result = await search({
+            const res = await searchAccounts({
                 name: this.name,
                 industry: this.industry,
                 region: this.region,
                 pageSize: PAGE_SIZE,
                 pageNumber: this.pageNumber
             });
-            this.cache.set(key, result);
-            this.apply(result);
-        } catch (err) {
+            this.records = res.records;
+            this.totalCount = res.totalCount;
+        } catch (e) {
             this.records = [];
             this.totalCount = 0;
-            this.error = (err && err.body && err.body.message) || 'Unable to search accounts.';
+            this.error = (e && e.body && e.body.message) || 'Unable to search accounts. Please try again.';
         } finally {
+            this.searched = true;
             this.isLoading = false;
         }
-    }
-
-    apply(result) {
-        this.records = result.records || [];
-        this.totalCount = result.totalCount || 0;
     }
 }
