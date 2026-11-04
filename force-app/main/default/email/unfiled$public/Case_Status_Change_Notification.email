@@ -1,0 +1,3 @@
+Hello {!Contact.FirstName},
+
+The status of your case {!Case.CaseNumber} ("{!Case.Subject}") changed to {!Case.Status}.

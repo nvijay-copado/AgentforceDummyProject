@@ -1,0 +1,3 @@
+Hello {!Contact.FirstName},
+
+Your case {!Case.CaseNumber} ("{!Case.Subject}") has been created. We will keep you updated by email.
