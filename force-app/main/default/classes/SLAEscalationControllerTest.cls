@@ -13,9 +13,11 @@ private class SLAEscalationControllerTest {
             TimeZoneSidKey = 'America/Los_Angeles',
             Username = alias + System.currentTimeMillis() + '@example.com'
         );
-        insert u;
-        PermissionSet ps = [SELECT Id FROM PermissionSet WHERE Name = :permSetName];
-        insert new PermissionSetAssignment(AssigneeId = u.Id, PermissionSetId = ps.Id);
+        System.runAs(new User(Id = UserInfo.getUserId())) {
+            insert u;
+            PermissionSet ps = [SELECT Id FROM PermissionSet WHERE Name = :permSetName];
+            insert new PermissionSetAssignment(AssigneeId = u.Id, PermissionSetId = ps.Id);
+        }
         return u;
     }
 

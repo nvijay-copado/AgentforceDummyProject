@@ -69,30 +69,4 @@
         <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
-    <objectPermissions>
-        <allowCreate>false</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
-        <allowRead>false</allowRead>
-        <customizeSetup>false</customizeSetup>
-        <deleteSetup>false</deleteSetup>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>SLA_Breach_Event__e</object>
-        <viewAllFields>false</viewAllFields>
-        <viewAllRecords>false</viewAllRecords>
-        <viewSetup>false</viewSetup>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>false</allowCreate>
-        <allowDelete>false</allowDelete>
-        <allowEdit>false</allowEdit>
-        <allowRead>false</allowRead>
-        <customizeSetup>false</customizeSetup>
-        <deleteSetup>false</deleteSetup>
-        <modifyAllRecords>false</modifyAllRecords>
-        <object>SLA_Policy__mdt</object>
-        <viewAllFields>false</viewAllFields>
-        <viewAllRecords>false</viewAllRecords>
-        <viewSetup>false</viewSetup>
-    </objectPermissions>
 </PermissionSet>
