@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="SLA and Escalations" icon-name="standard:case">
+        <template lwc:if={summary}>
+            <div class="slds-p-horizontal_medium">
+                <p>SLA Status: <lightning-badge label={summary.slaStatus} class={badgeClass}></lightning-badge></p>
+                <p>Due: <lightning-formatted-date-time value={summary.dueDate} year="numeric" month="short" day="2-digit" hour="2-digit" minute="2-digit"></lightning-formatted-date-time></p>
+                <p>Escalation Level: {summary.escalationLevel}</p>
+            </div>
+            <ul class="slds-p-around_medium">
+                <template for:each={rows} for:item="row">
+                    <li key={row.id} class="slds-m-bottom_small">
+                        Level {row.level} ({row.reason}) to {row.escalatedToName}
+                        <template lwc:if={row.acknowledged}> - Acknowledged</template>
+                        <template lwc:elseif={row.canAcknowledge}>
+                            <lightning-button label="Acknowledge" data-id={row.id} onclick={handleAcknowledge} class="slds-m-left_small"></lightning-button>
+                        </template>
+                    </li>
+                </template>
+            </ul>
+            <template lwc:if={noEscalations}><p class="slds-p-horizontal_medium">No escalations.</p></template>
+        </template>
+        <template lwc:if={error}><p class="slds-p-around_medium slds-text-color_error">{error}</p></template>
+    </lightning-card>
+</template>
